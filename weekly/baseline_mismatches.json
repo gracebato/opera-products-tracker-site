@@ -1,0 +1,11 @@
+{
+  "n_slcs": 30,
+  "n_bursts_annotation": 1290,
+  "n_bursts_catalog": 645,
+  "missing_from_catalog": 0,
+  "extra_in_catalog": 0,
+  "catalog_fallback_slcs": [
+    "S1D_IW_SLC__1SDV_20261008T130313_20261008T130340_004924_009471_3375"
+  ],
+  "failed_slcs": []
+}

@@ -1,0 +1,26 @@
+{
+  "label": "Global",
+  "start": "2026-10-03",
+  "stop": "2026-10-17",
+  "burst_source": "catalog",
+  "n_slcs": 11325,
+  "n_burst_acquisitions": 262996,
+  "rtc_missing": 2708,
+  "cslc_expected": 25782,
+  "cslc_missing": 896,
+  "rtc_duplicated": 6861,
+  "cslc_duplicated": 476,
+  "failed_slcs": [],
+  "catalog_fallback_slcs": [
+    "S1D_IW_SLC__1SDV_20261008T130313_20261008T130340_004924_009471_3375"
+  ],
+  "baseline": {
+    "n_slcs": 30,
+    "n_bursts_annotation": 1290,
+    "n_bursts_catalog": 645,
+    "missing_from_catalog": 0,
+    "extra_in_catalog": 0
+  },
+  "as_of": "2026-10-21T16:20:50Z",
+  "generated": "2026-10-21 16:22 UTC"
+}

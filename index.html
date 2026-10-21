@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OPERA RTC-S1 and CSLC-S1 Tracker</title><style>
+:root { color-scheme: light; --bg:#fcfcfb; --card:#f3f2ef; --fg:#0b0b0b; --muted:#52514e; --faint:#7a7974;
+  --line:#e4e3df; --link:#2a78d6; --warn:#b26a00; }
+@media (prefers-color-scheme: dark) { :root { color-scheme: dark; --bg:#1a1a19; --card:#242423; --fg:#fff;
+  --muted:#c3c2b7; --faint:#9a998f; --line:#383835; --link:#3987e5; --warn:#fab219; } }
+body { margin:0; background:var(--bg); color:var(--fg);
+  font:15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+main { max-width:980px; margin:0 auto; padding:28px 16px 48px; }
+h1 { font-size:24px; margin:0 0 6px; } h2 { font-size:18px; margin:0 0 4px; }
+p { color:var(--muted); margin:0 0 12px; } a { color:var(--link); }
+.cards { display:grid; grid-template-columns:repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  gap:16px; margin-top:20px; }
+.card { background:var(--card); border-radius:10px; padding:16px 18px; }
+.meta { color:var(--faint); font-size:13px; margin-bottom:10px; }
+table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; font-size:14px; margin:8px 0; }
+td { padding:4px 0; border-bottom:1px solid var(--line); } td:last-child { text-align:right; }
+.links { display:flex; flex-wrap:wrap; gap:6px 14px; font-size:14px; margin-top:8px; }
+.btn { display:inline-block; background:var(--link); color:#fff; text-decoration:none; border-radius:6px;
+  padding:6px 12px; font-weight:600; font-size:14px; }
+.warn { color:var(--warn); font-size:13px; } .empty { color:var(--faint); }
+</style></head>
+<body><main>
+<h1>OPERA RTC-S1 and CSLC-S1 Tracker</h1>
+<p>Shows whether OPERA made the RTC-S1 and CSLC-S1 products it should have for each Sentinel-1 radar pass, and
+which DISP-S1 frames (need CSLC-S1) and DSWx-S1 granules (need RTC-S1) are affected by anything missing. CSLC-S1 is
+only made for North America, so it is only checked there.</p>
+<div class="cards"><section class="card"><h2>Weekly check</h2><p>The last 2 weeks of Sentinel-1 passes: RTC-S1 worldwide, CSLC-S1 in North America. Updated every Monday.</p><div class="meta">2026-10-03 to 2026-10-17 · updated 2026-10-21 16:22 UTC</div><table><tr><td>SLC SAFE files</td><td>11,325</td></tr><tr><td>Burst acquisitions</td><td>262,996</td></tr><tr><td>RTC-S1 missing</td><td>2,708 of 262,996 (1.0%)</td></tr><tr><td>CSLC-S1 missing</td><td>896 of 25,782 expected (3.5%)</td></tr><tr><td>DISP-S1 frames with missing CSLCs</td><td>67 of 977 frames (6.9%)</td></tr><tr><td>DSWx-S1 granules with missing RTCs</td><td>1,096 of 19,514 granules (5.6%)</td></tr><tr><td>Duplicated (RTC-S1 · CSLC-S1)</td><td>6,861 · 476</td></tr></table><a class="btn" href="weekly/index.html?v=20261021230610">Open map and timeline</a><div class="links"><a href="weekly/missing.csv?v=20261021230610" download="missing_20261003-20261017.csv">Missing CSV</a><a href="weekly/duplicates.csv?v=20261021230610" download="duplicates_20261003-20261017.csv">Duplicates CSV</a></div></section><section class="card"><h2>Long-term check</h2><p>Longer windows, with every radar image read in full: CSLC-S1 in North America over the past year and RTC-S1 worldwide over the past 2 months.</p><p class="empty">No run yet.</p></section></div>
+<p class="meta" style="margin-top:20px">Site updated 2026-10-21 23:06 UTC.</p>
+</main></body></html>
