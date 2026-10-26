@@ -703,13 +703,15 @@ async function selectionRows(sel, month) {
   if (sel.kind === "burst") rows = body.filter(r => r[ib] === sel.id);
   else { const col = c(AFFECTED[sel.kind]); rows = body.filter(r => r[col] && split(r[col]).includes(sel.id)); }
   return rows.map(r => ({ burst: r[ib], date: r[id], slc: r[islc], dswx: split(r[idx]), disp: split(r[idf]),
+    dup: ip >= 0,
     products: ip >= 0 ? [r[ip]] : [r[c("rtc_s1")] === "missing" ? "RTC-S1" : "", r[c("cslc_s1")] === "missing" ? "CSLC-S1" : ""].filter(Boolean),
     what: ip >= 0 ? `${r[ip]} ×${r[c("n_products")]}` : [r[c("rtc_s1")] === "missing" ? "RTC-S1" : "", r[c("cslc_s1")] === "missing" ? "CSLC-S1" : ""].filter(Boolean).join(" + ") }));
 }
-// ASF Search for a burst's OPERA products, two weeks either side of the acquisition date (shareable link)
-function asfLink(burst, date, product) {
+// ASF Search for a burst's OPERA products around the acquisition date (shareable link): two weeks either side for a
+// missing product, one day for duplicates (whose granules all have that date)
+function asfLink(burst, date, product, days = 14) {
   const day = 86400000, t = Date.parse(`${date}T00:00:00Z`), iso = v => new Date(v).toISOString().slice(0, 19) + "Z";
-  return `https://search.asf.alaska.edu/#/?dataset=OPERA-S1&start=${iso(t - 14 * day)}&end=${iso(t + 15 * day - 1000)}` +
+  return `https://search.asf.alaska.edu/#/?dataset=OPERA-S1&start=${iso(t - days * day)}&end=${iso(t + (days + 1) * day - 1000)}` +
     `&resultsLoaded=true&operaBurstID=${burst.replaceAll("-", "_")}&productTypes=${product === "CSLC-S1" ? "CSLC" : "RTC"}`;
 }
 // Footprint and orbit pass (p) of each burst, from the track files
@@ -790,7 +792,7 @@ async function showSelection(token) {
       <div class="scroll"><table><thead><tr><th>Burst</th><th>Date</th><th>${st.issue === "duplicate" ? "Duplicated" : "Missing"}</th><th>DSWx-S1 granules</th><th>DISP-S1 frames</th><th>ASF Search</th><th>SLC</th></tr></thead><tbody>${rows.slice(0, MAX).map(r =>
         `<tr><td><button class="chip" data-k="burst" data-id="${esc(r.burst)}">${esc(r.burst)}</button></td><td>${esc(r.date)}</td><td>${esc(r.what)}</td>
         <td class="ids">${chips("dswx", r.dswx)}</td><td class="ids">${chips("disp", r.disp)}</td>
-        <td>${r.products.map(p => `<a href="${esc(asfLink(r.burst, r.date, p))}" target="_blank" rel="noopener">${p === "CSLC-S1" ? "CSLC" : "RTC"} ↗</a>`).join(" ")}</td>
+        <td>${r.products.map(p => `<a href="${esc(asfLink(r.burst, r.date, p, r.dup ? 1 : 14))}" target="_blank" rel="noopener">${p === "CSLC-S1" ? "CSLC" : "RTC"} ↗</a>`).join(" ")}</td>
         <td class="ids">${esc(r.slc)}</td></tr>`).join("")}</tbody></table></div>` +
       (rows.length > MAX ? `<p class="meta" style="margin:0">Showing ${MAX} of ${fmt(rows.length)}; the month's list below has all of them.</p>` : "") : "");
 }
