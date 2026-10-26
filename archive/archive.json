@@ -1,7 +1,7 @@
 {
  "kind": "archive",
  "run_date": "2026-10-26",
- "run_at": "2026-10-26T18:58:07Z",
+ "run_at": "2026-10-26T21:02:09Z",
  "first_month": "2016-04",
  "last_month": "2026-09",
  "built": [],
@@ -381,8 +381,8 @@
   },
   {
    "month": "2017-07",
-   "as_of": "2026-10-23T19:26:14Z",
-   "built_at": "2026-10-23T19:30:53Z",
+   "as_of": "2026-10-26T18:58:59Z",
+   "built_at": "2026-10-26T19:04:27Z",
    "updated_at": null,
    "n_slcs": 21754,
    "n_burst_acquisitions": 507572,
@@ -395,7 +395,7 @@
    "disp_frames": 1114,
    "dswx_granules_with_missing": 121,
    "dswx_granules": 19732,
-   "failed_slcs": 1,
+   "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 85,
     "RTC-S1|missing|open": 1113
@@ -403,8 +403,8 @@
   },
   {
    "month": "2017-08",
-   "as_of": "2026-10-23T19:30:54Z",
-   "built_at": "2026-10-23T19:36:03Z",
+   "as_of": "2026-10-26T19:04:30Z",
+   "built_at": "2026-10-26T19:10:15Z",
    "updated_at": null,
    "n_slcs": 22004,
    "n_burst_acquisitions": 514117,
@@ -417,7 +417,7 @@
    "disp_frames": 1112,
    "dswx_granules_with_missing": 113,
    "dswx_granules": 19719,
-   "failed_slcs": 3,
+   "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 77,
     "RTC-S1|missing|open": 903
@@ -425,8 +425,8 @@
   },
   {
    "month": "2017-09",
-   "as_of": "2026-10-23T19:36:03Z",
-   "built_at": "2026-10-23T19:40:58Z",
+   "as_of": "2026-10-26T19:10:18Z",
+   "built_at": "2026-10-26T19:15:43Z",
    "updated_at": null,
    "n_slcs": 21805,
    "n_burst_acquisitions": 508465,
@@ -439,7 +439,7 @@
    "disp_frames": 1199,
    "dswx_granules_with_missing": 102,
    "dswx_granules": 19742,
-   "failed_slcs": 1,
+   "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 97,
     "RTC-S1|missing|open": 824
@@ -447,8 +447,8 @@
   },
   {
    "month": "2017-10",
-   "as_of": "2026-10-23T19:40:59Z",
-   "built_at": "2026-10-23T19:46:01Z",
+   "as_of": "2026-10-26T19:15:46Z",
+   "built_at": "2026-10-26T19:21:26Z",
    "updated_at": null,
    "n_slcs": 21863,
    "n_burst_acquisitions": 509700,
@@ -461,7 +461,7 @@
    "disp_frames": 1103,
    "dswx_granules_with_missing": 115,
    "dswx_granules": 19709,
-   "failed_slcs": 1,
+   "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 96,
     "RTC-S1|missing|open": 905
@@ -513,8 +513,8 @@
   },
   {
    "month": "2018-01",
-   "as_of": "2026-10-23T05:55:53Z",
-   "built_at": "2026-10-23T06:03:39Z",
+   "as_of": "2026-10-26T19:21:29Z",
+   "built_at": "2026-10-26T19:26:59Z",
    "updated_at": null,
    "n_slcs": 22943,
    "n_burst_acquisitions": 535348,
@@ -527,7 +527,7 @@
    "disp_frames": 1150,
    "dswx_granules_with_missing": 102,
    "dswx_granules": 19837,
-   "failed_slcs": 2,
+   "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 102,
     "RTC-S1|missing|open": 897
@@ -579,8 +579,8 @@
   },
   {
    "month": "2018-04",
-   "as_of": "2026-10-23T06:20:02Z",
-   "built_at": "2026-10-23T06:29:56Z",
+   "as_of": "2026-10-26T19:27:03Z",
+   "built_at": "2026-10-26T19:32:22Z",
    "updated_at": null,
    "n_slcs": 21659,
    "n_burst_acquisitions": 504415,
@@ -593,7 +593,7 @@
    "disp_frames": 1085,
    "dswx_granules_with_missing": 86,
    "dswx_granules": 19713,
-   "failed_slcs": 1,
+   "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 82,
     "RTC-S1|missing|open": 805
@@ -601,8 +601,8 @@
   },
   {
    "month": "2018-05",
-   "as_of": "2026-10-23T06:29:56Z",
-   "built_at": "2026-10-23T06:39:56Z",
+   "as_of": "2026-10-26T19:32:25Z",
+   "built_at": "2026-10-26T19:38:01Z",
    "updated_at": null,
    "n_slcs": 22274,
    "n_burst_acquisitions": 518749,
@@ -615,7 +615,7 @@
    "disp_frames": 1125,
    "dswx_granules_with_missing": 99,
    "dswx_granules": 19667,
-   "failed_slcs": 1,
+   "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 125,
     "RTC-S1|missing|open": 819
@@ -667,8 +667,8 @@
   },
   {
    "month": "2018-08",
-   "as_of": "2026-10-23T06:58:24Z",
-   "built_at": "2026-10-23T07:08:43Z",
+   "as_of": "2026-10-26T19:38:04Z",
+   "built_at": "2026-10-26T19:43:30Z",
    "updated_at": null,
    "n_slcs": 21957,
    "n_burst_acquisitions": 512277,
@@ -681,7 +681,7 @@
    "disp_frames": 1084,
    "dswx_granules_with_missing": 105,
    "dswx_granules": 19656,
-   "failed_slcs": 2,
+   "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 119,
     "RTC-S1|missing|open": 817
@@ -689,8 +689,8 @@
   },
   {
    "month": "2018-09",
-   "as_of": "2026-10-23T07:08:44Z",
-   "built_at": "2026-10-23T07:17:53Z",
+   "as_of": "2026-10-26T19:43:34Z",
+   "built_at": "2026-10-26T19:48:58Z",
    "updated_at": null,
    "n_slcs": 21637,
    "n_burst_acquisitions": 503380,
@@ -703,7 +703,7 @@
    "disp_frames": 1101,
    "dswx_granules_with_missing": 101,
    "dswx_granules": 19633,
-   "failed_slcs": 2,
+   "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 160,
     "RTC-S1|missing|open": 785
@@ -711,8 +711,8 @@
   },
   {
    "month": "2018-10",
-   "as_of": "2026-10-23T07:17:54Z",
-   "built_at": "2026-10-23T07:27:44Z",
+   "as_of": "2026-10-26T19:49:01Z",
+   "built_at": "2026-10-26T19:54:29Z",
    "updated_at": null,
    "n_slcs": 22284,
    "n_burst_acquisitions": 517892,
@@ -725,7 +725,7 @@
    "disp_frames": 1121,
    "dswx_granules_with_missing": 123,
    "dswx_granules": 19633,
-   "failed_slcs": 2,
+   "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 124,
     "RTC-S1|missing|open": 916
@@ -733,8 +733,8 @@
   },
   {
    "month": "2018-11",
-   "as_of": "2026-10-23T07:27:45Z",
-   "built_at": "2026-10-23T07:35:11Z",
+   "as_of": "2026-10-26T19:54:33Z",
+   "built_at": "2026-10-26T19:59:45Z",
    "updated_at": null,
    "n_slcs": 21395,
    "n_burst_acquisitions": 494081,
@@ -747,7 +747,7 @@
    "disp_frames": 1100,
    "dswx_granules_with_missing": 127,
    "dswx_granules": 19547,
-   "failed_slcs": 1,
+   "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 112,
     "RTC-S1|missing|open": 885
@@ -799,8 +799,8 @@
   },
   {
    "month": "2019-02",
-   "as_of": "2026-10-23T07:52:27Z",
-   "built_at": "2026-10-23T07:59:10Z",
+   "as_of": "2026-10-26T19:59:48Z",
+   "built_at": "2026-10-26T20:04:40Z",
    "updated_at": null,
    "n_slcs": 19828,
    "n_burst_acquisitions": 458564,
@@ -813,7 +813,7 @@
    "disp_frames": 1085,
    "dswx_granules_with_missing": 114,
    "dswx_granules": 19684,
-   "failed_slcs": 3,
+   "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 58,
     "RTC-S1|missing|open": 815
@@ -821,8 +821,8 @@
   },
   {
    "month": "2019-03",
-   "as_of": "2026-10-23T07:59:11Z",
-   "built_at": "2026-10-23T08:08:42Z",
+   "as_of": "2026-10-26T20:04:43Z",
+   "built_at": "2026-10-26T20:10:04Z",
    "updated_at": null,
    "n_slcs": 22556,
    "n_burst_acquisitions": 520355,
@@ -835,7 +835,7 @@
    "disp_frames": 1065,
    "dswx_granules_with_missing": 100,
    "dswx_granules": 19609,
-   "failed_slcs": 1,
+   "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 123,
     "RTC-S1|missing|open": 935
@@ -843,8 +843,8 @@
   },
   {
    "month": "2019-04",
-   "as_of": "2026-10-23T08:08:43Z",
-   "built_at": "2026-10-23T08:16:58Z",
+   "as_of": "2026-10-26T20:10:07Z",
+   "built_at": "2026-10-26T20:15:20Z",
    "updated_at": null,
    "n_slcs": 22116,
    "n_burst_acquisitions": 511932,
@@ -857,7 +857,7 @@
    "disp_frames": 1096,
    "dswx_granules_with_missing": 131,
    "dswx_granules": 19608,
-   "failed_slcs": 1,
+   "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 76,
     "RTC-S1|missing|open": 945
@@ -887,8 +887,8 @@
   },
   {
    "month": "2019-06",
-   "as_of": "2026-10-23T08:25:37Z",
-   "built_at": "2026-10-23T08:33:31Z",
+   "as_of": "2026-10-26T20:15:23Z",
+   "built_at": "2026-10-26T20:20:30Z",
    "updated_at": null,
    "n_slcs": 21782,
    "n_burst_acquisitions": 505213,
@@ -901,7 +901,7 @@
    "disp_frames": 1094,
    "dswx_granules_with_missing": 87,
    "dswx_granules": 19587,
-   "failed_slcs": 1,
+   "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 126,
     "RTC-S1|missing|open": 695
@@ -909,8 +909,8 @@
   },
   {
    "month": "2019-07",
-   "as_of": "2026-10-23T08:33:31Z",
-   "built_at": "2026-10-23T08:41:13Z",
+   "as_of": "2026-10-26T20:20:33Z",
+   "built_at": "2026-10-26T20:25:57Z",
    "updated_at": null,
    "n_slcs": 22834,
    "n_burst_acquisitions": 529051,
@@ -923,7 +923,7 @@
    "disp_frames": 1103,
    "dswx_granules_with_missing": 127,
    "dswx_granules": 19499,
-   "failed_slcs": 1,
+   "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 169,
     "RTC-S1|missing|open": 843
@@ -931,8 +931,8 @@
   },
   {
    "month": "2019-08",
-   "as_of": "2026-10-23T08:41:14Z",
-   "built_at": "2026-10-23T08:49:58Z",
+   "as_of": "2026-10-26T20:26:00Z",
+   "built_at": "2026-10-26T20:31:21Z",
    "updated_at": null,
    "n_slcs": 23278,
    "n_burst_acquisitions": 539200,
@@ -945,7 +945,7 @@
    "disp_frames": 1185,
    "dswx_granules_with_missing": 109,
    "dswx_granules": 19702,
-   "failed_slcs": 2,
+   "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 176,
     "RTC-S1|duplicate|open": 7,
@@ -954,8 +954,8 @@
   },
   {
    "month": "2019-09",
-   "as_of": "2026-10-23T08:49:59Z",
-   "built_at": "2026-10-23T08:57:43Z",
+   "as_of": "2026-10-26T20:31:24Z",
+   "built_at": "2026-10-26T20:36:54Z",
    "updated_at": null,
    "n_slcs": 22731,
    "n_burst_acquisitions": 526570,
@@ -968,7 +968,7 @@
    "disp_frames": 1230,
    "dswx_granules_with_missing": 130,
    "dswx_granules": 19735,
-   "failed_slcs": 1,
+   "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 121,
     "RTC-S1|missing|open": 990
@@ -976,8 +976,8 @@
   },
   {
    "month": "2019-10",
-   "as_of": "2026-10-23T08:57:44Z",
-   "built_at": "2026-10-23T09:06:42Z",
+   "as_of": "2026-10-26T20:36:57Z",
+   "built_at": "2026-10-26T20:42:38Z",
    "updated_at": null,
    "n_slcs": 23688,
    "n_burst_acquisitions": 548373,
@@ -990,7 +990,7 @@
    "disp_frames": 1181,
    "dswx_granules_with_missing": 124,
    "dswx_granules": 19638,
-   "failed_slcs": 2,
+   "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 153,
     "RTC-S1|duplicate|open": 1,
@@ -999,8 +999,8 @@
   },
   {
    "month": "2019-11",
-   "as_of": "2026-10-23T09:06:43Z",
-   "built_at": "2026-10-23T09:16:16Z",
+   "as_of": "2026-10-26T20:42:41Z",
+   "built_at": "2026-10-26T20:48:15Z",
    "updated_at": null,
    "n_slcs": 22894,
    "n_burst_acquisitions": 529625,
@@ -1013,7 +1013,7 @@
    "disp_frames": 1186,
    "dswx_granules_with_missing": 98,
    "dswx_granules": 19604,
-   "failed_slcs": 1,
+   "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 1,
     "CSLC-S1|missing|open": 123,
@@ -1044,8 +1044,8 @@
   },
   {
    "month": "2020-01",
-   "as_of": "2026-10-23T09:30:12Z",
-   "built_at": "2026-10-23T09:41:22Z",
+   "as_of": "2026-10-26T20:48:19Z",
+   "built_at": "2026-10-26T20:53:58Z",
    "updated_at": null,
    "n_slcs": 24213,
    "n_burst_acquisitions": 561095,
@@ -1058,7 +1058,7 @@
    "disp_frames": 1185,
    "dswx_granules_with_missing": 114,
    "dswx_granules": 19885,
-   "failed_slcs": 1,
+   "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 150,
     "RTC-S1|duplicate|open": 1,
@@ -1089,8 +1089,8 @@
   },
   {
    "month": "2020-03",
-   "as_of": "2026-10-23T09:49:03Z",
-   "built_at": "2026-10-23T09:57:25Z",
+   "as_of": "2026-10-26T20:54:02Z",
+   "built_at": "2026-10-26T20:59:31Z",
    "updated_at": null,
    "n_slcs": 23657,
    "n_burst_acquisitions": 548416,
@@ -1103,7 +1103,7 @@
    "disp_frames": 1200,
    "dswx_granules_with_missing": 104,
    "dswx_granules": 19814,
-   "failed_slcs": 1,
+   "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 1,
     "CSLC-S1|missing|open": 150,
@@ -1112,8 +1112,8 @@
   },
   {
    "month": "2020-04",
-   "as_of": "2026-10-23T09:57:26Z",
-   "built_at": "2026-10-23T10:07:06Z",
+   "as_of": "2026-10-26T20:59:35Z",
+   "built_at": "2026-10-26T21:05:07Z",
    "updated_at": null,
    "n_slcs": 22973,
    "n_burst_acquisitions": 531731,
@@ -1126,7 +1126,7 @@
    "disp_frames": 1202,
    "dswx_granules_with_missing": 113,
    "dswx_granules": 19677,
-   "failed_slcs": 1,
+   "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 2,
     "CSLC-S1|missing|open": 143,
