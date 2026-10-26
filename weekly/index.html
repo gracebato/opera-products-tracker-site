@@ -11,21 +11,21 @@
   color-scheme: light;
   --surface-1: #fcfcfb; --surface-2: #f3f2ef; --grid: #e4e3df; --border: #d6d5d0;
   --text-primary: #0b0b0b; --text-secondary: #52514e; --text-muted: #7a7974;
-  --complete: #2a78d6; --partial: #fab219; --missing: #d03b3b; --oos: #c9c8c2; --hl: #0b0b0b; --dup: #0b0b0b; --dupmap: #7b3fe4;
+  --complete: #2a78d6; --partial: #fab219; --missing: #d03b3b; --oos: #c9c8c2; --hl: #0b0b0b; --dup: #0b0b0b; --dupmap: #7b3fe4; --good: #1f8a4c;
 }
 @media (prefers-color-scheme: dark) {
   :root:where(:not([data-theme="light"])) .viz-root {
     color-scheme: dark;
     --surface-1: #1a1a19; --surface-2: #242423; --grid: #383835; --border: #4a4a46;
     --text-primary: #ffffff; --text-secondary: #c3c2b7; --text-muted: #9a998f;
-    --complete: #3987e5; --partial: #fab219; --missing: #d03b3b; --oos: #4f4e4a; --hl: #ffffff; --dup: #ffffff; --dupmap: #a98bf7;
+    --complete: #3987e5; --partial: #fab219; --missing: #d03b3b; --oos: #4f4e4a; --hl: #ffffff; --dup: #ffffff; --dupmap: #a98bf7; --good: #3fb06a;
   }
 }
 :root[data-theme="dark"] .viz-root {
   color-scheme: dark;
   --surface-1: #1a1a19; --surface-2: #242423; --grid: #383835; --border: #4a4a46;
   --text-primary: #ffffff; --text-secondary: #c3c2b7; --text-muted: #9a998f;
-  --complete: #3987e5; --partial: #fab219; --missing: #d03b3b; --oos: #4f4e4a; --hl: #ffffff; --dup: #ffffff; --dupmap: #a98bf7;
+  --complete: #3987e5; --partial: #fab219; --missing: #d03b3b; --oos: #4f4e4a; --hl: #ffffff; --dup: #ffffff; --dupmap: #a98bf7; --good: #3fb06a;
 }
 html, body { margin: 0; background: #fcfcfb; }
 @media (prefers-color-scheme: dark) { :root:where(:not([data-theme="light"])) body { background: #1a1a19; } }
@@ -54,7 +54,7 @@ h2 { font-size: 16px; margin: 24px 0 4px; font-weight: 600; }
 .section .note { color: var(--text-secondary); font-weight: 400; font-size: 13px; }
 .tiles.sec { margin-top: 8px; }
 .delta { font-size: 13px; font-weight: 600; margin-left: 6px; white-space: nowrap; }
-.delta.up { color: var(--missing); } .delta.down { color: var(--complete); } .delta.same { color: var(--text-muted); font-weight: 400; }
+.delta.up { color: var(--missing); } .delta.down { color: var(--good); } .delta.same { color: var(--text-muted); font-weight: 400; }
 .warnline { margin-top: 6px; color: var(--text-primary); font-weight: 600; }
 .tri { display: inline-block; width: 0; height: 0; border-top: 10px solid var(--dup); border-right: 10px solid transparent;
   vertical-align: -1px; margin-right: 6px; }
@@ -64,6 +64,15 @@ h2 { font-size: 16px; margin: 24px 0 4px; font-weight: 600; }
 #map { height: 440px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface-2); }
 #sel { margin: 8px 0 0; font-size: 13px; color: var(--text-secondary); min-height: 1.4em; }
 #sel b { color: var(--text-primary); }
+#detail { margin: 8px 0 0; }
+#detail .scroll { overflow: auto; max-height: 320px; border: 1px solid var(--grid); border-radius: 8px; }
+#detail table { width: 100%; border-collapse: collapse; font-size: 13px; font-variant-numeric: tabular-nums; }
+#detail th, #detail td { padding: 5px 10px; border-bottom: 1px solid var(--grid); text-align: left; white-space: nowrap; }
+#detail th { position: sticky; top: 0; background: var(--surface-2); color: var(--text-secondary); font-weight: 600; z-index: 1; }
+#detail td.ids { font-family: ui-monospace, Menlo, monospace; font-size: 12px; white-space: normal; word-break: break-all; min-width: 18ch; }
+#detail a { color: var(--complete); }
+.chip { font: 12px ui-monospace, Menlo, monospace; background: var(--surface-2); color: var(--complete); border: 1px solid var(--border); border-radius: 999px; padding: 0 7px; cursor: pointer; line-height: 18px; }
+.chip:hover { border-color: var(--complete); }
 #axis, #timeline { display: block; }
 /* Only the visible rows are drawn: the canvas sits at the scroll position inside a box as tall as all rows */
 #tlScroll { position: relative; overflow-y: auto; overflow-x: hidden; border-bottom: 1px solid var(--grid); }
@@ -132,6 +141,7 @@ body.resizing { cursor: ns-resize; user-select: none; -webkit-user-select: none;
 
   <div id="map" role="region" aria-label="Map of frames, granules and bursts"></div>
   <div id="sel">Click a polygon or a timeline row to select it. Clicking a cell shows that date's burst status on the map.</div>
+  <div id="detail"></div>
 
   <div id="splitter" role="separator" aria-orientation="horizontal" aria-label="Resize map and timeline" tabindex="0"
     title="Drag down for a bigger map, up for a bigger timeline (double-click to reset)">drag to resize map and timeline</div>
@@ -259,7 +269,7 @@ function unresolved() {
     const T = [["RTC-S1", "missing"], ["RTC-S1", "duplicate"], ["CSLC-S1", "missing"], ["CSLC-S1", "duplicate"]].map(([p, i]) => {
       const g = f.groups.find(x => x.product === p && x.issue === i), all = g ? g.open : 0, here = WIN[`${p} ${i}`] || 0;
       // Unresolved after the last report = what has since been fixed, arrived late or is still open
-      // The arrow is the net change: new problems minus those resolved (fixed or arrived late) since the last report
+      // The arrow is the net change (red up: the backlog grew; green down: it shrank): new problems minus those resolved (fixed or arrived late) since the last report
       const prev = g ? g.fixed + g.arrived_late + g.still_open : 0, ch = all - prev, fmt = v => v.toLocaleString();
       const why = g ? `Net change since the ${esc(f.previous_report)} report: ${fmt(prev)} → ${fmt(all)} = +${fmt(g.new)} new, ` +
         `−${fmt(g.fixed + g.arrived_late)} resolved (${fmt(g.fixed)} fixed, ${fmt(g.arrived_late)} arrived late)` : "";
@@ -391,7 +401,7 @@ function gridVals(xs) {
 }
 
 // ---- draw ----
-function render() { rows = filtered(); draw(); drawMap(); }
+function render() { rows = filtered(); draw(); drawMap(); details(); }
 function draw() {
   $("axisWrap").style.top = document.querySelector(".controls").offsetHeight + "px";
   const box = $("tlScroll"), cv = $("timeline"), dpr = devicePixelRatio || 1, rh = st.rh, gap = rh >= 6 ? 2 : 0;
@@ -605,13 +615,46 @@ function select(G, date, scroll) {
     st.gapsOnly = st.dupOnly = false; $("gapsOnly").checked = $("dupOnly").checked = false;
     rows = filtered();
   }
-  draw(); drawMap();
+  draw(); drawMap(); details();
   const lyr = groupLayer.getLayers().find(l => l.feature.properties.G === G);
   if (lyr) map.fitBounds(lyr.getBounds(), { maxZoom: 10, padding: [20, 20] });
   if (scroll) { const l = layout.find(l => l.G === G), box = $("tlScroll");
     if (l) { box.scrollTop = Math.max(0, l.y - box.clientHeight / 3); draw();
       window.scrollTo({ top: box.getBoundingClientRect().top + scrollY - document.querySelector(".controls").offsetHeight - 40, behavior: "smooth" }); } }
 }
+
+// ---- selected row: its missing and duplicated burst acquisitions, with ASF Search links ----
+// ASF Search for a burst's OPERA products around the acquisition date (shareable link): two weeks either side for a
+// missing product, one day for duplicates (whose granules all have that date). Same links as the long-term archive page.
+function asfLink(burst, date, product, days = 14) {
+  const t = Date.parse(`${date}T00:00:00Z`), at = v => new Date(v).toISOString().slice(0, 19) + "Z";
+  return `https://search.asf.alaska.edu/#/?dataset=OPERA-S1&start=${at(t - days * DAY)}&end=${at(t + (days + 1) * DAY - 1000)}` +
+    `&resultsLoaded=true&operaBurstID=${burst.replaceAll("-", "_")}&productTypes=${product === "CSLC-S1" ? "CSLC" : "RTC"}`;
+}
+function details() {
+  const box = $("detail"), G = st.sel;
+  if (!G) { box.innerHTML = ""; return; }
+  const P = PRODUCT[st.mode], k = st.mode === "rtc" ? 1 : 2, out = [];
+  for (const i of G.b) { const b = B[i];
+    b.o.forEach((o, j) => { if (st.selDate !== null && o !== st.selDate) return;
+      const v = b.c[j], d = b.dup.get(j), at = { i, burst: b.id, date: iso(o), slc: DATA.slcs[b.k[j]] };
+      if (st.mode === "rtc" ? v & 1 : (v >> 1) === 1) out.push({ ...at, what: `${P} missing`, days: 14 });
+      if (d && d[k] > 1) out.push({ ...at, what: `${P} ×${d[k]}`, days: 1 }); }); }
+  out.sort((a, b) => a.date < b.date ? -1 : a.date > b.date ? 1 : a.burst < b.burst ? -1 : 1);
+  const nm = out.filter(r => r.days === 14).length, nd = out.length - nm, MAX = 500, fmt = v => v.toLocaleString();
+  box.innerHTML = `<div class="note">${out.length ? `${fmt(nm)} missing and ${fmt(nd)} duplicated ${P} burst acquisition${out.length > 1 ? "s" : ""}` +
+      `${st.selDate !== null ? ` on ${iso(st.selDate)}` : " in the window"} · ASF Search opens the burst's ${P} products ` +
+      `two weeks either side of a missing date, or on the date of a duplicate`
+      : `No missing or duplicated ${P} ${st.selDate !== null ? `on ${iso(st.selDate)}` : "in the window"}`}</div>` +
+    (out.length ? `<div class="scroll"><table><thead><tr><th>Burst</th><th>Date</th><th>Problem</th><th>ASF Search</th><th>SLC</th></tr></thead><tbody>${
+      out.slice(0, MAX).map(r => `<tr><td>${st.group === "burst" ? esc(r.burst) : `<button class="chip" data-i="${r.i}" title="Show this burst's row">${esc(r.burst)}</button>`}</td>
+        <td>${r.date}</td><td>${esc(r.what)}</td>
+        <td><a href="${esc(asfLink(r.burst, r.date, P, r.days))}" target="_blank" rel="noopener">${P === "CSLC-S1" ? "CSLC" : "RTC"} ↗</a></td>
+        <td class="ids">${esc(r.slc)}</td></tr>`).join("")}</tbody></table></div>` +
+      (out.length > MAX ? `<p class="note">Showing ${MAX} of ${fmt(out.length)}; the CSV downloads have all of them.</p>` : "") : "");
+}
+$("detail").addEventListener("click", e => { const c = e.target.closest(".chip"); if (!c) return;
+  const G = DATA.burst[+c.dataset.i], date = st.selDate; setGroup("burst"); syncSegs(); rows = filtered(); select(G, date, true); });
 
 { const n = groupsOf(st.group).length; st.rh = n <= 150 ? 14 : 10; $("rh").value = String(st.rh); }
 header(); tiles(); unresolved(); render();
