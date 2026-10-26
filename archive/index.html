@@ -386,9 +386,20 @@ async function getJson(path) {
   if (!mp.json.has(path)) mp.json.set(path, fetch(path).then(r => { if (!r.ok) throw new Error(`${path}: HTTP ${r.status}`); return r.json(); }));
   try { return await mp.json.get(path); } catch (err) { mp.json.delete(path); throw err; }
 }
+// A shape split at the antimeridian (parts near -180 and +180) is drawn as one piece east of 180, so it is not spread
+// over the whole map and zooming to it lands on it
+function unwrap(g) {
+  const rings = g.type === "MultiPolygon" ? g.coordinates.flat() : g.type === "Polygon" ? g.coordinates : [];
+  let lo = Infinity, hi = -Infinity;
+  for (const r of rings) for (const c of r) { lo = Math.min(lo, c[0]); hi = Math.max(hi, c[0]); }
+  if (hi - lo <= 180) return g;
+  const shift = r => r.map(c => [c[0] < 0 ? c[0] + 360 : c[0], c[1]]);
+  return g.type === "MultiPolygon" ? { type: g.type, coordinates: g.coordinates.map(p => p.map(shift)) }
+    : { type: g.type, coordinates: g.coordinates.map(shift) };
+}
 // Footprints come as GeoJSON (g) or as corners (q: 1e-3 deg, corners after the first relative to it)
 function shape(o) {
-  if (o.g) return o.g;
+  if (o.g) return unwrap(o.g);
   const q = o.q, x = q[0], y = q[1], ring = [[x / 1000, y / 1000]];
   for (let i = 2; i < q.length; i += 2) ring.push([(x + q[i]) / 1000, (y + q[i + 1]) / 1000]);
   ring.push(ring[0]);
@@ -476,9 +487,9 @@ const PASS = { A: "ascending", D: "descending", AD: "ascending + descending" };
 function groupTip(kind, id) {
   const s = mp.stat && mp.stat.get(id), when = st.month || "all months", p = PRODUCT_OF[kind];
   const lyr = mp.index[kind].get(id), ps = lyr && PASS[lyr.feature.properties.p];
-  id = ps ? `${id}</b> (${ps})<b>` : id;
-  if (!s || !s.exp) return `<b>${esc(id)}</b> · no ${p}-scope burst acquisitions in ${esc(when)}`;
-  return `<b>${esc(id)}</b> · ${esc(when)}<br>${p} missing ${fmt(s.miss)} of ${fmt(s.exp)} burst acquisitions (${pct(s.miss, s.exp)})` +
+  const name = `<b>${esc(id)}</b>${ps ? ` (${ps})` : ""}`;
+  if (!s || !s.exp) return `${name} · no ${p}-scope burst acquisitions in ${esc(when)}`;
+  return `${name} · ${esc(when)}<br>${p} missing ${fmt(s.miss)} of ${fmt(s.exp)} burst acquisitions (${pct(s.miss, s.exp)})` +
     (s.dup ? `<br>${fmt(s.dup)} with duplicated ${p}` : "");
 }
 function mapLegend() {
