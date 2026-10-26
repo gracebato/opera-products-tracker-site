@@ -1,7 +1,7 @@
 {
  "kind": "archive",
  "run_date": "2026-10-26",
- "run_at": "2026-10-26T17:18:00Z",
+ "run_at": "2026-10-26T18:58:07Z",
  "first_month": "2016-04",
  "last_month": "2026-09",
  "built": [],
@@ -50,7 +50,7 @@
    "resolved_total": 0
   }
  ],
- "n_burst_acquisitions": 56528761,
+ "n_burst_acquisitions": 56528774,
  "months": [
   {
    "month": "2016-04",
@@ -117,8 +117,8 @@
   },
   {
    "month": "2016-07",
-   "as_of": "2026-10-23T18:53:34Z",
-   "built_at": "2026-10-23T18:55:49Z",
+   "as_of": "2026-10-26T18:20:38Z",
+   "built_at": "2026-10-26T18:23:39Z",
    "updated_at": null,
    "n_slcs": 8933,
    "n_burst_acquisitions": 212810,
@@ -131,7 +131,7 @@
    "disp_frames": 907,
    "dswx_granules_with_missing": 87,
    "dswx_granules": 15374,
-   "failed_slcs": 1,
+   "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 87,
     "RTC-S1|missing|open": 364
@@ -183,8 +183,8 @@
   },
   {
    "month": "2016-10",
-   "as_of": "2026-10-23T18:55:50Z",
-   "built_at": "2026-10-23T18:59:42Z",
+   "as_of": "2026-10-26T18:23:42Z",
+   "built_at": "2026-10-26T18:28:17Z",
    "updated_at": null,
    "n_slcs": 16580,
    "n_burst_acquisitions": 398088,
@@ -197,7 +197,7 @@
    "disp_frames": 1160,
    "dswx_granules_with_missing": 148,
    "dswx_granules": 18997,
-   "failed_slcs": 1,
+   "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 77,
     "RTC-S1|missing|open": 402
@@ -227,8 +227,8 @@
   },
   {
    "month": "2016-12",
-   "as_of": "2026-10-23T18:59:43Z",
-   "built_at": "2026-10-23T19:04:09Z",
+   "as_of": "2026-10-26T18:28:20Z",
+   "built_at": "2026-10-26T18:32:54Z",
    "updated_at": null,
    "n_slcs": 17373,
    "n_burst_acquisitions": 417447,
@@ -241,7 +241,7 @@
    "disp_frames": 1142,
    "dswx_granules_with_missing": 118,
    "dswx_granules": 19374,
-   "failed_slcs": 1,
+   "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 82,
     "RTC-S1|missing|open": 564
@@ -271,8 +271,8 @@
   },
   {
    "month": "2017-02",
-   "as_of": "2026-10-23T19:04:10Z",
-   "built_at": "2026-10-23T19:08:16Z",
+   "as_of": "2026-10-26T18:32:57Z",
+   "built_at": "2026-10-26T18:37:38Z",
    "updated_at": null,
    "n_slcs": 18057,
    "n_burst_acquisitions": 427842,
@@ -285,7 +285,7 @@
    "disp_frames": 1189,
    "dswx_granules_with_missing": 141,
    "dswx_granules": 19626,
-   "failed_slcs": 4,
+   "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 122,
     "RTC-S1|missing|open": 770
@@ -293,21 +293,21 @@
   },
   {
    "month": "2017-03",
-   "as_of": "2026-10-23T19:08:16Z",
-   "built_at": "2026-10-23T19:12:51Z",
+   "as_of": "2026-10-26T18:37:42Z",
+   "built_at": "2026-10-26T18:43:01Z",
    "updated_at": null,
-   "n_slcs": 20624,
-   "n_burst_acquisitions": 483883,
-   "rtc_missing": 1152,
+   "n_slcs": 20625,
+   "n_burst_acquisitions": 483896,
+   "rtc_missing": 1165,
    "cslc_expected": 50268,
    "cslc_missing": 74,
    "rtc_duplicated": 0,
    "cslc_duplicated": 0,
    "disp_frames_with_missing": 8,
    "disp_frames": 1159,
-   "dswx_granules_with_missing": 156,
+   "dswx_granules_with_missing": 167,
    "dswx_granules": 19726,
-   "failed_slcs": 3,
+   "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 74,
     "RTC-S1|missing|open": 1152
@@ -315,8 +315,8 @@
   },
   {
    "month": "2017-04",
-   "as_of": "2026-10-23T19:12:52Z",
-   "built_at": "2026-10-23T19:17:04Z",
+   "as_of": "2026-10-26T18:43:04Z",
+   "built_at": "2026-10-26T18:48:03Z",
    "updated_at": null,
    "n_slcs": 19853,
    "n_burst_acquisitions": 465355,
@@ -329,7 +329,7 @@
    "disp_frames": 1065,
    "dswx_granules_with_missing": 134,
    "dswx_granules": 19685,
-   "failed_slcs": 2,
+   "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 123,
     "RTC-S1|missing|open": 941
@@ -337,8 +337,8 @@
   },
   {
    "month": "2017-05",
-   "as_of": "2026-10-23T19:17:05Z",
-   "built_at": "2026-10-23T19:21:41Z",
+   "as_of": "2026-10-26T18:48:07Z",
+   "built_at": "2026-10-26T18:53:37Z",
    "updated_at": null,
    "n_slcs": 21890,
    "n_burst_acquisitions": 513603,
@@ -351,7 +351,7 @@
    "disp_frames": 1186,
    "dswx_granules_with_missing": 136,
    "dswx_granules": 19736,
-   "failed_slcs": 1,
+   "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 97,
     "RTC-S1|missing|open": 1137
@@ -359,8 +359,8 @@
   },
   {
    "month": "2017-06",
-   "as_of": "2026-10-23T19:21:42Z",
-   "built_at": "2026-10-23T19:26:13Z",
+   "as_of": "2026-10-26T18:53:40Z",
+   "built_at": "2026-10-26T18:58:56Z",
    "updated_at": null,
    "n_slcs": 21129,
    "n_burst_acquisitions": 493172,
@@ -373,7 +373,7 @@
    "disp_frames": 1094,
    "dswx_granules_with_missing": 121,
    "dswx_granules": 19717,
-   "failed_slcs": 3,
+   "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 99,
     "RTC-S1|missing|open": 1022
