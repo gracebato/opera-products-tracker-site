@@ -515,7 +515,7 @@ const NAME = { disp: "DISP-S1 frame", dswx: "DSWx-S1 granule" }, NAMES = { disp:
 const AFFECTED = { disp: "disp_frame_ids_affected", dswx: "dswx_granule_ids_affected" };
 const ALL_MONTHS = `All months, ${DATA.first_month} to ${DATA.last_month}`;
 const frameLabel = id => `F${String(id).padStart(5, "0")}`;
-const mp = window._mp = { layers: {}, index: { disp: new Map(), dswx: new Map() }, json: new Map(), stat: null, kind: null, sel: null,
+const mp = window._mp = { layers: {}, loading: {}, index: { disp: new Map(), dswx: new Map() }, json: new Map(), stat: null, kind: null, sel: null,
   burstLayer: null, fitted: {}, token: 0 };
 async function getJson(path) {
   if (!mp.json.has(path)) mp.json.set(path, fetch(path).then(r => { if (!r.ok) throw new Error(`${path}: HTTP ${r.status}`); return r.json(); }));
@@ -574,8 +574,13 @@ const BasemapControl = L.Control.extend({ onAdd() {
 } });
 new BasemapControl({ position: "topright" }).addTo(map);
 
-async function groupLayer(kind) {
-  if (mp.layers[kind]) return mp.layers[kind];
+// The map and the month timeline both ask for a layer, often at the same time: they share one load (two would put a
+// second, unfiltered copy on the map)
+function groupLayer(kind) {
+  if (!mp.loading[kind]) mp.loading[kind] = makeGroupLayer(kind).catch(err => { delete mp.loading[kind]; throw err; });
+  return mp.loading[kind];
+}
+async function makeGroupLayer(kind) {
   const list = await getJson(`geo/${kind}.json`);
   const feats = list.map(o => ({ type: "Feature", geometry: shape(o), properties: { id: kind === "disp" ? frameLabel(o.id) : o.id, p: o.p } }));
   return mp.layers[kind] = L.geoJSON({ type: "FeatureCollection", features: feats }, {
