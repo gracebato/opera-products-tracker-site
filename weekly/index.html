@@ -259,15 +259,18 @@ function unresolved() {
     const T = [["RTC-S1", "missing"], ["RTC-S1", "duplicate"], ["CSLC-S1", "missing"], ["CSLC-S1", "duplicate"]].map(([p, i]) => {
       const g = f.groups.find(x => x.product === p && x.issue === i), all = g ? g.open : 0, here = WIN[`${p} ${i}`] || 0;
       // Unresolved after the last report = what has since been fixed, arrived late or is still open
-      const prev = g ? g.fixed + g.arrived_late + g.still_open : 0, ch = all - prev, since = f.previous_report ? ` since the ${esc(f.previous_report)} report` : "";
-      const delta = !f.previous_report ? "" : ch > 0 ? `<span class="delta up" title="Up from ${prev.toLocaleString()}${since}">▲ ${ch.toLocaleString()}</span>`
-        : ch < 0 ? `<span class="delta down" title="Down from ${prev.toLocaleString()}${since}">▼ ${(-ch).toLocaleString()}</span>`
-        : `<span class="delta same" title="Unchanged${since}">no change</span>`;
+      // The arrow is the net change: new problems minus those resolved (fixed or arrived late) since the last report
+      const prev = g ? g.fixed + g.arrived_late + g.still_open : 0, ch = all - prev, fmt = v => v.toLocaleString();
+      const why = g ? `Net change since the ${esc(f.previous_report)} report: ${fmt(prev)} → ${fmt(all)} = +${fmt(g.new)} new, ` +
+        `−${fmt(g.fixed + g.arrived_late)} resolved (${fmt(g.fixed)} fixed, ${fmt(g.arrived_late)} arrived late)` : "";
+      const delta = !f.previous_report ? "" : ch > 0 ? `<span class="delta up" title="${why}">▲ ${fmt(ch)} net</span>`
+        : ch < 0 ? `<span class="delta down" title="${why}">▼ ${fmt(-ch)} net</span>`
+        : `<span class="delta same" title="${why}">no net change</span>`;
       return [`${p} ${i === "missing" ? "missing" : "duplicated"}`, all.toLocaleString() + delta,
         `${here.toLocaleString()} in this report + ${Math.max(all - here, 0).toLocaleString()} from earlier dates`];
     });
     $("openhead").innerHTML = `All unresolved: every report so far, as of ${esc(f.report_date)}
-      <span class="note">· arrows show the change since the ${esc(f.previous_report || "last")} report; problems from earlier dates are not on the map; the <a href="followup.csv">follow-up CSV</a> lists them all</span>`;
+      <span class="note">· arrows show the net change since the ${esc(f.previous_report || "last")} report (new minus resolved; hover for the breakdown); problems from earlier dates are not on the map; the <a href="followup.csv">follow-up CSV</a> lists them all</span>`;
     $("opentiles").innerHTML = T.map(tileHTML).join("");
     $("unresolved").hidden = false;
   }).catch(() => {});
