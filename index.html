@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OPERA RTC-S1 and CSLC-S1 Tracker</title><style>
+:root { color-scheme: light; --bg:#fcfcfb; --card:#f3f2ef; --fg:#0b0b0b; --muted:#52514e; --faint:#7a7974;
+  --line:#e4e3df; --link:#2a78d6; --warn:#b26a00; }
+@media (prefers-color-scheme: dark) { :root { color-scheme: dark; --bg:#1a1a19; --card:#242423; --fg:#fff;
+  --muted:#c3c2b7; --faint:#9a998f; --line:#383835; --link:#3987e5; --warn:#fab219; } }
+body { margin:0; background:var(--bg); color:var(--fg);
+  font:15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+main { max-width:980px; margin:0 auto; padding:28px 16px 48px; }
+h1 { font-size:24px; margin:0 0 6px; } h2 { font-size:18px; margin:0 0 4px; }
+p { color:var(--muted); margin:0 0 12px; } a { color:var(--link); }
+.cards { display:grid; grid-template-columns:repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  gap:16px; margin-top:20px; }
+.card { background:var(--card); border-radius:10px; padding:16px 18px; }
+.meta { color:var(--faint); font-size:13px; margin-bottom:10px; }
+table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; font-size:14px; margin:8px 0; }
+td { padding:4px 0; border-bottom:1px solid var(--line); } td:last-child { text-align:right; }
+.links { display:flex; flex-wrap:wrap; gap:6px 14px; font-size:14px; margin-top:8px; }
+.btn { display:inline-block; background:var(--link); color:#fff; text-decoration:none; border-radius:6px;
+  padding:6px 12px; font-weight:600; font-size:14px; }
+.warn { color:var(--warn); font-size:13px; } .empty { color:var(--faint); }
+</style></head>
+<body><main>
+<h1>OPERA RTC-S1 and CSLC-S1 Tracker</h1>
+<p>Shows whether OPERA made the RTC-S1 and CSLC-S1 products it should have for each Sentinel-1 radar pass, and
+which DSWx-S1 granules (need RTC-S1) are affected and which DISP-S1 frames (need CSLC-S1) could be stalled by
+anything missing. CSLC-S1 is only made for North America, so it is only checked there.</p>
+<div class="cards"><section class="card"><h2>Weekly check</h2><p>The last 2 weeks of Sentinel-1 passes: RTC-S1 worldwide, CSLC-S1 in North America. Updated every Monday.</p><div class="meta">2026-10-10 to 2026-10-24 · updated 2026-10-26 17:12 UTC<br>Counts reflect CMR as of Oct 26, 2026, 17:09 UTC.</div><table><tr><td>SLC SAFE files</td><td>11,204</td></tr><tr><td>Burst acquisitions</td><td>260,610</td></tr><tr><td>RTC-S1 missing</td><td>3,554 of 260,610 (1.4%)</td></tr><tr><td>CSLC-S1 missing</td><td>1,150 of 25,151 expected (4.6%)</td></tr><tr><td>DISP-S1 frames with missing CSLCs</td><td>71 of 961 frames (7.4%)</td></tr><tr><td>DSWx-S1 granules with missing RTCs</td><td>1,208 of 19,550 granules (6.2%)</td></tr><tr><td>Duplicated (RTC-S1 · CSLC-S1)</td><td>423 · 6</td></tr></table><h3 style="font-size:15px;margin:14px 0 2px">Since the last report (Oct 21)</h3><table><tr><td>RTC-S1 missing</td><td>fixed 127 · arrived late 55 · still open 2,526 · new 3,533 · total unresolved 6,059</td></tr><tr><td>RTC-S1 duplicated</td><td>fixed 0 · still open 6,861 · new 41 · total unresolved 6,902</td></tr><tr><td>CSLC-S1 missing</td><td>fixed 424 · arrived late 169 · still open 303 · new 1,023 · total unresolved 1,326</td></tr><tr><td>CSLC-S1 duplicated</td><td>fixed 0 · still open 476 · new 6 · total unresolved 482</td></tr></table><a class="btn" href="weekly/index.html?v=20261026171450">Open map and timeline</a><div class="links"><a href="weekly/missing.csv?v=20261026171450" download="missing_20261010-20261024.csv">Missing CSV</a><a href="weekly/duplicates.csv?v=20261026171450" download="duplicates_20261010-20261024.csv">Duplicates CSV</a><a href="weekly/followup.csv?v=20261026171450" download="followup_20261026.csv">Follow-up CSV</a></div></section><section class="card"><h2>Long-term check</h2><p>Every RTC-S1 since April 2016 (worldwide) and every CSLC-S1 since July 2016 (North America), by acquisition month, with each problem tracked until it is resolved. Updated monthly.</p><div class="meta">2016-04 to 2026-09 · updated 2026-10-26T16:22:58Z</div><table><tr><td>Burst acquisitions</td><td>56,528,761</td></tr><tr><td>RTC-S1 missing</td><td>715,298 of 56,528,761 (1.3%)</td></tr><tr><td>CSLC-S1 missing</td><td>45,252 of 6,531,599 expected (0.7%)</td></tr><tr><td>Duplicated (RTC-S1 · CSLC-S1)</td><td>1,101,052 · 13,534</td></tr><tr><td>Resolved since first found</td><td>0</td></tr></table><a class="btn" href="archive/index.html?v=20261026171450">Open month by month</a></section></div>
+<p class="meta" style="margin-top:20px">Site updated 2026-10-26 17:14 UTC.</p>
+</main></body></html>
