@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>OPERA long-term check, 2016-04 to 2026-09</title>
+<title>OPERA production check, 2016-04 to 2026-09</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <style>
@@ -102,7 +102,9 @@ header { display: grid; grid-template-columns: 1fr auto; gap: 6px 16px; align-it
 <main>
   <header>
     <div>
-      <h1>OPERA RTC-S1 and CSLC-S1: long-term check</h1>
+      <h1 id="pageTitle">OPERA RTC-S1 and CSLC-S1 production check</h1>
+      <div class="meta" id="scope" style="margin:0 0 6px">RTC-S1 worldwide from 2016-04-14 · CSLC-S1 for North America from 2016-07-01 ·
+        checked against CMR by acquisition month, updated monthly</div>
       <p class="sub" id="subtitle"></p>
       <div class="meta" id="meta"></div>
     </div>
@@ -177,6 +179,9 @@ const sum = f => M.reduce((a, m) => a + f(m), 0);
 // ---- header and tiles ----
 {
   const r = DATA;
+  // The window grows every month: "Apr 2016 – Sep 2026" from the first and last acquisition months
+  const monthName = m => new Date(`${m}-01T00:00:00Z`).toLocaleString("en-US", { month: "short", year: "numeric", timeZone: "UTC" });
+  $("pageTitle").textContent = `OPERA RTC-S1 and CSLC-S1 production check: Sentinel-1 acquisitions ${monthName(r.first_month)} – ${monthName(r.last_month)}`;
   $("subtitle").innerHTML = `Every RTC-S1 OPERA should have made since it started (acquisitions from 2016-04-14, worldwide, land bursts) and
     every CSLC-S1 (from 2016-07-01, North America DISP-S1 frames), checked against CMR one acquisition month at a time. Each problem
     found stays on record until it is resolved, so this page shows both what is still open and what has been fixed.
