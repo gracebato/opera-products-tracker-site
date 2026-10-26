@@ -53,7 +53,7 @@ h2 { font-size: 16px; margin: 24px 0 4px; font-weight: 600; }
 .section { font-size: 14px; font-weight: 600; margin: 14px 0 0; }
 .section .note { color: var(--text-secondary); font-weight: 400; font-size: 13px; }
 .tiles.sec { margin-top: 8px; }
-.delta { font-size: 13px; font-weight: 600; margin-left: 6px; white-space: nowrap; }
+.delta { font-size: 13px; font-weight: 600; margin-left: 6px; white-space: nowrap; cursor: help; border-bottom: 1px dotted currentColor; }
 .delta.up { color: var(--missing); } .delta.down { color: var(--good); } .delta.same { color: var(--text-muted); font-weight: 400; }
 .warnline { margin-top: 6px; color: var(--text-primary); font-weight: 600; }
 .tri { display: inline-block; width: 0; height: 0; border-top: 10px solid var(--dup); border-right: 10px solid transparent;
@@ -273,9 +273,9 @@ function unresolved() {
       const prev = g ? g.fixed + g.arrived_late + g.still_open : 0, ch = all - prev, fmt = v => v.toLocaleString();
       const why = g ? `Net change since the ${esc(f.previous_report)} report: ${fmt(prev)} → ${fmt(all)} = +${fmt(g.new)} new, ` +
         `−${fmt(g.fixed + g.arrived_late)} resolved (${fmt(g.fixed)} fixed, ${fmt(g.arrived_late)} arrived late)` : "";
-      const delta = !f.previous_report ? "" : ch > 0 ? `<span class="delta up" title="${why}">▲ ${fmt(ch)} net</span>`
-        : ch < 0 ? `<span class="delta down" title="${why}">▼ ${fmt(-ch)} net</span>`
-        : `<span class="delta same" title="${why}">no net change</span>`;
+      const delta = !f.previous_report ? "" : ch > 0 ? `<span class="delta up" tabindex="0" data-tip="${why}">▲ ${fmt(ch)} net</span>`
+        : ch < 0 ? `<span class="delta down" tabindex="0" data-tip="${why}">▼ ${fmt(-ch)} net</span>`
+        : `<span class="delta same" tabindex="0" data-tip="${why}">no net change</span>`;
       return [`${p} ${i === "missing" ? "missing" : "duplicated"}`, all.toLocaleString() + delta,
         `${here.toLocaleString()} in this report + ${Math.max(all - here, 0).toLocaleString()} from earlier dates`];
     });
@@ -285,6 +285,18 @@ function unresolved() {
     $("unresolved").hidden = false;
   }).catch(() => {});
 }
+// The arrows' breakdown, in the page's own tooltip (a title attribute shows late or not at all in some browsers, and
+// never on touch screens): on hover, keyboard focus or tap
+function deltaTip(e) {
+  const d = e.target.closest(".delta"); if (!d) return;
+  const tip = $("tip"), r = d.getBoundingClientRect();
+  tip.innerHTML = esc(d.dataset.tip); tip.style.display = "block";
+  tip.style.left = Math.max(8, Math.min(r.left, innerWidth - tip.offsetWidth - 8)) + "px";
+  tip.style.top = (r.bottom + 6 + tip.offsetHeight > innerHeight ? r.top - tip.offsetHeight - 6 : r.bottom + 6) + "px";
+}
+const hideTip = e => { if (e.target.closest(".delta")) $("tip").style.display = "none"; };
+for (const [ev, fn] of [["mouseover", deltaTip], ["focusin", deltaTip], ["click", deltaTip], ["mouseout", hideTip], ["focusout", hideTip]])
+  $("opentiles").addEventListener(ev, fn);
 
 // ---- controls ----
 function seg(id, key, set = v => { st[key] = v; }) {
