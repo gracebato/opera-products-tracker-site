@@ -626,6 +626,8 @@ function select(G, date, scroll) {
 // ---- selected row: its missing and duplicated burst acquisitions, with ASF Search links ----
 // ASF Search for a burst's OPERA products around the acquisition date (shareable link): two weeks either side for a
 // missing product, one day for duplicates (whose granules all have that date). Same links as the long-term archive page.
+// The SLC in ASF Search (list search by scene name, which for Sentinel-1 is the SLC ID)
+const slcLink = id => id ? `<a href="https://search.asf.alaska.edu/#/?dataset=SENTINEL-1&searchType=List%20Search&searchList=${encodeURIComponent(id)}&resultsLoaded=true" target="_blank" rel="noopener" title="Open this SLC in ASF Search">${esc(id)}</a>` : "";
 function asfLink(burst, date, product, days = 14) {
   const t = Date.parse(`${date}T00:00:00Z`), at = v => new Date(v).toISOString().slice(0, 19) + "Z";
   return `https://search.asf.alaska.edu/#/?dataset=OPERA-S1&start=${at(t - days * DAY)}&end=${at(t + (days + 1) * DAY - 1000)}` +
@@ -650,7 +652,7 @@ function details() {
       out.slice(0, MAX).map(r => `<tr><td>${st.group === "burst" ? esc(r.burst) : `<button class="chip" data-i="${r.i}" title="Show this burst's row">${esc(r.burst)}</button>`}</td>
         <td>${r.date}</td><td>${esc(r.what)}</td>
         <td><a href="${esc(asfLink(r.burst, r.date, P, r.days))}" target="_blank" rel="noopener">${P === "CSLC-S1" ? "CSLC" : "RTC"} ↗</a></td>
-        <td class="ids">${esc(r.slc)}</td></tr>`).join("")}</tbody></table></div>` +
+        <td class="ids">${slcLink(r.slc)}</td></tr>`).join("")}</tbody></table></div>` +
       (out.length > MAX ? `<p class="note">Showing ${MAX} of ${fmt(out.length)}; the CSV downloads have all of them.</p>` : "") : "");
 }
 $("detail").addEventListener("click", e => { const c = e.target.closest(".chip"); if (!c) return;
