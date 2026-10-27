@@ -1,7 +1,7 @@
 {
  "kind": "archive",
  "run_date": "2026-10-27",
- "run_at": "2026-10-27T20:13:29Z",
+ "run_at": "2026-10-27T21:03:37Z",
  "first_month": "2016-04",
  "last_month": "2026-09",
  "built": [],
@@ -70,9 +70,9 @@
    "dswx_granules_with_missing": 45,
    "dswx_granules": 13543,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "RTC-S1|missing|open": 131
@@ -82,6 +82,8 @@
      "S1A": 131
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 4884,
@@ -97,14 +99,12 @@
      "dswx_granules_with_missing": 45,
      "dswx_granules": 13543,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2016-05",
@@ -124,9 +124,9 @@
    "dswx_granules_with_missing": 60,
    "dswx_granules": 13879,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "RTC-S1|missing|open": 235
@@ -136,6 +136,8 @@
      "S1A": 235
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 8599,
@@ -151,14 +153,12 @@
      "dswx_granules_with_missing": 60,
      "dswx_granules": 13879,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2016-06",
@@ -178,9 +178,9 @@
    "dswx_granules_with_missing": 45,
    "dswx_granules": 13480,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "RTC-S1|missing|open": 198
@@ -190,6 +190,8 @@
      "S1A": 198
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 5417,
@@ -205,14 +207,12 @@
      "dswx_granules_with_missing": 45,
      "dswx_granules": 13480,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2016-07",
@@ -232,9 +232,9 @@
    "dswx_granules_with_missing": 87,
    "dswx_granules": 15374,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 87,
@@ -248,6 +248,8 @@
      "S1A": 364
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 8933,
@@ -263,14 +265,12 @@
      "dswx_granules_with_missing": 87,
      "dswx_granules": 15374,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2016-08",
@@ -290,9 +290,9 @@
    "dswx_granules_with_missing": 109,
    "dswx_granules": 15393,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 64,
@@ -306,6 +306,8 @@
      "S1A": 422
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 9334,
@@ -321,9 +323,9 @@
      "dswx_granules_with_missing": 109,
      "dswx_granules": 15393,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 6,
@@ -339,14 +341,12 @@
      "dswx_granules_with_missing": 0,
      "dswx_granules": 28,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2016-09",
@@ -366,9 +366,9 @@
    "dswx_granules_with_missing": 72,
    "dswx_granules": 17402,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 73,
@@ -384,6 +384,8 @@
      "S1B": 13
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 8929,
@@ -399,9 +401,9 @@
      "dswx_granules_with_missing": 60,
      "dswx_granules": 15738,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 1286,
@@ -417,14 +419,12 @@
      "dswx_granules_with_missing": 12,
      "dswx_granules": 7766,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2016-10",
@@ -444,9 +444,9 @@
    "dswx_granules_with_missing": 148,
    "dswx_granules": 18997,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 77,
@@ -462,6 +462,8 @@
      "S1B": 234
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 9516,
@@ -477,9 +479,9 @@
      "dswx_granules_with_missing": 69,
      "dswx_granules": 14171,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 7064,
@@ -495,14 +497,12 @@
      "dswx_granules_with_missing": 84,
      "dswx_granules": 11766,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2016-11",
@@ -522,9 +522,9 @@
    "dswx_granules_with_missing": 251,
    "dswx_granules": 19213,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 97,
@@ -540,6 +540,8 @@
      "S1B": 465
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 8912,
@@ -555,9 +557,9 @@
      "dswx_granules_with_missing": 143,
      "dswx_granules": 14374,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 6569,
@@ -573,14 +575,12 @@
      "dswx_granules_with_missing": 119,
      "dswx_granules": 11753,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2016-12",
@@ -600,9 +600,9 @@
    "dswx_granules_with_missing": 118,
    "dswx_granules": 19374,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 82,
@@ -618,6 +618,8 @@
      "S1B": 462
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 9633,
@@ -633,9 +635,9 @@
      "dswx_granules_with_missing": 35,
      "dswx_granules": 14553,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 7740,
@@ -651,14 +653,12 @@
      "dswx_granules_with_missing": 94,
      "dswx_granules": 12647,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2017-01",
@@ -678,9 +678,9 @@
    "dswx_granules_with_missing": 126,
    "dswx_granules": 19458,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 93,
@@ -696,6 +696,8 @@
      "S1B": 589
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 9382,
@@ -711,9 +713,9 @@
      "dswx_granules_with_missing": 43,
      "dswx_granules": 14356,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 8529,
@@ -729,14 +731,12 @@
      "dswx_granules_with_missing": 94,
      "dswx_granules": 12771,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2017-02",
@@ -756,9 +756,9 @@
    "dswx_granules_with_missing": 141,
    "dswx_granules": 19626,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 122,
@@ -774,6 +774,8 @@
      "S1B": 541
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 10388,
@@ -789,9 +791,9 @@
      "dswx_granules_with_missing": 35,
      "dswx_granules": 14815,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 7669,
@@ -807,14 +809,12 @@
      "dswx_granules_with_missing": 117,
      "dswx_granules": 13093,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2017-03",
@@ -834,9 +834,9 @@
    "dswx_granules_with_missing": 167,
    "dswx_granules": 19726,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 74,
@@ -852,6 +852,8 @@
      "S1B": 939
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12160,
@@ -867,9 +869,9 @@
      "dswx_granules_with_missing": 65,
      "dswx_granules": 14698,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 8465,
@@ -885,14 +887,12 @@
      "dswx_granules_with_missing": 113,
      "dswx_granules": 12170,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2017-04",
@@ -912,9 +912,9 @@
    "dswx_granules_with_missing": 134,
    "dswx_granules": 19685,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 123,
@@ -930,6 +930,8 @@
      "S1B": 685
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 11935,
@@ -945,9 +947,9 @@
      "dswx_granules_with_missing": 48,
      "dswx_granules": 14301,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 7918,
@@ -963,14 +965,12 @@
      "dswx_granules_with_missing": 97,
      "dswx_granules": 11904,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2017-05",
@@ -990,9 +990,9 @@
    "dswx_granules_with_missing": 136,
    "dswx_granules": 19736,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 97,
@@ -1008,6 +1008,8 @@
      "S1B": 781
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12688,
@@ -1023,9 +1025,9 @@
      "dswx_granules_with_missing": 76,
      "dswx_granules": 14617,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 9202,
@@ -1041,14 +1043,12 @@
      "dswx_granules_with_missing": 84,
      "dswx_granules": 12372,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2017-06",
@@ -1068,9 +1068,9 @@
    "dswx_granules_with_missing": 121,
    "dswx_granules": 19717,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 99,
@@ -1086,6 +1086,8 @@
      "S1B": 621
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 11869,
@@ -1101,9 +1103,9 @@
      "dswx_granules_with_missing": 61,
      "dswx_granules": 14485,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 9260,
@@ -1119,14 +1121,12 @@
      "dswx_granules_with_missing": 84,
      "dswx_granules": 12252,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2017-07",
@@ -1146,9 +1146,9 @@
    "dswx_granules_with_missing": 121,
    "dswx_granules": 19732,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 85,
@@ -1164,6 +1164,8 @@
      "S1B": 734
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12387,
@@ -1179,9 +1181,9 @@
      "dswx_granules_with_missing": 61,
      "dswx_granules": 14678,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 9367,
@@ -1197,14 +1199,12 @@
      "dswx_granules_with_missing": 84,
      "dswx_granules": 12212,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2017-08",
@@ -1224,9 +1224,9 @@
    "dswx_granules_with_missing": 113,
    "dswx_granules": 19719,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 77,
@@ -1242,6 +1242,8 @@
      "S1B": 599
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12443,
@@ -1257,9 +1259,9 @@
      "dswx_granules_with_missing": 56,
      "dswx_granules": 14471,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 9561,
@@ -1275,14 +1277,12 @@
      "dswx_granules_with_missing": 80,
      "dswx_granules": 12363,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2017-09",
@@ -1302,9 +1302,9 @@
    "dswx_granules_with_missing": 102,
    "dswx_granules": 19742,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 97,
@@ -1320,6 +1320,8 @@
      "S1B": 530
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12294,
@@ -1335,9 +1337,9 @@
      "dswx_granules_with_missing": 56,
      "dswx_granules": 14641,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 9511,
@@ -1353,14 +1355,12 @@
      "dswx_granules_with_missing": 69,
      "dswx_granules": 12681,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2017-10",
@@ -1380,9 +1380,9 @@
    "dswx_granules_with_missing": 115,
    "dswx_granules": 19709,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 96,
@@ -1398,6 +1398,8 @@
      "S1B": 627
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12227,
@@ -1413,9 +1415,9 @@
      "dswx_granules_with_missing": 69,
      "dswx_granules": 14509,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 9636,
@@ -1431,14 +1433,12 @@
      "dswx_granules_with_missing": 69,
      "dswx_granules": 12461,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2017-11",
@@ -1458,9 +1458,9 @@
    "dswx_granules_with_missing": 102,
    "dswx_granules": 19767,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 96,
@@ -1476,6 +1476,8 @@
      "S1B": 577
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12467,
@@ -1491,9 +1493,9 @@
      "dswx_granules_with_missing": 56,
      "dswx_granules": 14611,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 9426,
@@ -1509,14 +1511,12 @@
      "dswx_granules_with_missing": 69,
      "dswx_granules": 12619,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2017-12",
@@ -1536,9 +1536,9 @@
    "dswx_granules_with_missing": 102,
    "dswx_granules": 19800,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 116,
@@ -1554,6 +1554,8 @@
      "S1B": 671
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12856,
@@ -1569,9 +1571,9 @@
      "dswx_granules_with_missing": 56,
      "dswx_granules": 14639,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 9459,
@@ -1587,14 +1589,12 @@
      "dswx_granules_with_missing": 69,
      "dswx_granules": 12660,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2018-01",
@@ -1614,9 +1614,9 @@
    "dswx_granules_with_missing": 102,
    "dswx_granules": 19837,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 102,
@@ -1632,6 +1632,8 @@
      "S1B": 578
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13204,
@@ -1647,9 +1649,9 @@
      "dswx_granules_with_missing": 56,
      "dswx_granules": 14676,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 9739,
@@ -1665,14 +1667,12 @@
      "dswx_granules_with_missing": 69,
      "dswx_granules": 12757,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2018-02",
@@ -1692,9 +1692,9 @@
    "dswx_granules_with_missing": 118,
    "dswx_granules": 19805,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 101,
@@ -1710,6 +1710,8 @@
      "S1B": 644
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 11793,
@@ -1725,9 +1727,9 @@
      "dswx_granules_with_missing": 72,
      "dswx_granules": 14803,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 8776,
@@ -1743,14 +1745,12 @@
      "dswx_granules_with_missing": 69,
      "dswx_granules": 12668,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2018-03",
@@ -1770,9 +1770,9 @@
    "dswx_granules_with_missing": 102,
    "dswx_granules": 19802,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 125,
@@ -1788,6 +1788,8 @@
      "S1B": 551
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12803,
@@ -1803,9 +1805,9 @@
      "dswx_granules_with_missing": 56,
      "dswx_granules": 14714,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 9425,
@@ -1821,14 +1823,12 @@
      "dswx_granules_with_missing": 69,
      "dswx_granules": 12705,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2018-04",
@@ -1848,9 +1848,9 @@
    "dswx_granules_with_missing": 86,
    "dswx_granules": 19713,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 82,
@@ -1866,6 +1866,8 @@
      "S1B": 566
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12525,
@@ -1881,9 +1883,9 @@
      "dswx_granules_with_missing": 57,
      "dswx_granules": 14673,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 9134,
@@ -1899,14 +1901,12 @@
      "dswx_granules_with_missing": 53,
      "dswx_granules": 12535,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2018-05",
@@ -1926,9 +1926,9 @@
    "dswx_granules_with_missing": 99,
    "dswx_granules": 19667,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 125,
@@ -1944,6 +1944,8 @@
      "S1B": 544
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12796,
@@ -1959,9 +1961,9 @@
      "dswx_granules_with_missing": 53,
      "dswx_granules": 14570,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 9478,
@@ -1977,14 +1979,12 @@
      "dswx_granules_with_missing": 67,
      "dswx_granules": 12505,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2018-06",
@@ -2004,9 +2004,9 @@
    "dswx_granules_with_missing": 93,
    "dswx_granules": 19711,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 98,
@@ -2022,6 +2022,8 @@
      "S1B": 523
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12127,
@@ -2037,9 +2039,9 @@
      "dswx_granules_with_missing": 63,
      "dswx_granules": 14595,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 9204,
@@ -2055,14 +2057,12 @@
      "dswx_granules_with_missing": 51,
      "dswx_granules": 12630,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2018-07",
@@ -2082,9 +2082,9 @@
    "dswx_granules_with_missing": 78,
    "dswx_granules": 19630,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 131,
@@ -2100,6 +2100,8 @@
      "S1B": 254
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12712,
@@ -2115,9 +2117,9 @@
      "dswx_granules_with_missing": 53,
      "dswx_granules": 14562,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 9579,
@@ -2133,14 +2135,12 @@
      "dswx_granules_with_missing": 36,
      "dswx_granules": 12649,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2018-08",
@@ -2160,9 +2160,9 @@
    "dswx_granules_with_missing": 105,
    "dswx_granules": 19656,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 119,
@@ -2178,6 +2178,8 @@
      "S1B": 549
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12393,
@@ -2193,9 +2195,9 @@
      "dswx_granules_with_missing": 59,
      "dswx_granules": 14806,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 9564,
@@ -2211,14 +2213,12 @@
      "dswx_granules_with_missing": 67,
      "dswx_granules": 12715,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2018-09",
@@ -2238,9 +2238,9 @@
    "dswx_granules_with_missing": 101,
    "dswx_granules": 19633,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 160,
@@ -2256,6 +2256,8 @@
      "S1B": 521
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12375,
@@ -2271,9 +2273,9 @@
      "dswx_granules_with_missing": 56,
      "dswx_granules": 14615,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 9262,
@@ -2289,14 +2291,12 @@
      "dswx_granules_with_missing": 67,
      "dswx_granules": 12774,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2018-10",
@@ -2316,9 +2316,9 @@
    "dswx_granules_with_missing": 123,
    "dswx_granules": 19633,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 124,
@@ -2334,6 +2334,8 @@
      "S1B": 618
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12660,
@@ -2349,9 +2351,9 @@
      "dswx_granules_with_missing": 54,
      "dswx_granules": 14644,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 9624,
@@ -2367,14 +2369,12 @@
      "dswx_granules_with_missing": 91,
      "dswx_granules": 13201,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2018-11",
@@ -2394,9 +2394,9 @@
    "dswx_granules_with_missing": 127,
    "dswx_granules": 19547,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 112,
@@ -2412,6 +2412,8 @@
      "S1B": 596
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12385,
@@ -2427,9 +2429,9 @@
      "dswx_granules_with_missing": 68,
      "dswx_granules": 14708,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 9010,
@@ -2445,14 +2447,12 @@
      "dswx_granules_with_missing": 82,
      "dswx_granules": 12685,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2018-12",
@@ -2472,9 +2472,9 @@
    "dswx_granules_with_missing": 114,
    "dswx_granules": 19764,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 104,
@@ -2490,6 +2490,8 @@
      "S1B": 581
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12705,
@@ -2505,9 +2507,9 @@
      "dswx_granules_with_missing": 56,
      "dswx_granules": 14911,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 9943,
@@ -2523,14 +2525,12 @@
      "dswx_granules_with_missing": 81,
      "dswx_granules": 12966,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2019-01",
@@ -2550,9 +2550,9 @@
    "dswx_granules_with_missing": 100,
    "dswx_granules": 19556,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 95,
@@ -2568,6 +2568,8 @@
      "S1B": 609
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13313,
@@ -2583,9 +2585,9 @@
      "dswx_granules_with_missing": 56,
      "dswx_granules": 14849,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 9587,
@@ -2601,14 +2603,12 @@
      "dswx_granules_with_missing": 67,
      "dswx_granules": 12687,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2019-02",
@@ -2628,9 +2628,9 @@
    "dswx_granules_with_missing": 114,
    "dswx_granules": 19684,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 58,
@@ -2646,6 +2646,8 @@
      "S1B": 565
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 11432,
@@ -2661,9 +2663,9 @@
      "dswx_granules_with_missing": 56,
      "dswx_granules": 14873,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 8396,
@@ -2679,14 +2681,12 @@
      "dswx_granules_with_missing": 81,
      "dswx_granules": 13218,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2019-03",
@@ -2706,9 +2706,9 @@
    "dswx_granules_with_missing": 100,
    "dswx_granules": 19609,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 123,
@@ -2724,6 +2724,8 @@
      "S1B": 649
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12857,
@@ -2739,9 +2741,9 @@
      "dswx_granules_with_missing": 56,
      "dswx_granules": 14817,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 9699,
@@ -2757,14 +2759,12 @@
      "dswx_granules_with_missing": 67,
      "dswx_granules": 13200,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2019-04",
@@ -2784,9 +2784,9 @@
    "dswx_granules_with_missing": 131,
    "dswx_granules": 19608,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 76,
@@ -2802,6 +2802,8 @@
      "S1B": 599
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12474,
@@ -2817,9 +2819,9 @@
      "dswx_granules_with_missing": 72,
      "dswx_granules": 14924,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 9642,
@@ -2835,14 +2837,12 @@
      "dswx_granules_with_missing": 82,
      "dswx_granules": 13242,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2019-05",
@@ -2862,9 +2862,9 @@
    "dswx_granules_with_missing": 92,
    "dswx_granules": 19675,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 151,
@@ -2880,6 +2880,8 @@
      "S1B": 495
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12480,
@@ -2895,9 +2897,9 @@
      "dswx_granules_with_missing": 52,
      "dswx_granules": 14844,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 10075,
@@ -2913,14 +2915,12 @@
      "dswx_granules_with_missing": 59,
      "dswx_granules": 13369,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2019-06",
@@ -2940,9 +2940,9 @@
    "dswx_granules_with_missing": 87,
    "dswx_granules": 19587,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 126,
@@ -2958,6 +2958,8 @@
      "S1B": 450
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12315,
@@ -2973,9 +2975,9 @@
      "dswx_granules_with_missing": 49,
      "dswx_granules": 14701,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 9467,
@@ -2991,14 +2993,12 @@
      "dswx_granules_with_missing": 55,
      "dswx_granules": 13001,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2019-07",
@@ -3018,9 +3018,9 @@
    "dswx_granules_with_missing": 127,
    "dswx_granules": 19499,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 169,
@@ -3036,6 +3036,8 @@
      "S1B": 614
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12867,
@@ -3051,9 +3053,9 @@
      "dswx_granules_with_missing": 74,
      "dswx_granules": 14637,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 9967,
@@ -3069,14 +3071,12 @@
      "dswx_granules_with_missing": 70,
      "dswx_granules": 12979,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2019-08",
@@ -3096,9 +3096,9 @@
    "dswx_granules_with_missing": 109,
    "dswx_granules": 19702,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 176,
@@ -3118,6 +3118,14 @@
      "S1B": 565
     }
    },
+   "extra_products": {
+    "RTC-S1": 7
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 7
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13106,
@@ -3133,9 +3141,9 @@
      "dswx_granules_with_missing": 56,
      "dswx_granules": 15023,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 10172,
@@ -3151,20 +3159,12 @@
      "dswx_granules_with_missing": 76,
      "dswx_granules": 13560,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 7
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 7
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2019-09",
@@ -3184,9 +3184,9 @@
    "dswx_granules_with_missing": 130,
    "dswx_granules": 19735,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 121,
@@ -3202,6 +3202,8 @@
      "S1B": 701
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12743,
@@ -3217,9 +3219,9 @@
      "dswx_granules_with_missing": 78,
      "dswx_granules": 14925,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 9988,
@@ -3235,14 +3237,12 @@
      "dswx_granules_with_missing": 88,
      "dswx_granules": 13777,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2019-10",
@@ -3262,9 +3262,9 @@
    "dswx_granules_with_missing": 124,
    "dswx_granules": 19638,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 153,
@@ -3284,6 +3284,14 @@
      "S1B": 583
     }
    },
+   "extra_products": {
+    "RTC-S1": 1
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 1
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13292,
@@ -3299,9 +3307,9 @@
      "dswx_granules_with_missing": 68,
      "dswx_granules": 14869,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 10396,
@@ -3317,20 +3325,12 @@
      "dswx_granules_with_missing": 79,
      "dswx_granules": 13518,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 1
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 1
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2019-11",
@@ -3350,9 +3350,9 @@
    "dswx_granules_with_missing": 98,
    "dswx_granules": 19604,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 1,
@@ -3372,6 +3372,14 @@
      "S1B": 634
     }
    },
+   "extra_products": {
+    "CSLC-S1": 1
+   },
+   "extra_sat": {
+    "CSLC-S1": {
+     "S1A": 1
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12842,
@@ -3387,9 +3395,9 @@
      "dswx_granules_with_missing": 56,
      "dswx_granules": 14887,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 10052,
@@ -3405,20 +3413,12 @@
      "dswx_granules_with_missing": 65,
      "dswx_granules": 13570,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "CSLC-S1": 1
-   },
-   "extra_sat": {
-    "CSLC-S1": {
-     "S1A": 1
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2019-12",
@@ -3438,9 +3438,9 @@
    "dswx_granules_with_missing": 98,
    "dswx_granules": 19758,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 171,
@@ -3456,6 +3456,8 @@
      "S1B": 556
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13433,
@@ -3471,9 +3473,9 @@
      "dswx_granules_with_missing": 56,
      "dswx_granules": 14947,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 10394,
@@ -3489,14 +3491,12 @@
      "dswx_granules_with_missing": 65,
      "dswx_granules": 13572,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2020-01",
@@ -3516,9 +3516,9 @@
    "dswx_granules_with_missing": 114,
    "dswx_granules": 19885,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 150,
@@ -3538,6 +3538,14 @@
      "S1B": 662
     }
    },
+   "extra_products": {
+    "RTC-S1": 1
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1B": 1
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13603,
@@ -3553,9 +3561,9 @@
      "dswx_granules_with_missing": 69,
      "dswx_granules": 15022,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 10610,
@@ -3571,20 +3579,12 @@
      "dswx_granules_with_missing": 86,
      "dswx_granules": 13870,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 1
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1B": 1
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2020-02",
@@ -3604,9 +3604,9 @@
    "dswx_granules_with_missing": 121,
    "dswx_granules": 19756,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 147,
@@ -3622,6 +3622,8 @@
      "S1B": 556
     }
    },
+   "extra_products": {},
+   "extra_sat": {},
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12480,
@@ -3637,9 +3639,9 @@
      "dswx_granules_with_missing": 79,
      "dswx_granules": 14892,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 9477,
@@ -3655,14 +3657,12 @@
      "dswx_granules_with_missing": 65,
      "dswx_granules": 13456,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {},
-   "extra_sat": {}
+   "early_sat": {}
   },
   {
    "month": "2020-03",
@@ -3682,9 +3682,9 @@
    "dswx_granules_with_missing": 104,
    "dswx_granules": 19814,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 1,
@@ -3704,6 +3704,14 @@
      "S1B": 634
     }
    },
+   "extra_products": {
+    "CSLC-S1": 1
+   },
+   "extra_sat": {
+    "CSLC-S1": {
+     "S1A": 1
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13422,
@@ -3719,9 +3727,9 @@
      "dswx_granules_with_missing": 62,
      "dswx_granules": 14947,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 10235,
@@ -3737,20 +3745,12 @@
      "dswx_granules_with_missing": 65,
      "dswx_granules": 13336,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "CSLC-S1": 1
-   },
-   "extra_sat": {
-    "CSLC-S1": {
-     "S1A": 1
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2020-04",
@@ -3770,9 +3770,9 @@
    "dswx_granules_with_missing": 113,
    "dswx_granules": 19677,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 2,
@@ -3792,6 +3792,14 @@
      "S1B": 667
     }
    },
+   "extra_products": {
+    "CSLC-S1": 2
+   },
+   "extra_sat": {
+    "CSLC-S1": {
+     "S1A": 2
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13088,
@@ -3807,9 +3815,9 @@
      "dswx_granules_with_missing": 65,
      "dswx_granules": 14914,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 9885,
@@ -3825,20 +3833,12 @@
      "dswx_granules_with_missing": 89,
      "dswx_granules": 13153,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "CSLC-S1": 2
-   },
-   "extra_sat": {
-    "CSLC-S1": {
-     "S1A": 2
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2020-05",
@@ -3858,9 +3858,9 @@
    "dswx_granules_with_missing": 109,
    "dswx_granules": 19606,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 1,
@@ -3880,6 +3880,14 @@
      "S1B": 477
     }
    },
+   "extra_products": {
+    "CSLC-S1": 1
+   },
+   "extra_sat": {
+    "CSLC-S1": {
+     "S1B": 1
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12927,
@@ -3895,9 +3903,9 @@
      "dswx_granules_with_missing": 65,
      "dswx_granules": 14828,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 10124,
@@ -3913,20 +3921,12 @@
      "dswx_granules_with_missing": 65,
      "dswx_granules": 13344,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "CSLC-S1": 1
-   },
-   "extra_sat": {
-    "CSLC-S1": {
-     "S1B": 1
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2020-06",
@@ -3946,9 +3946,9 @@
    "dswx_granules_with_missing": 112,
    "dswx_granules": 19660,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 5,
@@ -3969,6 +3969,15 @@
      "S1B": 545
     }
    },
+   "extra_products": {
+    "CSLC-S1": 5
+   },
+   "extra_sat": {
+    "CSLC-S1": {
+     "S1A": 1,
+     "S1B": 4
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12537,
@@ -3984,9 +3993,9 @@
      "dswx_granules_with_missing": 65,
      "dswx_granules": 14714,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 10091,
@@ -4002,21 +4011,12 @@
      "dswx_granules_with_missing": 64,
      "dswx_granules": 13394,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "CSLC-S1": 5
-   },
-   "extra_sat": {
-    "CSLC-S1": {
-     "S1A": 1,
-     "S1B": 4
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2020-07",
@@ -4036,9 +4036,9 @@
    "dswx_granules_with_missing": 111,
    "dswx_granules": 19639,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 2,
@@ -4058,6 +4058,14 @@
      "S1B": 477
     }
    },
+   "extra_products": {
+    "CSLC-S1": 2
+   },
+   "extra_sat": {
+    "CSLC-S1": {
+     "S1B": 2
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12791,
@@ -4073,9 +4081,9 @@
      "dswx_granules_with_missing": 61,
      "dswx_granules": 14807,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 10483,
@@ -4091,20 +4099,12 @@
      "dswx_granules_with_missing": 67,
      "dswx_granules": 13516,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "CSLC-S1": 2
-   },
-   "extra_sat": {
-    "CSLC-S1": {
-     "S1B": 2
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2020-08",
@@ -4124,9 +4124,9 @@
    "dswx_granules_with_missing": 130,
    "dswx_granules": 19817,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 6,
@@ -4146,6 +4146,14 @@
      "S1B": 716
     }
    },
+   "extra_products": {
+    "CSLC-S1": 6
+   },
+   "extra_sat": {
+    "CSLC-S1": {
+     "S1B": 6
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13642,
@@ -4161,9 +4169,9 @@
      "dswx_granules_with_missing": 79,
      "dswx_granules": 15014,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 10981,
@@ -4179,20 +4187,12 @@
      "dswx_granules_with_missing": 74,
      "dswx_granules": 13801,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "CSLC-S1": 6
-   },
-   "extra_sat": {
-    "CSLC-S1": {
-     "S1B": 6
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2020-09",
@@ -4212,9 +4212,9 @@
    "dswx_granules_with_missing": 110,
    "dswx_granules": 19866,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 4,
@@ -4234,6 +4234,14 @@
      "S1B": 543
     }
    },
+   "extra_products": {
+    "CSLC-S1": 4
+   },
+   "extra_sat": {
+    "CSLC-S1": {
+     "S1B": 4
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13177,
@@ -4249,9 +4257,9 @@
      "dswx_granules_with_missing": 68,
      "dswx_granules": 15153,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 10608,
@@ -4267,20 +4275,12 @@
      "dswx_granules_with_missing": 65,
      "dswx_granules": 13848,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "CSLC-S1": 4
-   },
-   "extra_sat": {
-    "CSLC-S1": {
-     "S1B": 4
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2020-10",
@@ -4300,9 +4300,9 @@
    "dswx_granules_with_missing": 98,
    "dswx_granules": 19834,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 5,
@@ -4323,6 +4323,15 @@
      "S1B": 647
     }
    },
+   "extra_products": {
+    "CSLC-S1": 5
+   },
+   "extra_sat": {
+    "CSLC-S1": {
+     "S1A": 1,
+     "S1B": 4
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13726,
@@ -4338,9 +4347,9 @@
      "dswx_granules_with_missing": 56,
      "dswx_granules": 14984,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 10992,
@@ -4356,21 +4365,12 @@
      "dswx_granules_with_missing": 65,
      "dswx_granules": 13810,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "CSLC-S1": 5
-   },
-   "extra_sat": {
-    "CSLC-S1": {
-     "S1A": 1,
-     "S1B": 4
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2020-11",
@@ -4390,9 +4390,9 @@
    "dswx_granules_with_missing": 110,
    "dswx_granules": 19887,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 6,
@@ -4413,6 +4413,15 @@
      "S1B": 556
     }
    },
+   "extra_products": {
+    "CSLC-S1": 6
+   },
+   "extra_sat": {
+    "CSLC-S1": {
+     "S1A": 1,
+     "S1B": 5
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13147,
@@ -4428,9 +4437,9 @@
      "dswx_granules_with_missing": 68,
      "dswx_granules": 15009,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 10535,
@@ -4446,21 +4455,12 @@
      "dswx_granules_with_missing": 65,
      "dswx_granules": 13791,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "CSLC-S1": 6
-   },
-   "extra_sat": {
-    "CSLC-S1": {
-     "S1A": 1,
-     "S1B": 5
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2020-12",
@@ -4480,9 +4480,9 @@
    "dswx_granules_with_missing": 104,
    "dswx_granules": 19892,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 6,
@@ -4502,6 +4502,14 @@
      "S1B": 683
     }
    },
+   "extra_products": {
+    "CSLC-S1": 6
+   },
+   "extra_sat": {
+    "CSLC-S1": {
+     "S1B": 6
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13755,
@@ -4517,9 +4525,9 @@
      "dswx_granules_with_missing": 56,
      "dswx_granules": 15004,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 10750,
@@ -4535,20 +4543,12 @@
      "dswx_granules_with_missing": 85,
      "dswx_granules": 13731,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "CSLC-S1": 6
-   },
-   "extra_sat": {
-    "CSLC-S1": {
-     "S1B": 6
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2021-01",
@@ -4568,9 +4568,9 @@
    "dswx_granules_with_missing": 98,
    "dswx_granules": 19889,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 198,
@@ -4591,6 +4591,15 @@
      "S1B": 631
     }
    },
+   "extra_products": {
+    "RTC-S1": 2984
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 1165,
+     "S1B": 1819
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13691,
@@ -4606,9 +4615,9 @@
      "dswx_granules_with_missing": 56,
      "dswx_granules": 15071,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 10679,
@@ -4624,21 +4633,12 @@
      "dswx_granules_with_missing": 65,
      "dswx_granules": 13677,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 2984
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 1165,
-     "S1B": 1819
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2021-02",
@@ -4658,9 +4658,9 @@
    "dswx_granules_with_missing": 120,
    "dswx_granules": 19855,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 6,
@@ -4686,6 +4686,20 @@
      "S1B": 585
     }
    },
+   "extra_products": {
+    "CSLC-S1": 6,
+    "RTC-S1": 2733
+   },
+   "extra_sat": {
+    "CSLC-S1": {
+     "S1A": 1,
+     "S1B": 5
+    },
+    "RTC-S1": {
+     "S1A": 1005,
+     "S1B": 1728
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12362,
@@ -4701,9 +4715,9 @@
      "dswx_granules_with_missing": 66,
      "dswx_granules": 14948,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 9558,
@@ -4719,26 +4733,12 @@
      "dswx_granules_with_missing": 77,
      "dswx_granules": 13728,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "CSLC-S1": 6,
-    "RTC-S1": 2733
-   },
-   "extra_sat": {
-    "CSLC-S1": {
-     "S1A": 1,
-     "S1B": 5
-    },
-    "RTC-S1": {
-     "S1A": 1005,
-     "S1B": 1728
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2021-03",
@@ -4758,9 +4758,9 @@
    "dswx_granules_with_missing": 110,
    "dswx_granules": 19862,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 3,
@@ -4786,6 +4786,20 @@
      "S1B": 504
     }
    },
+   "extra_products": {
+    "CSLC-S1": 3,
+    "RTC-S1": 2787
+   },
+   "extra_sat": {
+    "CSLC-S1": {
+     "S1A": 1,
+     "S1B": 2
+    },
+    "RTC-S1": {
+     "S1A": 1079,
+     "S1B": 1708
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13490,
@@ -4801,9 +4815,9 @@
      "dswx_granules_with_missing": 68,
      "dswx_granules": 14944,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 10653,
@@ -4819,26 +4833,12 @@
      "dswx_granules_with_missing": 65,
      "dswx_granules": 13729,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "CSLC-S1": 3,
-    "RTC-S1": 2787
-   },
-   "extra_sat": {
-    "CSLC-S1": {
-     "S1A": 1,
-     "S1B": 2
-    },
-    "RTC-S1": {
-     "S1A": 1079,
-     "S1B": 1708
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2021-04",
@@ -4858,9 +4858,9 @@
    "dswx_granules_with_missing": 109,
    "dswx_granules": 19815,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 10,
@@ -4886,6 +4886,20 @@
      "S1B": 637
     }
    },
+   "extra_products": {
+    "CSLC-S1": 10,
+    "RTC-S1": 2963
+   },
+   "extra_sat": {
+    "CSLC-S1": {
+     "S1A": 1,
+     "S1B": 9
+    },
+    "RTC-S1": {
+     "S1A": 1067,
+     "S1B": 1896
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13224,
@@ -4901,9 +4915,9 @@
      "dswx_granules_with_missing": 61,
      "dswx_granules": 14984,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 10450,
@@ -4919,26 +4933,12 @@
      "dswx_granules_with_missing": 71,
      "dswx_granules": 13639,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "CSLC-S1": 10,
-    "RTC-S1": 2963
-   },
-   "extra_sat": {
-    "CSLC-S1": {
-     "S1A": 1,
-     "S1B": 9
-    },
-    "RTC-S1": {
-     "S1A": 1067,
-     "S1B": 1896
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2021-05",
@@ -4958,9 +4958,9 @@
    "dswx_granules_with_missing": 85,
    "dswx_granules": 19778,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 5,
@@ -4985,6 +4985,19 @@
      "S1B": 500
     }
    },
+   "extra_products": {
+    "CSLC-S1": 5,
+    "RTC-S1": 2960
+   },
+   "extra_sat": {
+    "CSLC-S1": {
+     "S1B": 5
+    },
+    "RTC-S1": {
+     "S1A": 1158,
+     "S1B": 1802
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13056,
@@ -5000,9 +5013,9 @@
      "dswx_granules_with_missing": 38,
      "dswx_granules": 14982,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 10469,
@@ -5018,25 +5031,12 @@
      "dswx_granules_with_missing": 58,
      "dswx_granules": 13691,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "CSLC-S1": 5,
-    "RTC-S1": 2960
-   },
-   "extra_sat": {
-    "CSLC-S1": {
-     "S1B": 5
-    },
-    "RTC-S1": {
-     "S1A": 1158,
-     "S1B": 1802
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2021-06",
@@ -5056,9 +5056,9 @@
    "dswx_granules_with_missing": 94,
    "dswx_granules": 19704,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 4,
@@ -5083,6 +5083,19 @@
      "S1B": 452
     }
    },
+   "extra_products": {
+    "CSLC-S1": 4,
+    "RTC-S1": 2588
+   },
+   "extra_sat": {
+    "CSLC-S1": {
+     "S1B": 4
+    },
+    "RTC-S1": {
+     "S1A": 885,
+     "S1B": 1703
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12411,
@@ -5098,9 +5111,9 @@
      "dswx_granules_with_missing": 52,
      "dswx_granules": 14652,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 10114,
@@ -5116,25 +5129,12 @@
      "dswx_granules_with_missing": 60,
      "dswx_granules": 13549,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "CSLC-S1": 4,
-    "RTC-S1": 2588
-   },
-   "extra_sat": {
-    "CSLC-S1": {
-     "S1B": 4
-    },
-    "RTC-S1": {
-     "S1A": 885,
-     "S1B": 1703
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2021-07",
@@ -5154,9 +5154,9 @@
    "dswx_granules_with_missing": 103,
    "dswx_granules": 19768,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 6,
@@ -5182,6 +5182,20 @@
      "S1B": 416
     }
    },
+   "extra_products": {
+    "CSLC-S1": 6,
+    "RTC-S1": 2846
+   },
+   "extra_sat": {
+    "CSLC-S1": {
+     "S1A": 3,
+     "S1B": 3
+    },
+    "RTC-S1": {
+     "S1A": 1061,
+     "S1B": 1785
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13060,
@@ -5197,9 +5211,9 @@
      "dswx_granules_with_missing": 65,
      "dswx_granules": 14863,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 10381,
@@ -5215,26 +5229,12 @@
      "dswx_granules_with_missing": 55,
      "dswx_granules": 13564,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "CSLC-S1": 6,
-    "RTC-S1": 2846
-   },
-   "extra_sat": {
-    "CSLC-S1": {
-     "S1A": 3,
-     "S1B": 3
-    },
-    "RTC-S1": {
-     "S1A": 1061,
-     "S1B": 1785
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2021-08",
@@ -5254,9 +5254,9 @@
    "dswx_granules_with_missing": 104,
    "dswx_granules": 19803,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 4,
@@ -5282,6 +5282,20 @@
      "S1B": 549
     }
    },
+   "extra_products": {
+    "CSLC-S1": 4,
+    "RTC-S1": 2888
+   },
+   "extra_sat": {
+    "CSLC-S1": {
+     "S1A": 3,
+     "S1B": 1
+    },
+    "RTC-S1": {
+     "S1A": 923,
+     "S1B": 1965
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13489,
@@ -5297,9 +5311,9 @@
      "dswx_granules_with_missing": 56,
      "dswx_granules": 15127,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 10583,
@@ -5315,26 +5329,12 @@
      "dswx_granules_with_missing": 71,
      "dswx_granules": 13800,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "CSLC-S1": 4,
-    "RTC-S1": 2888
-   },
-   "extra_sat": {
-    "CSLC-S1": {
-     "S1A": 3,
-     "S1B": 1
-    },
-    "RTC-S1": {
-     "S1A": 923,
-     "S1B": 1965
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2021-09",
@@ -5354,9 +5354,9 @@
    "dswx_granules_with_missing": 125,
    "dswx_granules": 19822,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 5,
@@ -5382,6 +5382,20 @@
      "S1B": 694
     }
    },
+   "extra_products": {
+    "CSLC-S1": 5,
+    "RTC-S1": 2980
+   },
+   "extra_sat": {
+    "CSLC-S1": {
+     "S1A": 1,
+     "S1B": 4
+    },
+    "RTC-S1": {
+     "S1A": 1030,
+     "S1B": 1950
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13249,
@@ -5397,9 +5411,9 @@
      "dswx_granules_with_missing": 77,
      "dswx_granules": 15031,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 10894,
@@ -5415,26 +5429,12 @@
      "dswx_granules_with_missing": 71,
      "dswx_granules": 13825,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "CSLC-S1": 5,
-    "RTC-S1": 2980
-   },
-   "extra_sat": {
-    "CSLC-S1": {
-     "S1A": 1,
-     "S1B": 4
-    },
-    "RTC-S1": {
-     "S1A": 1030,
-     "S1B": 1950
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2021-10",
@@ -5454,9 +5454,9 @@
    "dswx_granules_with_missing": 131,
    "dswx_granules": 19837,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 4,
@@ -5482,6 +5482,20 @@
      "S1B": 567
     }
    },
+   "extra_products": {
+    "CSLC-S1": 4,
+    "RTC-S1": 2770
+   },
+   "extra_sat": {
+    "CSLC-S1": {
+     "S1A": 1,
+     "S1B": 3
+    },
+    "RTC-S1": {
+     "S1A": 1001,
+     "S1B": 1769
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13692,
@@ -5497,9 +5511,9 @@
      "dswx_granules_with_missing": 83,
      "dswx_granules": 14949,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 10937,
@@ -5515,26 +5529,12 @@
      "dswx_granules_with_missing": 71,
      "dswx_granules": 13819,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "CSLC-S1": 4,
-    "RTC-S1": 2770
-   },
-   "extra_sat": {
-    "CSLC-S1": {
-     "S1A": 1,
-     "S1B": 3
-    },
-    "RTC-S1": {
-     "S1A": 1001,
-     "S1B": 1769
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2021-11",
@@ -5554,9 +5554,9 @@
    "dswx_granules_with_missing": 130,
    "dswx_granules": 19859,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 4,
    "ledger": {
     "CSLC-S1|duplicate|open": 3,
@@ -5581,6 +5581,19 @@
      "S1B": 712
     }
    },
+   "extra_products": {
+    "CSLC-S1": 3,
+    "RTC-S1": 2925
+   },
+   "extra_sat": {
+    "CSLC-S1": {
+     "S1B": 3
+    },
+    "RTC-S1": {
+     "S1A": 1027,
+     "S1B": 1898
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12830,
@@ -5596,9 +5609,9 @@
      "dswx_granules_with_missing": 56,
      "dswx_granules": 15015,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 10641,
@@ -5614,25 +5627,12 @@
      "dswx_granules_with_missing": 97,
      "dswx_granules": 13797,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "CSLC-S1": 3,
-    "RTC-S1": 2925
-   },
-   "extra_sat": {
-    "CSLC-S1": {
-     "S1B": 3
-    },
-    "RTC-S1": {
-     "S1A": 1027,
-     "S1B": 1898
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2021-12",
@@ -5652,9 +5652,9 @@
    "dswx_granules_with_missing": 98,
    "dswx_granules": 19930,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 1,
    "ledger": {
     "CSLC-S1|duplicate|open": 2,
@@ -5679,6 +5679,19 @@
      "S1B": 406
     }
    },
+   "extra_products": {
+    "CSLC-S1": 2,
+    "RTC-S1": 2251
+   },
+   "extra_sat": {
+    "CSLC-S1": {
+     "S1B": 2
+    },
+    "RTC-S1": {
+     "S1A": 976,
+     "S1B": 1275
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13676,
@@ -5694,9 +5707,9 @@
      "dswx_granules_with_missing": 56,
      "dswx_granules": 15104,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1B": {
      "n_slcs": 7935,
@@ -5712,25 +5725,12 @@
      "dswx_granules_with_missing": 65,
      "dswx_granules": 13779,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "CSLC-S1": 2,
-    "RTC-S1": 2251
-   },
-   "extra_sat": {
-    "CSLC-S1": {
-     "S1B": 2
-    },
-    "RTC-S1": {
-     "S1A": 976,
-     "S1B": 1275
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2022-01",
@@ -5750,9 +5750,9 @@
    "dswx_granules_with_missing": 187,
    "dswx_granules": 15178,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 79,
@@ -5770,6 +5770,14 @@
      "S1A": 78
     }
    },
+   "extra_products": {
+    "RTC-S1": 9475
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 9475
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13929,
@@ -5785,20 +5793,12 @@
      "dswx_granules_with_missing": 187,
      "dswx_granules": 15178,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 9475
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 9475
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2022-02",
@@ -5818,9 +5818,9 @@
    "dswx_granules_with_missing": 23,
    "dswx_granules": 15523,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 93,
@@ -5838,6 +5838,14 @@
      "S1A": 35
     }
    },
+   "extra_products": {
+    "RTC-S1": 817
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 817
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12367,
@@ -5853,20 +5861,12 @@
      "dswx_granules_with_missing": 23,
      "dswx_granules": 15523,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 817
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 817
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2022-03",
@@ -5886,9 +5886,9 @@
    "dswx_granules_with_missing": 0,
    "dswx_granules": 15687,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 87,
@@ -5899,6 +5899,14 @@
      "S1A": 87
     },
     "RTC-S1|duplicate|open": {
+     "S1A": 983
+    }
+   },
+   "extra_products": {
+    "RTC-S1": 983
+   },
+   "extra_sat": {
+    "RTC-S1": {
      "S1A": 983
     }
    },
@@ -5917,20 +5925,12 @@
      "dswx_granules_with_missing": 0,
      "dswx_granules": 15687,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 983
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 983
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2022-04",
@@ -5950,9 +5950,9 @@
    "dswx_granules_with_missing": 0,
    "dswx_granules": 15757,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 95,
@@ -5963,6 +5963,14 @@
      "S1A": 95
     },
     "RTC-S1|duplicate|open": {
+     "S1A": 987
+    }
+   },
+   "extra_products": {
+    "RTC-S1": 987
+   },
+   "extra_sat": {
+    "RTC-S1": {
      "S1A": 987
     }
    },
@@ -5981,20 +5989,12 @@
      "dswx_granules_with_missing": 0,
      "dswx_granules": 15757,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 987
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 987
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2022-05",
@@ -6014,9 +6014,9 @@
    "dswx_granules_with_missing": 7,
    "dswx_granules": 15756,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 68,
@@ -6034,6 +6034,14 @@
      "S1A": 15
     }
    },
+   "extra_products": {
+    "RTC-S1": 1336
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 1336
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13445,
@@ -6049,20 +6057,12 @@
      "dswx_granules_with_missing": 7,
      "dswx_granules": 15756,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 1336
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 1336
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2022-06",
@@ -6082,9 +6082,9 @@
    "dswx_granules_with_missing": 9,
    "dswx_granules": 15607,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 27,
@@ -6102,6 +6102,14 @@
      "S1A": 16
     }
    },
+   "extra_products": {
+    "RTC-S1": 1348
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 1348
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13065,
@@ -6117,20 +6125,12 @@
      "dswx_granules_with_missing": 9,
      "dswx_granules": 15607,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 1348
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 1348
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2022-07",
@@ -6150,9 +6150,9 @@
    "dswx_granules_with_missing": 12,
    "dswx_granules": 15513,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 21,
@@ -6170,6 +6170,14 @@
      "S1A": 27
     }
    },
+   "extra_products": {
+    "RTC-S1": 1443
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 1443
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13352,
@@ -6185,20 +6193,12 @@
      "dswx_granules_with_missing": 12,
      "dswx_granules": 15513,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 1443
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 1443
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2022-08",
@@ -6218,9 +6218,9 @@
    "dswx_granules_with_missing": 0,
    "dswx_granules": 16153,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 43,
@@ -6231,6 +6231,14 @@
      "S1A": 43
     },
     "RTC-S1|duplicate|open": {
+     "S1A": 982
+    }
+   },
+   "extra_products": {
+    "RTC-S1": 982
+   },
+   "extra_sat": {
+    "RTC-S1": {
      "S1A": 982
     }
    },
@@ -6249,20 +6257,12 @@
      "dswx_granules_with_missing": 0,
      "dswx_granules": 16153,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 982
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 982
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2022-09",
@@ -6282,9 +6282,9 @@
    "dswx_granules_with_missing": 0,
    "dswx_granules": 15960,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 45,
@@ -6295,6 +6295,14 @@
      "S1A": 45
     },
     "RTC-S1|duplicate|open": {
+     "S1A": 1240
+    }
+   },
+   "extra_products": {
+    "RTC-S1": 1240
+   },
+   "extra_sat": {
+    "RTC-S1": {
      "S1A": 1240
     }
    },
@@ -6313,20 +6321,12 @@
      "dswx_granules_with_missing": 0,
      "dswx_granules": 15960,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 1240
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 1240
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2022-10",
@@ -6346,9 +6346,9 @@
    "dswx_granules_with_missing": 12,
    "dswx_granules": 15948,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 1,
    "ledger": {
     "CSLC-S1|missing|open": 49,
@@ -6366,6 +6366,14 @@
      "S1A": 27
     }
    },
+   "extra_products": {
+    "RTC-S1": 1125
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 1125
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13787,
@@ -6381,20 +6389,12 @@
      "dswx_granules_with_missing": 12,
      "dswx_granules": 15948,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 1125
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 1125
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2022-11",
@@ -6414,9 +6414,9 @@
    "dswx_granules_with_missing": 8,
    "dswx_granules": 15992,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 42,
@@ -6434,6 +6434,14 @@
      "S1A": 20
     }
    },
+   "extra_products": {
+    "RTC-S1": 955
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 955
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 14155,
@@ -6449,20 +6457,12 @@
      "dswx_granules_with_missing": 8,
      "dswx_granules": 15992,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 955
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 955
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2022-12",
@@ -6482,9 +6482,9 @@
    "dswx_granules_with_missing": 0,
    "dswx_granules": 16002,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 38,
@@ -6495,6 +6495,14 @@
      "S1A": 38
     },
     "RTC-S1|duplicate|open": {
+     "S1A": 984
+    }
+   },
+   "extra_products": {
+    "RTC-S1": 984
+   },
+   "extra_sat": {
+    "RTC-S1": {
      "S1A": 984
     }
    },
@@ -6513,20 +6521,12 @@
      "dswx_granules_with_missing": 0,
      "dswx_granules": 16002,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 984
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 984
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2023-01",
@@ -6546,9 +6546,9 @@
    "dswx_granules_with_missing": 39,
    "dswx_granules": 16057,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 59,
@@ -6566,6 +6566,14 @@
      "S1A": 76
     }
    },
+   "extra_products": {
+    "RTC-S1": 1145
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 1145
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 14826,
@@ -6581,20 +6589,12 @@
      "dswx_granules_with_missing": 39,
      "dswx_granules": 16057,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 1145
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 1145
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2023-02",
@@ -6614,9 +6614,9 @@
    "dswx_granules_with_missing": 9,
    "dswx_granules": 16095,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 41,
@@ -6634,6 +6634,14 @@
      "S1A": 16
     }
    },
+   "extra_products": {
+    "RTC-S1": 1947
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 1947
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13210,
@@ -6649,20 +6657,12 @@
      "dswx_granules_with_missing": 9,
      "dswx_granules": 16095,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 1947
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 1947
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2023-03",
@@ -6682,9 +6682,9 @@
    "dswx_granules_with_missing": 13,
    "dswx_granules": 16017,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 42,
@@ -6702,6 +6702,14 @@
      "S1A": 27
     }
    },
+   "extra_products": {
+    "RTC-S1": 1251
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 1251
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 14575,
@@ -6717,20 +6725,12 @@
      "dswx_granules_with_missing": 13,
      "dswx_granules": 16017,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 1251
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 1251
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2023-04",
@@ -6750,9 +6750,9 @@
    "dswx_granules_with_missing": 11,
    "dswx_granules": 15987,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 36,
@@ -6770,6 +6770,14 @@
      "S1A": 27
     }
    },
+   "extra_products": {
+    "RTC-S1": 522
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 522
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 14218,
@@ -6785,20 +6793,12 @@
      "dswx_granules_with_missing": 11,
      "dswx_granules": 15987,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 522
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 522
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2023-05",
@@ -6818,9 +6818,9 @@
    "dswx_granules_with_missing": 0,
    "dswx_granules": 15866,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 28,
@@ -6831,6 +6831,14 @@
      "S1A": 28
     },
     "RTC-S1|duplicate|open": {
+     "S1A": 27
+    }
+   },
+   "extra_products": {
+    "RTC-S1": 27
+   },
+   "extra_sat": {
+    "RTC-S1": {
      "S1A": 27
     }
    },
@@ -6849,20 +6857,12 @@
      "dswx_granules_with_missing": 0,
      "dswx_granules": 15866,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 27
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 27
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2023-06",
@@ -6882,9 +6882,9 @@
    "dswx_granules_with_missing": 0,
    "dswx_granules": 15690,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 2,
@@ -6899,6 +6899,18 @@
      "S1A": 12
     },
     "RTC-S1|duplicate|open": {
+     "S1A": 53
+    }
+   },
+   "extra_products": {
+    "CSLC-S1": 2,
+    "RTC-S1": 53
+   },
+   "extra_sat": {
+    "CSLC-S1": {
+     "S1A": 2
+    },
+    "RTC-S1": {
      "S1A": 53
     }
    },
@@ -6917,24 +6929,12 @@
      "dswx_granules_with_missing": 0,
      "dswx_granules": 15690,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "CSLC-S1": 2,
-    "RTC-S1": 53
-   },
-   "extra_sat": {
-    "CSLC-S1": {
-     "S1A": 2
-    },
-    "RTC-S1": {
-     "S1A": 53
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2023-07",
@@ -6954,9 +6954,9 @@
    "dswx_granules_with_missing": 159,
    "dswx_granules": 15587,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 142,
@@ -6975,6 +6975,14 @@
      "?": 267
     }
    },
+   "extra_products": {
+    "RTC-S1": 50
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 50
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13626,
@@ -6990,20 +6998,12 @@
      "dswx_granules_with_missing": 0,
      "dswx_granules": 15587,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 50
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 50
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2023-08",
@@ -7023,9 +7023,9 @@
    "dswx_granules_with_missing": 109,
    "dswx_granules": 15955,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 33,
@@ -7044,6 +7044,14 @@
      "S1A": 129
     }
    },
+   "extra_products": {
+    "RTC-S1": 22
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 22
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 14118,
@@ -7059,20 +7067,12 @@
      "dswx_granules_with_missing": 63,
      "dswx_granules": 15955,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 22
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 22
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2023-09",
@@ -7092,9 +7092,9 @@
    "dswx_granules_with_missing": 13,
    "dswx_granules": 16005,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 47,
@@ -7112,6 +7112,14 @@
      "S1A": 27
     }
    },
+   "extra_products": {
+    "RTC-S1": 163
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 163
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 14202,
@@ -7127,20 +7135,12 @@
      "dswx_granules_with_missing": 13,
      "dswx_granules": 16005,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 163
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 163
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2023-10",
@@ -7160,9 +7160,9 @@
    "dswx_granules_with_missing": 49,
    "dswx_granules": 15906,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "RTC-S1|duplicate|open": 5315,
@@ -7175,6 +7175,14 @@
     "RTC-S1|missing|open": {
      "?": 64,
      "S1A": 16
+    }
+   },
+   "extra_products": {
+    "RTC-S1": 5407
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 5407
     }
    },
    "sat_numbers": {
@@ -7192,20 +7200,12 @@
      "dswx_granules_with_missing": 14,
      "dswx_granules": 15906,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 5407
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 5407
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2023-11",
@@ -7225,9 +7225,9 @@
    "dswx_granules_with_missing": 8,
    "dswx_granules": 15928,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 39,
@@ -7245,6 +7245,14 @@
      "S1A": 4
     }
    },
+   "extra_products": {
+    "RTC-S1": 40354
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 40354
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 14033,
@@ -7260,20 +7268,12 @@
      "dswx_granules_with_missing": 8,
      "dswx_granules": 15928,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 40354
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 40354
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2023-12",
@@ -7293,9 +7293,9 @@
    "dswx_granules_with_missing": 0,
    "dswx_granules": 15931,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 46,
@@ -7307,6 +7307,14 @@
     },
     "RTC-S1|duplicate|open": {
      "S1A": 119917
+    }
+   },
+   "extra_products": {
+    "RTC-S1": 132808
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 132808
     }
    },
    "sat_numbers": {
@@ -7324,20 +7332,12 @@
      "dswx_granules_with_missing": 0,
      "dswx_granules": 15931,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 132808
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 132808
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2024-01",
@@ -7357,9 +7357,9 @@
    "dswx_granules_with_missing": 16,
    "dswx_granules": 15958,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 34,
@@ -7377,6 +7377,14 @@
      "S1A": 20
     }
    },
+   "extra_products": {
+    "RTC-S1": 92332
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 92332
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 14253,
@@ -7392,20 +7400,12 @@
      "dswx_granules_with_missing": 16,
      "dswx_granules": 15958,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 92332
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 92332
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2024-02",
@@ -7425,9 +7425,9 @@
    "dswx_granules_with_missing": 46,
    "dswx_granules": 15917,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 42,
@@ -7445,6 +7445,14 @@
      "S1A": 23
     }
    },
+   "extra_products": {
+    "RTC-S1": 130413
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 130413
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13430,
@@ -7460,20 +7468,12 @@
      "dswx_granules_with_missing": 46,
      "dswx_granules": 15917,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 130413
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 130413
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2024-03",
@@ -7493,9 +7493,9 @@
    "dswx_granules_with_missing": 160,
    "dswx_granules": 16069,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 36,
@@ -7513,6 +7513,14 @@
      "S1A": 98
     }
    },
+   "extra_products": {
+    "RTC-S1": 115558
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 115558
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 14666,
@@ -7528,20 +7536,12 @@
      "dswx_granules_with_missing": 160,
      "dswx_granules": 16069,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 115558
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 115558
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2024-04",
@@ -7561,9 +7561,9 @@
    "dswx_granules_with_missing": 105,
    "dswx_granules": 16087,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 32,
@@ -7585,6 +7585,18 @@
      "S1A": 96
     }
    },
+   "extra_products": {
+    "CSLC-S1": 32,
+    "RTC-S1": 30150
+   },
+   "extra_sat": {
+    "CSLC-S1": {
+     "S1A": 32
+    },
+    "RTC-S1": {
+     "S1A": 30150
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 14197,
@@ -7600,24 +7612,12 @@
      "dswx_granules_with_missing": 105,
      "dswx_granules": 16087,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "CSLC-S1": 32,
-    "RTC-S1": 30150
-   },
-   "extra_sat": {
-    "CSLC-S1": {
-     "S1A": 32
-    },
-    "RTC-S1": {
-     "S1A": 30150
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2024-05",
@@ -7637,9 +7637,9 @@
    "dswx_granules_with_missing": 53,
    "dswx_granules": 15943,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 16,
@@ -7658,6 +7658,14 @@
      "S1A": 56
     }
    },
+   "extra_products": {
+    "RTC-S1": 5087
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 5087
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13919,
@@ -7673,20 +7681,12 @@
      "dswx_granules_with_missing": 35,
      "dswx_granules": 15943,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 5087
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 5087
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2024-06",
@@ -7706,9 +7706,9 @@
    "dswx_granules_with_missing": 183,
    "dswx_granules": 15695,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 24,
@@ -7727,6 +7727,14 @@
      "S1A": 785
     }
    },
+   "extra_products": {
+    "RTC-S1": 3397
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 3397
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12684,
@@ -7742,20 +7750,12 @@
      "dswx_granules_with_missing": 152,
      "dswx_granules": 15695,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 3397
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 3397
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2024-07",
@@ -7775,9 +7775,9 @@
    "dswx_granules_with_missing": 272,
    "dswx_granules": 15541,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 8,
@@ -7800,6 +7800,18 @@
      "S1A": 912
     }
    },
+   "extra_products": {
+    "CSLC-S1": 9,
+    "RTC-S1": 19700
+   },
+   "extra_sat": {
+    "CSLC-S1": {
+     "S1A": 9
+    },
+    "RTC-S1": {
+     "S1A": 19700
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13505,
@@ -7815,24 +7827,12 @@
      "dswx_granules_with_missing": 264,
      "dswx_granules": 15541,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "CSLC-S1": 9,
-    "RTC-S1": 19700
-   },
-   "extra_sat": {
-    "CSLC-S1": {
-     "S1A": 9
-    },
-    "RTC-S1": {
-     "S1A": 19700
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2024-08",
@@ -7852,9 +7852,9 @@
    "dswx_granules_with_missing": 136,
    "dswx_granules": 15872,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 61,
@@ -7872,6 +7872,14 @@
      "S1A": 1193
     }
    },
+   "extra_products": {
+    "RTC-S1": 1808
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 1808
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 14086,
@@ -7887,20 +7895,12 @@
      "dswx_granules_with_missing": 136,
      "dswx_granules": 15872,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 1808
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 1808
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2024-09",
@@ -7920,9 +7920,9 @@
    "dswx_granules_with_missing": 222,
    "dswx_granules": 15931,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 51,
@@ -7942,6 +7942,14 @@
      "S1A": 918
     }
    },
+   "extra_products": {
+    "RTC-S1": 5224
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 5224
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 14075,
@@ -7957,20 +7965,12 @@
      "dswx_granules_with_missing": 136,
      "dswx_granules": 15931,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 5224
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 5224
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2024-10",
@@ -7990,9 +7990,9 @@
    "dswx_granules_with_missing": 169,
    "dswx_granules": 15913,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 58,
@@ -8010,6 +8010,14 @@
      "S1A": 1201
     }
    },
+   "extra_products": {
+    "RTC-S1": 6888
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 6888
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 14614,
@@ -8025,20 +8033,12 @@
      "dswx_granules_with_missing": 169,
      "dswx_granules": 15913,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 6888
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 6888
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2024-11",
@@ -8058,9 +8058,9 @@
    "dswx_granules_with_missing": 283,
    "dswx_granules": 16059,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 43,
@@ -8079,6 +8079,14 @@
      "S1A": 853
     }
    },
+   "extra_products": {
+    "RTC-S1": 14862
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 14862
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 14107,
@@ -8094,20 +8102,12 @@
      "dswx_granules_with_missing": 215,
      "dswx_granules": 16059,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 14862
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 14862
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2024-12",
@@ -8127,9 +8127,9 @@
    "dswx_granules_with_missing": 53,
    "dswx_granules": 16086,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 15,
@@ -8147,6 +8147,14 @@
      "S1A": 18
     }
    },
+   "extra_products": {
+    "RTC-S1": 25179
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 25179
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 14667,
@@ -8162,20 +8170,12 @@
      "dswx_granules_with_missing": 53,
      "dswx_granules": 16086,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 25179
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 25179
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2025-01",
@@ -8195,9 +8195,9 @@
    "dswx_granules_with_missing": 5,
    "dswx_granules": 16116,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 53,
@@ -8215,6 +8215,14 @@
      "S1A": 6
     }
    },
+   "extra_products": {
+    "RTC-S1": 8975
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 8975
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 14857,
@@ -8230,20 +8238,12 @@
      "dswx_granules_with_missing": 5,
      "dswx_granules": 16116,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 8975
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 8975
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2025-02",
@@ -8263,9 +8263,9 @@
    "dswx_granules_with_missing": 62,
    "dswx_granules": 16225,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 36,
@@ -8283,6 +8283,14 @@
      "S1A": 140
     }
    },
+   "extra_products": {
+    "RTC-S1": 6221
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 6221
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13806,
@@ -8298,20 +8306,12 @@
      "dswx_granules_with_missing": 62,
      "dswx_granules": 16225,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 6221
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 6221
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2025-03",
@@ -8331,9 +8331,9 @@
    "dswx_granules_with_missing": 53,
    "dswx_granules": 16320,
    "early_rtc_made": 27,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 27,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 46,
@@ -8355,6 +8355,14 @@
      "S1A": 257
     }
    },
+   "extra_products": {
+    "RTC-S1": 5374
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 5374
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 14978,
@@ -8370,9 +8378,9 @@
      "dswx_granules_with_missing": 53,
      "dswx_granules": 16320,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1C": {
      "n_slcs": 2,
@@ -8388,9 +8396,9 @@
      "dswx_granules_with_missing": 0,
      "dswx_granules": 13,
      "early_rtc_made": 27,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 27,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
    "early_sat": {
@@ -8399,14 +8407,6 @@
     },
     "rtc": {
      "S1C": 27
-    }
-   },
-   "extra_products": {
-    "RTC-S1": 5374
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 5374
     }
    }
   },
@@ -8428,9 +8428,9 @@
    "dswx_granules_with_missing": 56,
    "dswx_granules": 16216,
    "early_rtc_made": 17349,
-   "early_rtc_duplicated": 494,
+   "early_rtc_extra": 494,
    "early_cslc_made": 17558,
-   "early_cslc_duplicated": 1,
+   "early_cslc_extra": 1,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 1,
@@ -8461,6 +8461,19 @@
      "S1A": 230
     }
    },
+   "extra_products": {
+    "CSLC-S1": 1,
+    "RTC-S1": 8454
+   },
+   "extra_sat": {
+    "CSLC-S1": {
+     "S1C": 1
+    },
+    "RTC-S1": {
+     "S1A": 7960,
+     "S1C": 494
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 14451,
@@ -8476,9 +8489,9 @@
      "dswx_granules_with_missing": 56,
      "dswx_granules": 16168,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1C": {
      "n_slcs": 5766,
@@ -8494,9 +8507,9 @@
      "dswx_granules_with_missing": 0,
      "dswx_granules": 1630,
      "early_rtc_made": 17349,
-     "early_rtc_duplicated": 494,
+     "early_rtc_extra": 494,
      "early_cslc_made": 17558,
-     "early_cslc_duplicated": 1
+     "early_cslc_extra": 1
     }
    },
    "early_sat": {
@@ -8505,19 +8518,6 @@
     },
     "rtc": {
      "S1C": 17349
-    }
-   },
-   "extra_products": {
-    "CSLC-S1": 1,
-    "RTC-S1": 8454
-   },
-   "extra_sat": {
-    "CSLC-S1": {
-     "S1C": 1
-    },
-    "RTC-S1": {
-     "S1A": 7960,
-     "S1C": 494
     }
    }
   },
@@ -8539,9 +8539,9 @@
    "dswx_granules_with_missing": 2369,
    "dswx_granules": 19485,
    "early_rtc_made": 12905,
-   "early_rtc_duplicated": 58,
+   "early_rtc_extra": 58,
    "early_cslc_made": 13085,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|no_longer_expected": 2242,
@@ -8570,6 +8570,15 @@
      "S1C": 7781
     }
    },
+   "extra_products": {
+    "RTC-S1": 8129
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 8030,
+     "S1C": 99
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13788,
@@ -8585,9 +8594,9 @@
      "dswx_granules_with_missing": 86,
      "dswx_granules": 15934,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1C": {
      "n_slcs": 9982,
@@ -8603,9 +8612,9 @@
      "dswx_granules_with_missing": 2307,
      "dswx_granules": 12408,
      "early_rtc_made": 12905,
-     "early_rtc_duplicated": 58,
+     "early_rtc_extra": 58,
      "early_cslc_made": 13085,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
    "early_sat": {
@@ -8614,15 +8623,6 @@
     },
     "rtc": {
      "S1C": 12905
-    }
-   },
-   "extra_products": {
-    "RTC-S1": 8129
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 8030,
-     "S1C": 99
     }
    }
   },
@@ -8644,9 +8644,9 @@
    "dswx_granules_with_missing": 115,
    "dswx_granules": 19495,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 8,
@@ -8671,6 +8671,19 @@
      "S1C": 726
     }
    },
+   "extra_products": {
+    "CSLC-S1": 8,
+    "RTC-S1": 1481
+   },
+   "extra_sat": {
+    "CSLC-S1": {
+     "S1A": 8
+    },
+    "RTC-S1": {
+     "S1A": 830,
+     "S1C": 651
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13139,
@@ -8686,9 +8699,9 @@
      "dswx_granules_with_missing": 52,
      "dswx_granules": 15537,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1C": {
      "n_slcs": 10273,
@@ -8704,25 +8717,12 @@
      "dswx_granules_with_missing": 87,
      "dswx_granules": 12834,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "CSLC-S1": 8,
-    "RTC-S1": 1481
-   },
-   "extra_sat": {
-    "CSLC-S1": {
-     "S1A": 8
-    },
-    "RTC-S1": {
-     "S1A": 830,
-     "S1C": 651
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2025-07",
@@ -8742,9 +8742,9 @@
    "dswx_granules_with_missing": 108,
    "dswx_granules": 19601,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 49,
@@ -8765,6 +8765,15 @@
      "S1C": 607
     }
    },
+   "extra_products": {
+    "RTC-S1": 1190
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 748,
+     "S1C": 442
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13706,
@@ -8780,9 +8789,9 @@
      "dswx_granules_with_missing": 56,
      "dswx_granules": 15518,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1C": {
      "n_slcs": 10583,
@@ -8798,21 +8807,12 @@
      "dswx_granules_with_missing": 76,
      "dswx_granules": 13411,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 1190
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 748,
-     "S1C": 442
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2025-08",
@@ -8832,9 +8832,9 @@
    "dswx_granules_with_missing": 122,
    "dswx_granules": 19784,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 45,
@@ -8855,6 +8855,15 @@
      "S1C": 695
     }
    },
+   "extra_products": {
+    "RTC-S1": 10835
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 9317,
+     "S1C": 1518
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 14080,
@@ -8870,9 +8879,9 @@
      "dswx_granules_with_missing": 56,
      "dswx_granules": 15675,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1C": {
      "n_slcs": 11416,
@@ -8888,21 +8897,12 @@
      "dswx_granules_with_missing": 90,
      "dswx_granules": 13870,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 10835
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 9317,
-     "S1C": 1518
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2025-09",
@@ -8922,9 +8922,9 @@
    "dswx_granules_with_missing": 215,
    "dswx_granules": 19830,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 7,
@@ -8949,6 +8949,19 @@
      "S1C": 752
     }
    },
+   "extra_products": {
+    "CSLC-S1": 7,
+    "RTC-S1": 38905
+   },
+   "extra_sat": {
+    "CSLC-S1": {
+     "S1A": 7
+    },
+    "RTC-S1": {
+     "S1A": 19449,
+     "S1C": 19456
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13678,
@@ -8964,9 +8977,9 @@
      "dswx_granules_with_missing": 68,
      "dswx_granules": 15186,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1C": {
      "n_slcs": 10893,
@@ -8982,25 +8995,12 @@
      "dswx_granules_with_missing": 171,
      "dswx_granules": 13735,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "CSLC-S1": 7,
-    "RTC-S1": 38905
-   },
-   "extra_sat": {
-    "CSLC-S1": {
-     "S1A": 7
-    },
-    "RTC-S1": {
-     "S1A": 19449,
-     "S1C": 19456
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2025-10",
@@ -9020,9 +9020,9 @@
    "dswx_granules_with_missing": 130,
    "dswx_granules": 19791,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 102,
@@ -9043,6 +9043,15 @@
      "S1C": 678
     }
    },
+   "extra_products": {
+    "RTC-S1": 23913
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 9913,
+     "S1C": 14000
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 14193,
@@ -9058,9 +9067,9 @@
      "dswx_granules_with_missing": 69,
      "dswx_granules": 15115,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1C": {
      "n_slcs": 11696,
@@ -9076,21 +9085,12 @@
      "dswx_granules_with_missing": 85,
      "dswx_granules": 13696,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 23913
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 9913,
-     "S1C": 14000
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2025-11",
@@ -9110,9 +9110,9 @@
    "dswx_granules_with_missing": 177,
    "dswx_granules": 19790,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 40,
@@ -9134,6 +9134,15 @@
      "S1C": 703
     }
    },
+   "extra_products": {
+    "RTC-S1": 46045
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 22265,
+     "S1C": 23780
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13352,
@@ -9149,9 +9158,9 @@
      "dswx_granules_with_missing": 67,
      "dswx_granules": 15118,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1C": {
      "n_slcs": 11110,
@@ -9167,21 +9176,12 @@
      "dswx_granules_with_missing": 89,
      "dswx_granules": 13752,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 46045
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 22265,
-     "S1C": 23780
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2025-12",
@@ -9201,9 +9201,9 @@
    "dswx_granules_with_missing": 100,
    "dswx_granules": 19784,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 54,
@@ -9224,6 +9224,15 @@
      "S1C": 562
     }
    },
+   "extra_products": {
+    "RTC-S1": 39942
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 20497,
+     "S1C": 19445
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 14039,
@@ -9239,9 +9248,9 @@
      "dswx_granules_with_missing": 56,
      "dswx_granules": 15115,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1C": {
      "n_slcs": 11438,
@@ -9257,21 +9266,12 @@
      "dswx_granules_with_missing": 68,
      "dswx_granules": 13588,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 39942
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 20497,
-     "S1C": 19445
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2026-01",
@@ -9291,9 +9291,9 @@
    "dswx_granules_with_missing": 655,
    "dswx_granules": 19830,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 170,
@@ -9314,6 +9314,15 @@
      "S1C": 1043
     }
    },
+   "extra_products": {
+    "RTC-S1": 42262
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 21989,
+     "S1C": 20273
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13333,
@@ -9329,9 +9338,9 @@
      "dswx_granules_with_missing": 313,
      "dswx_granules": 15114,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1C": {
      "n_slcs": 10791,
@@ -9347,21 +9356,12 @@
      "dswx_granules_with_missing": 374,
      "dswx_granules": 13681,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 42262
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 21989,
-     "S1C": 20273
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2026-02",
@@ -9381,9 +9381,9 @@
    "dswx_granules_with_missing": 56,
    "dswx_granules": 19705,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 91,
@@ -9405,6 +9405,15 @@
      "S1C": 42
     }
    },
+   "extra_products": {
+    "RTC-S1": 25943
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 10053,
+     "S1C": 15890
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12050,
@@ -9420,9 +9429,9 @@
      "dswx_granules_with_missing": 9,
      "dswx_granules": 15187,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1C": {
      "n_slcs": 9986,
@@ -9438,21 +9447,12 @@
      "dswx_granules_with_missing": 10,
      "dswx_granules": 13550,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 25943
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 10053,
-     "S1C": 15890
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2026-03",
@@ -9472,9 +9472,9 @@
    "dswx_granules_with_missing": 443,
    "dswx_granules": 19856,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 56,
@@ -9495,6 +9495,15 @@
      "S1C": 469
     }
    },
+   "extra_products": {
+    "RTC-S1": 8201
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 4432,
+     "S1C": 3769
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 13915,
@@ -9510,9 +9519,9 @@
      "dswx_granules_with_missing": 358,
      "dswx_granules": 15148,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1C": {
      "n_slcs": 11092,
@@ -9528,21 +9537,12 @@
      "dswx_granules_with_missing": 137,
      "dswx_granules": 13698,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 8201
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 4432,
-     "S1C": 3769
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2026-04",
@@ -9562,9 +9562,9 @@
    "dswx_granules_with_missing": 12760,
    "dswx_granules": 19865,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|missing|open": 10439,
@@ -9590,6 +9590,15 @@
      "S1D": 113370
     }
    },
+   "extra_products": {
+    "RTC-S1": 19158
+   },
+   "extra_sat": {
+    "RTC-S1": {
+     "S1A": 8578,
+     "S1C": 10580
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12901,
@@ -9605,9 +9614,9 @@
      "dswx_granules_with_missing": 0,
      "dswx_granules": 15134,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1C": {
      "n_slcs": 10706,
@@ -9623,9 +9632,9 @@
      "dswx_granules_with_missing": 10,
      "dswx_granules": 13621,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1D": {
      "n_slcs": 4825,
@@ -9641,21 +9650,12 @@
      "dswx_granules_with_missing": 12760,
      "dswx_granules": 12760,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "RTC-S1": 19158
-   },
-   "extra_sat": {
-    "RTC-S1": {
-     "S1A": 8578,
-     "S1C": 10580
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2026-05",
@@ -9675,9 +9675,9 @@
    "dswx_granules_with_missing": 13842,
    "dswx_granules": 19878,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 5712,
@@ -9705,6 +9705,20 @@
      "S1D": 118141
     }
    },
+   "extra_products": {
+    "CSLC-S1": 5751,
+    "RTC-S1": 107157
+   },
+   "extra_sat": {
+    "CSLC-S1": {
+     "S1A": 2996,
+     "S1C": 2755
+    },
+    "RTC-S1": {
+     "S1A": 53658,
+     "S1C": 53499
+    }
+   },
    "sat_numbers": {
     "S1A": {
      "n_slcs": 12798,
@@ -9720,9 +9734,9 @@
      "dswx_granules_with_missing": 1595,
      "dswx_granules": 14785,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1C": {
      "n_slcs": 10903,
@@ -9738,9 +9752,9 @@
      "dswx_granules_with_missing": 904,
      "dswx_granules": 13267,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1D": {
      "n_slcs": 5010,
@@ -9756,26 +9770,12 @@
      "dswx_granules_with_missing": 13226,
      "dswx_granules": 13226,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "CSLC-S1": 5751,
-    "RTC-S1": 107157
-   },
-   "extra_sat": {
-    "CSLC-S1": {
-     "S1A": 2996,
-     "S1C": 2755
-    },
-    "RTC-S1": {
-     "S1A": 53658,
-     "S1C": 53499
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2026-06",
@@ -9795,9 +9795,9 @@
    "dswx_granules_with_missing": 15247,
    "dswx_granules": 19803,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 5808,
@@ -9827,63 +9827,6 @@
      "S1D": 97407
     }
    },
-   "sat_numbers": {
-    "S1A": {
-     "n_slcs": 12399,
-     "n_burst_acquisitions": 282098,
-     "rtc_expected": 282098,
-     "rtc_missing": 18778,
-     "cslc_expected": 29962,
-     "cslc_missing": 216,
-     "rtc_duplicated": 36957,
-     "cslc_duplicated": 2763,
-     "disp_frames_with_missing": 15,
-     "disp_frames": 668,
-     "dswx_granules_with_missing": 4952,
-     "dswx_granules": 14616,
-     "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
-     "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
-    },
-    "S1C": {
-     "n_slcs": 5334,
-     "n_burst_acquisitions": 125641,
-     "rtc_expected": 125641,
-     "rtc_missing": 2954,
-     "cslc_expected": 11191,
-     "cslc_missing": 145,
-     "rtc_duplicated": 30102,
-     "cslc_duplicated": 2645,
-     "disp_frames_with_missing": 18,
-     "disp_frames": 468,
-     "dswx_granules_with_missing": 1385,
-     "dswx_granules": 12865,
-     "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
-     "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
-    },
-    "S1D": {
-     "n_slcs": 11355,
-     "n_burst_acquisitions": 265351,
-     "rtc_expected": 265351,
-     "rtc_missing": 97407,
-     "cslc_expected": 22966,
-     "cslc_missing": 7450,
-     "rtc_duplicated": 380,
-     "cslc_duplicated": 400,
-     "disp_frames_with_missing": 386,
-     "disp_frames": 719,
-     "dswx_granules_with_missing": 13329,
-     "dswx_granules": 18685,
-     "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
-     "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
-    }
-   },
-   "early_sat": {},
    "extra_products": {
     "CSLC-S1": 5808,
     "RTC-S1": 70111
@@ -9899,7 +9842,64 @@
      "S1C": 32705,
      "S1D": 380
     }
-   }
+   },
+   "sat_numbers": {
+    "S1A": {
+     "n_slcs": 12399,
+     "n_burst_acquisitions": 282098,
+     "rtc_expected": 282098,
+     "rtc_missing": 18778,
+     "cslc_expected": 29962,
+     "cslc_missing": 216,
+     "rtc_duplicated": 36957,
+     "cslc_duplicated": 2763,
+     "disp_frames_with_missing": 15,
+     "disp_frames": 668,
+     "dswx_granules_with_missing": 4952,
+     "dswx_granules": 14616,
+     "early_rtc_made": 0,
+     "early_rtc_extra": 0,
+     "early_cslc_made": 0,
+     "early_cslc_extra": 0
+    },
+    "S1C": {
+     "n_slcs": 5334,
+     "n_burst_acquisitions": 125641,
+     "rtc_expected": 125641,
+     "rtc_missing": 2954,
+     "cslc_expected": 11191,
+     "cslc_missing": 145,
+     "rtc_duplicated": 30102,
+     "cslc_duplicated": 2645,
+     "disp_frames_with_missing": 18,
+     "disp_frames": 468,
+     "dswx_granules_with_missing": 1385,
+     "dswx_granules": 12865,
+     "early_rtc_made": 0,
+     "early_rtc_extra": 0,
+     "early_cslc_made": 0,
+     "early_cslc_extra": 0
+    },
+    "S1D": {
+     "n_slcs": 11355,
+     "n_burst_acquisitions": 265351,
+     "rtc_expected": 265351,
+     "rtc_missing": 97407,
+     "cslc_expected": 22966,
+     "cslc_missing": 7450,
+     "rtc_duplicated": 380,
+     "cslc_duplicated": 400,
+     "disp_frames_with_missing": 386,
+     "disp_frames": 719,
+     "dswx_granules_with_missing": 13329,
+     "dswx_granules": 18685,
+     "early_rtc_made": 0,
+     "early_rtc_extra": 0,
+     "early_cslc_made": 0,
+     "early_cslc_extra": 0
+    }
+   },
+   "early_sat": {}
   },
   {
    "month": "2026-07",
@@ -9919,9 +9919,9 @@
    "dswx_granules_with_missing": 115,
    "dswx_granules": 19710,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 1097,
@@ -9946,6 +9946,19 @@
      "S1D": 24
     }
    },
+   "extra_products": {
+    "CSLC-S1": 1097,
+    "RTC-S1": 14830
+   },
+   "extra_sat": {
+    "CSLC-S1": {
+     "S1C": 1097
+    },
+    "RTC-S1": {
+     "S1C": 13064,
+     "S1D": 1766
+    }
+   },
    "sat_numbers": {
     "S1C": {
      "n_slcs": 11699,
@@ -9961,9 +9974,9 @@
      "dswx_granules_with_missing": 103,
      "dswx_granules": 13896,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1D": {
      "n_slcs": 13563,
@@ -9979,25 +9992,12 @@
      "dswx_granules_with_missing": 12,
      "dswx_granules": 14756,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "CSLC-S1": 1097,
-    "RTC-S1": 14830
-   },
-   "extra_sat": {
-    "CSLC-S1": {
-     "S1C": 1097
-    },
-    "RTC-S1": {
-     "S1C": 13064,
-     "S1D": 1766
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2026-08",
@@ -10017,9 +10017,9 @@
    "dswx_granules_with_missing": 2299,
    "dswx_granules": 19726,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 731,
@@ -10045,6 +10045,19 @@
      "S1D": 82
     }
    },
+   "extra_products": {
+    "CSLC-S1": 765,
+    "RTC-S1": 6721
+   },
+   "extra_sat": {
+    "CSLC-S1": {
+     "S1D": 765
+    },
+    "RTC-S1": {
+     "S1C": 2360,
+     "S1D": 4361
+    }
+   },
    "sat_numbers": {
     "S1C": {
      "n_slcs": 11653,
@@ -10060,9 +10073,9 @@
      "dswx_granules_with_missing": 2267,
      "dswx_granules": 13651,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1D": {
      "n_slcs": 13395,
@@ -10078,25 +10091,12 @@
      "dswx_granules_with_missing": 34,
      "dswx_granules": 14658,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "CSLC-S1": 765,
-    "RTC-S1": 6721
-   },
-   "extra_sat": {
-    "CSLC-S1": {
-     "S1D": 765
-    },
-    "RTC-S1": {
-     "S1C": 2360,
-     "S1D": 4361
-    }
-   }
+   "early_sat": {}
   },
   {
    "month": "2026-09",
@@ -10116,9 +10116,9 @@
    "dswx_granules_with_missing": 8312,
    "dswx_granules": 19685,
    "early_rtc_made": 0,
-   "early_rtc_duplicated": 0,
+   "early_rtc_extra": 0,
    "early_cslc_made": 0,
-   "early_cslc_duplicated": 0,
+   "early_cslc_extra": 0,
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 37,
@@ -10143,6 +10143,19 @@
      "S1D": 27
     }
    },
+   "extra_products": {
+    "CSLC-S1": 37,
+    "RTC-S1": 524
+   },
+   "extra_sat": {
+    "CSLC-S1": {
+     "S1D": 37
+    },
+    "RTC-S1": {
+     "S1C": 275,
+     "S1D": 249
+    }
+   },
    "sat_numbers": {
     "S1C": {
      "n_slcs": 11335,
@@ -10158,9 +10171,9 @@
      "dswx_granules_with_missing": 8302,
      "dswx_granules": 13490,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     },
     "S1D": {
      "n_slcs": 13015,
@@ -10176,25 +10189,12 @@
      "dswx_granules_with_missing": 10,
      "dswx_granules": 14572,
      "early_rtc_made": 0,
-     "early_rtc_duplicated": 0,
+     "early_rtc_extra": 0,
      "early_cslc_made": 0,
-     "early_cslc_duplicated": 0
+     "early_cslc_extra": 0
     }
    },
-   "early_sat": {},
-   "extra_products": {
-    "CSLC-S1": 37,
-    "RTC-S1": 524
-   },
-   "extra_sat": {
-    "CSLC-S1": {
-     "S1D": 37
-    },
-    "RTC-S1": {
-     "S1C": 275,
-     "S1D": 249
-    }
-   }
+   "early_sat": {}
   }
  ],
  "site_url": "https://gracebato.github.io/opera-products-tracker-site/archive/index.html"
