@@ -1,13 +1,21 @@
 {
  "kind": "archive",
- "run_date": "2026-10-27",
- "run_at": "2026-10-27T21:03:37Z",
+ "run_date": "2026-10-28",
+ "run_at": "2026-10-28T00:07:22Z",
  "first_month": "2016-04",
  "last_month": "2026-09",
+ "n_burst_acquisitions": 56528774,
  "built": [],
  "rebuilt": [],
  "failed": [],
- "changed": {},
+ "changes_since": "2026-10-23T18:53:32Z",
+ "changed": {
+  "rtc_changed_granules": 0,
+  "rtc_rows_updated": 0,
+  "cslc_changed_granules": 333,
+  "cslc_rows_updated": 261
+ },
+ "rebuild_per_run": 0,
  "ledger": [
   {
    "product": "RTC-S1",
@@ -32,12 +40,12 @@
   {
    "product": "CSLC-S1",
    "issue": "missing",
-   "open": 42097,
+   "open": 41836,
    "new": 0,
-   "fixed": 0,
+   "fixed": 261,
    "arrived_late": 0,
    "no_longer_expected": 0,
-   "resolved_total": 3155
+   "resolved_total": 3416
   },
   {
    "product": "CSLC-S1",
@@ -50,7 +58,7 @@
    "resolved_total": 0
   }
  ],
- "n_burst_acquisitions": 56528774,
+ "cmr_changes_checked_at": "2026-10-28T00:07:22Z",
  "months": [
   {
    "month": "2016-04",
@@ -9661,16 +9669,16 @@
    "month": "2026-05",
    "as_of": "2026-10-23T18:25:50Z",
    "built_at": "2026-10-23T18:31:30Z",
-   "updated_at": null,
+   "updated_at": "2026-10-28T00:07:46Z",
    "n_slcs": 28711,
    "n_burst_acquisitions": 664882,
    "rtc_expected": 664882,
    "rtc_missing": 120497,
    "cslc_expected": 64924,
-   "cslc_missing": 10943,
+   "cslc_missing": 10783,
    "rtc_duplicated": 106461,
    "cslc_duplicated": 5712,
-   "disp_frames_with_missing": 511,
+   "disp_frames_with_missing": 476,
    "disp_frames": 1050,
    "dswx_granules_with_missing": 13842,
    "dswx_granules": 19878,
@@ -9681,7 +9689,8 @@
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 5712,
-    "CSLC-S1|missing|open": 10943,
+    "CSLC-S1|missing|fixed": 160,
+    "CSLC-S1|missing|open": 10783,
     "RTC-S1|duplicate|open": 106461,
     "RTC-S1|missing|open": 120497
    },
@@ -9690,9 +9699,12 @@
      "S1A": 2957,
      "S1C": 2755
     },
+    "CSLC-S1|missing|fixed": {
+     "S1A": 97,
+     "S1C": 63
+    },
     "CSLC-S1|missing|open": {
-     "S1A": 111,
-     "S1C": 63,
+     "S1A": 14,
      "S1D": 10769
     },
     "RTC-S1|duplicate|open": {
@@ -9726,10 +9738,10 @@
      "rtc_expected": 290056,
      "rtc_missing": 1249,
      "cslc_expected": 30885,
-     "cslc_missing": 111,
+     "cslc_missing": 14,
      "rtc_duplicated": 53315,
      "cslc_duplicated": 2957,
-     "disp_frames_with_missing": 47,
+     "disp_frames_with_missing": 2,
      "disp_frames": 708,
      "dswx_granules_with_missing": 1595,
      "dswx_granules": 14785,
@@ -9744,10 +9756,10 @@
      "rtc_expected": 256685,
      "rtc_missing": 1107,
      "cslc_expected": 23270,
-     "cslc_missing": 63,
+     "cslc_missing": 0,
      "rtc_duplicated": 53146,
      "cslc_duplicated": 2755,
-     "disp_frames_with_missing": 36,
+     "disp_frames_with_missing": 0,
      "disp_frames": 517,
      "dswx_granules_with_missing": 904,
      "dswx_granules": 13267,
@@ -9781,16 +9793,16 @@
    "month": "2026-06",
    "as_of": "2026-10-23T18:31:31Z",
    "built_at": "2026-10-23T18:36:54Z",
-   "updated_at": null,
+   "updated_at": "2026-10-28T00:07:49Z",
    "n_slcs": 29088,
    "n_burst_acquisitions": 673090,
    "rtc_expected": 673090,
    "rtc_missing": 119139,
    "cslc_expected": 64119,
-   "cslc_missing": 7811,
+   "cslc_missing": 7767,
    "rtc_duplicated": 67439,
    "cslc_duplicated": 5808,
-   "disp_frames_with_missing": 398,
+   "disp_frames_with_missing": 392,
    "disp_frames": 1026,
    "dswx_granules_with_missing": 15247,
    "dswx_granules": 19803,
@@ -9801,7 +9813,8 @@
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 5808,
-    "CSLC-S1|missing|open": 7811,
+    "CSLC-S1|missing|fixed": 44,
+    "CSLC-S1|missing|open": 7767,
     "RTC-S1|duplicate|open": 67439,
     "RTC-S1|missing|open": 119139
    },
@@ -9811,10 +9824,15 @@
      "S1C": 2645,
      "S1D": 400
     },
+    "CSLC-S1|missing|fixed": {
+     "S1A": 1,
+     "S1C": 16,
+     "S1D": 27
+    },
     "CSLC-S1|missing|open": {
-     "S1A": 216,
-     "S1C": 145,
-     "S1D": 7450
+     "S1A": 215,
+     "S1C": 129,
+     "S1D": 7423
     },
     "RTC-S1|duplicate|open": {
      "S1A": 36957,
@@ -9850,10 +9868,10 @@
      "rtc_expected": 282098,
      "rtc_missing": 18778,
      "cslc_expected": 29962,
-     "cslc_missing": 216,
+     "cslc_missing": 215,
      "rtc_duplicated": 36957,
      "cslc_duplicated": 2763,
-     "disp_frames_with_missing": 15,
+     "disp_frames_with_missing": 14,
      "disp_frames": 668,
      "dswx_granules_with_missing": 4952,
      "dswx_granules": 14616,
@@ -9868,10 +9886,10 @@
      "rtc_expected": 125641,
      "rtc_missing": 2954,
      "cslc_expected": 11191,
-     "cslc_missing": 145,
+     "cslc_missing": 129,
      "rtc_duplicated": 30102,
      "cslc_duplicated": 2645,
-     "disp_frames_with_missing": 18,
+     "disp_frames_with_missing": 12,
      "disp_frames": 468,
      "dswx_granules_with_missing": 1385,
      "dswx_granules": 12865,
@@ -9886,10 +9904,10 @@
      "rtc_expected": 265351,
      "rtc_missing": 97407,
      "cslc_expected": 22966,
-     "cslc_missing": 7450,
+     "cslc_missing": 7423,
      "rtc_duplicated": 380,
      "cslc_duplicated": 400,
-     "disp_frames_with_missing": 386,
+     "disp_frames_with_missing": 384,
      "disp_frames": 719,
      "dswx_granules_with_missing": 13329,
      "dswx_granules": 18685,
@@ -10003,16 +10021,16 @@
    "month": "2026-08",
    "as_of": "2026-10-23T18:42:20Z",
    "built_at": "2026-10-23T18:47:35Z",
-   "updated_at": null,
+   "updated_at": "2026-10-28T00:07:51Z",
    "n_slcs": 25048,
    "n_burst_acquisitions": 580990,
    "rtc_expected": 580990,
    "rtc_missing": 6798,
    "cslc_expected": 57340,
-   "cslc_missing": 689,
+   "cslc_missing": 676,
    "rtc_duplicated": 6677,
    "cslc_duplicated": 731,
-   "disp_frames_with_missing": 36,
+   "disp_frames_with_missing": 34,
    "disp_frames": 1028,
    "dswx_granules_with_missing": 2299,
    "dswx_granules": 19726,
@@ -10023,7 +10041,8 @@
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 731,
-    "CSLC-S1|missing|open": 689,
+    "CSLC-S1|missing|fixed": 13,
+    "CSLC-S1|missing|open": 676,
     "RTC-S1|duplicate|open": 6677,
     "RTC-S1|missing|open": 6798
    },
@@ -10031,8 +10050,11 @@
     "CSLC-S1|duplicate|open": {
      "S1D": 731
     },
+    "CSLC-S1|missing|fixed": {
+     "S1C": 13
+    },
     "CSLC-S1|missing|open": {
-     "S1C": 551,
+     "S1C": 538,
      "S1D": 138
     },
     "RTC-S1|duplicate|open": {
@@ -10065,10 +10087,10 @@
      "rtc_expected": 274953,
      "rtc_missing": 6695,
      "cslc_expected": 25017,
-     "cslc_missing": 551,
+     "cslc_missing": 538,
      "rtc_duplicated": 2351,
      "cslc_duplicated": 0,
-     "disp_frames_with_missing": 25,
+     "disp_frames_with_missing": 23,
      "disp_frames": 538,
      "dswx_granules_with_missing": 2267,
      "dswx_granules": 13651,
@@ -10102,16 +10124,16 @@
    "month": "2026-09",
    "as_of": "2026-10-23T18:47:36Z",
    "built_at": "2026-10-23T18:52:47Z",
-   "updated_at": null,
+   "updated_at": "2026-10-28T00:07:53Z",
    "n_slcs": 24350,
    "n_burst_acquisitions": 565999,
    "rtc_expected": 565999,
    "rtc_missing": 36737,
    "cslc_expected": 54945,
-   "cslc_missing": 713,
+   "cslc_missing": 669,
    "rtc_duplicated": 506,
    "cslc_duplicated": 37,
-   "disp_frames_with_missing": 38,
+   "disp_frames_with_missing": 32,
    "disp_frames": 1042,
    "dswx_granules_with_missing": 8312,
    "dswx_granules": 19685,
@@ -10122,7 +10144,8 @@
    "failed_slcs": 0,
    "ledger": {
     "CSLC-S1|duplicate|open": 37,
-    "CSLC-S1|missing|open": 713,
+    "CSLC-S1|missing|fixed": 44,
+    "CSLC-S1|missing|open": 669,
     "RTC-S1|duplicate|open": 506,
     "RTC-S1|missing|open": 36737
    },
@@ -10130,8 +10153,11 @@
     "CSLC-S1|duplicate|open": {
      "S1D": 37
     },
+    "CSLC-S1|missing|fixed": {
+     "S1C": 44
+    },
     "CSLC-S1|missing|open": {
-     "S1C": 620,
+     "S1C": 576,
      "S1D": 93
     },
     "RTC-S1|duplicate|open": {
@@ -10163,10 +10189,10 @@
      "rtc_expected": 268360,
      "rtc_missing": 36710,
      "cslc_expected": 23524,
-     "cslc_missing": 620,
+     "cslc_missing": 576,
      "rtc_duplicated": 257,
      "cslc_duplicated": 0,
-     "disp_frames_with_missing": 30,
+     "disp_frames_with_missing": 24,
      "disp_frames": 526,
      "dswx_granules_with_missing": 8302,
      "dswx_granules": 13490,
@@ -10197,6 +10223,5 @@
    "early_sat": {}
   }
  ],
- "site_url": "https://gracebato.github.io/opera-products-tracker-site/archive/index.html",
- "cmr_changes_checked_at": "2026-10-23T18:53:32Z"
+ "site_url": "https://gracebato.github.io/opera-products-tracker-site/archive/index.html"
 }
