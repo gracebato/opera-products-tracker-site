@@ -272,13 +272,15 @@ function drawTiles() {
   sync();
 }
 const FOOT = `How it works: the bursts each Sentinel-1 radar image should have come from ASF's burst catalog; every burst
-    acquisition without its OPERA product in CMR counts as missing, and every product beyond the first for the same burst ID and acquisition date (processed more than once)
-    counts as a duplicate: a burst acquisition with 3 products has 2 duplicates. "Fixed" means a product appeared that was processed after the problem was first found; "arrived late" means it was
-    processed earlier but reached CMR afterwards. Each monthly run adds the previous month, merges in granules created or changed in CMR since
-    the last run, and fully rechecks ${DATA.rebuild_per_run || 12} older months, which is how granules deleted from CMR are noticed.
-    Sentinel-1C counts from 2025-05-19 (RTC-S1) and 2025-05-20 (CSLC-S1), and Sentinel-1D from 2026-04-17, when OPERA chose to start
-    processing them; their earlier products that were not made are out of scope, not missing. The Satellite filter uses each burst
-    acquisition's radar image (its SLC ID); the frame and granule lists under Month details are for all satellites.`;
+    acquisition without its OPERA product in CMR counts as missing, and every product beyond the first for the same burst ID and acquisition
+    date (processed more than once) counts as a duplicate: a burst acquisition with 3 products has 2 duplicates. A missing product is
+    "resolved" once it appears in CMR: fixed if it was processed after the gap was first found, or arrived late if it was processed earlier
+    but reached CMR afterwards (each month's Resolved list says which, and which product resolved it). Each monthly run adds the previous
+    month, merges in products created or changed in CMR since the last run (the CMR timestamp above), and fully rechecks
+    ${DATA.rebuild_per_run || 12} older months, which is how products deleted from CMR are noticed. Sentinel-1C counts from 2025-05-19
+    (RTC-S1) and 2025-05-20 (CSLC-S1), and Sentinel-1D from 2026-04-17, when OPERA chose to start processing them; their earlier products
+    that were not made are out of scope, not missing. The Satellite filter uses each burst acquisition's radar image (its SLC ID); the
+    frame and granule lists under Month details are for all satellites.`;
 
 // ---- controls ----
 function seg(id, key) {
