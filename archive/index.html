@@ -743,7 +743,7 @@ const BasemapControl = L.Control.extend({ onAdd() {
 new BasemapControl({ position: "topright" }).addTo(map);
 // Optional layer: OPERA's North America outline, drawn above the frames and granules but not clickable (as on the
 // weekly page)
-map.createPane("outline").style.zIndex = 440;
+map.createPane("outline").style.zIndex = 440; map.getPane("outline").style.pointerEvents = "none";
 let naLayer = null;
 const naStyle = () => ({ color: css("--hl"), weight: 1.5, dashArray: "5 4", fill: false, interactive: false });
 function showOutline(on) {
