@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>OPERA RTC-S1 and CSLC-S1 Tracker, 2026-10-10 to 2026-10-24 · Global (RTC-S1) · North America (CSLC-S1)</title>
+<title>OPERA RTC-S1 and CSLC-S1 Weekly Tracker, 2026-10-10 to 2026-10-24 · Global (RTC-S1) · North America (CSLC-S1)</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <style>
@@ -49,10 +49,21 @@ h2 { font-size: 16px; margin: 24px 0 4px; font-weight: 600; }
 .controls button.btn { cursor: pointer; }
 .seg { display: inline-flex; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
 .seg button { font: inherit; font-size: 13px; background: transparent; color: var(--text-secondary); border: 0; padding: 4px 10px; cursor: pointer; }
+.seg button:disabled { opacity: 0.4; cursor: default; }
 .seg button[aria-pressed=true] { background: var(--surface-2); color: var(--text-primary); font-weight: 600; }
 .section { font-size: 14px; font-weight: 600; margin: 14px 0 0; }
 .section .note { color: var(--text-secondary); font-weight: 400; font-size: 13px; }
 .tiles.sec { margin-top: 8px; }
+/* Both rows of tiles share the same columns (8 wide, 4 on a medium screen, 2 on a phone), so the "All unresolved"
+   tiles sit under this report's first four; a label keeps room for two lines, so the numbers line up */
+#tiles, #opentiles { grid-template-columns: repeat(8, minmax(0, 1fr)); }
+@media (max-width: 1250px) { #tiles, #opentiles { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (max-width: 700px) { #tiles, #opentiles { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+#tiles .tile .k, #opentiles .tile .k { line-height: 1.35; min-height: 2.7em; }
+.tile[data-g] { cursor: pointer; }
+.tile[data-g]:hover { background: color-mix(in srgb, var(--surface-2) 70%, var(--border)); }
+.tile[aria-pressed=true] { outline: 2px solid var(--hl); outline-offset: -2px; }
+.tile:focus-visible { outline: 2px solid var(--link); outline-offset: 1px; }
 .delta { font-size: 13px; font-weight: 600; margin-left: 6px; white-space: nowrap; cursor: help; border-bottom: 1px dotted currentColor; }
 .delta.up { color: var(--missing); } .delta.down { color: var(--good); } .delta.same { color: var(--text-muted); font-weight: 400; }
 .warnline { margin-top: 6px; color: var(--text-primary); font-weight: 600; }
@@ -80,11 +91,26 @@ h2 { font-size: 16px; margin: 24px 0 4px; font-weight: 600; }
 #sel { margin: 8px 0 0; font-size: 13px; color: var(--text-secondary); min-height: 1.4em; }
 #sel b { color: var(--text-primary); }
 #detail { margin: 8px 0 0; }
+/* The selection's burst table sits beside the map on a wide screen (same height, its own scroll), below it otherwise */
+#mapRow { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px 0; }
+#mapRow #sel { margin: 0; }
+#vsplit { display: none; }
+@media (min-width: 1100px) {
+  /* --map-w is the dragged map width (the bar between map and table); without it the map takes 3/5 */
+  #mapRow { grid-template-columns: minmax(0, var(--map-w, 3fr)) 14px minmax(0, 2fr); }
+  #vsplit { display: flex; align-items: center; justify-content: center; cursor: ew-resize; touch-action: none; user-select: none;
+    -webkit-user-select: none; border-radius: 6px; margin: 0 2px; }
+  #vsplit::before { content: ""; width: 4px; height: 40px; border-radius: 2px; background: var(--text-muted); }
+  #vsplit:hover, #vsplit:focus-visible, #vsplit.dragging { background: var(--grid); }
+  #side { position: relative; min-height: 160px; }
+  #side .inner { position: absolute; inset: 0; display: flex; flex-direction: column; }
+  #side #detail { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+  #side #detail .scroll { flex: 1; min-height: 0; max-height: none; }
+}
 #detail .scroll { overflow: auto; max-height: 320px; border: 1px solid var(--grid); border-radius: 8px; }
 #detail table { width: 100%; border-collapse: collapse; font-size: 13px; font-variant-numeric: tabular-nums; }
 #detail th, #detail td { padding: 5px 10px; border-bottom: 1px solid var(--grid); text-align: left; white-space: nowrap; }
 #detail th { position: sticky; top: 0; background: var(--surface-2); color: var(--text-secondary); font-weight: 600; z-index: 1; }
-#detail td.ids { font-family: ui-monospace, Menlo, monospace; font-size: 12px; white-space: normal; word-break: break-all; min-width: 18ch; }
 #detail a { color: var(--complete); }
 .chip { font: 12px ui-monospace, Menlo, monospace; background: var(--surface-2); color: var(--complete); border: 1px solid var(--border); border-radius: 999px; padding: 0 7px; cursor: pointer; line-height: 18px; }
 .chip:hover { border-color: var(--complete); }
@@ -98,6 +124,7 @@ h2 { font-size: 16px; margin: 24px 0 4px; font-weight: 600; }
 #splitter::before { content: ""; width: 40px; height: 4px; border-radius: 2px; background: var(--text-muted); }
 #splitter:hover, #splitter:focus-visible, #splitter.dragging { background: var(--grid); color: var(--text-primary); }
 body.resizing { cursor: ns-resize; user-select: none; -webkit-user-select: none; }
+body.resizing-x { cursor: ew-resize; user-select: none; -webkit-user-select: none; }
 #timeline { position: absolute; left: 0; top: 0; }
 #axisWrap { position: sticky; z-index: 1100; background: var(--surface-1); }
 #tip { position: fixed; pointer-events: none; background: var(--surface-1); color: var(--text-primary); border: 1px solid var(--border);
@@ -124,6 +151,8 @@ body.resizing { cursor: ns-resize; user-select: none; -webkit-user-select: none;
     <div class="grp">This report</div>
     <dt>Missing</dt><dd>a Sentinel-1 acquisition (SLC) is in CMR, but the product for that burst is not</dd>
     <dt>Duplicated</dt><dd>more than one product for the same burst and acquisition date</dd>
+    <dt>Potentially stalled</dt><dd>a DISP-S1 frame with at least one missing CSLC-S1 burst: the frame waits at that date until the CSLC is produced or the date is marked as skipped</dd>
+    <dt>Affected</dt><dd>a DSWx-S1 granule with at least one missing RTC-S1 burst</dd>
     <dt>CSLC-S1 scope</dt><dd>this report checks CSLC-S1 for every burst inside the North America DISP-S1 frame outlines; from the Nov 2 report on, only for the bursts DISP-S1 frames use (the burst lists of OPERA burst_db v0.18.0). RTC-S1: every burst over land</dd>
     <div class="grp">All unresolved (earlier reports)</div>
     <dt>▲ / ▼ net</dt><dd>change since the last report: new problems minus resolved ones (red ▲ the backlog grew, green ▼ it shrank; hover for the breakdown)</dd>
@@ -151,6 +180,10 @@ body.resizing { cursor: ns-resize; user-select: none; -webkit-user-select: none;
       <button data-v="gaps">Missing</button><button data-v="dups">Duplicates</button></span></span>
     <span><label>Product </label><span class="seg" id="mode" role="group" aria-label="Product">
       <button data-v="cslc">CSLC-S1</button><button data-v="rtc">RTC-S1</button></span></span>
+    <span><label>Satellite </label><span class="seg" id="sat" role="group" aria-label="Satellite">
+      <button data-v="">All</button><button data-v="S1A">S1A</button><button data-v="S1B">S1B</button><button data-v="S1C">S1C</button><button data-v="S1D">S1D</button></span></span>
+    <span title="From each radar image's SLC ID: VV is VV or VV+VH, HH is HH or HH+HV"><label>Polarization </label><span class="seg" id="pol" role="group" aria-label="Polarization">
+      <button data-v="">All</button><button data-v="VV">VV</button><button data-v="HH">HH</button></span></span>
     <span><label for="sort">Sort </label><select id="sort">
       <option value="gaps">Most missing</option><option value="dups">Most duplicates</option><option value="id">ID</option><option value="track">Track</option></select></span>
     <span><label for="pass">Pass </label><select id="pass"><option value="">All</option><option value="A">Ascending</option><option value="D">Descending</option></select></span>
@@ -174,9 +207,15 @@ body.resizing { cursor: ns-resize; user-select: none; -webkit-user-select: none;
     <span class="note">Blank means no SLC acquisition in the window.</span>
   </div>
 
-  <div id="map" role="region" aria-label="Map of frames, granules and bursts"></div>
-  <div id="sel">Click a polygon or a timeline row to select it. Clicking a cell shows that date's burst status on the map.</div>
-  <div id="detail"></div>
+  <div id="mapRow">
+    <div id="map" role="region" aria-label="Map of frames, granules and bursts"></div>
+    <div id="vsplit" role="separator" aria-orientation="vertical" aria-label="Resize map and burst table" tabindex="0"
+      title="Drag to change the widths of the map and the burst table (double-click to reset)"></div>
+    <div id="side"><div class="inner">
+      <div id="sel">Click a polygon or a timeline row to select it. Clicking a cell shows that date's burst status on the map.</div>
+      <div id="detail"></div>
+    </div></div>
+  </div>
 
   <div id="splitter" role="separator" aria-orientation="horizontal" aria-label="Resize map and timeline" tabindex="0"
     title="Drag down for a bigger map, up for a bigger timeline (double-click to reset)">drag to resize map and timeline</div>
@@ -207,6 +246,12 @@ for (const b of DATA.bursts) {
   b.dup = new Map((b.u || []).map(u => [u[0], u])); delete b.u;  // j -> [j, rtc_n, cslc_n, rtc_ids, cslc_ids, rtc_kept, cslc_kept]
 }
 const B = DATA.bursts;
+// Satellite and Polarization filters (as on the long-term archive page), from each burst acquisition's SLC ID
+// (S1A_IW_SLC__1SDV_...: V is VV or VV+VH, H is HH or HH+HV)
+const polOf = slc => ({ V: "VV", H: "HH" })[(slc || "")[15]] || "?";
+const slcKept = slc => !!slc && (!st.sat || slc.startsWith(st.sat)) && (!st.pol || polOf(slc) === st.pol);
+const inView = (b, j) => !st.sat && !st.pol || slcKept(DATA.slcs[b.k[j]]);
+const viewKey = () => [st.sat, st.pol].filter(Boolean).join(" ");
 // Burst footprints come as corners (b.q: 1e-3 deg, corners after the first relative to it); decoded when first drawn
 function bgeom(b) {
   if (b.g || !b.q) return b.g || null;
@@ -222,7 +267,7 @@ function cells(G) {
   if (G._cells) return G._cells;
   const m = new Map();
   for (const i of G.b) { const b = B[i];
-    for (let j = 0; j < b.o.length; j++) {
+    for (let j = 0; j < b.o.length; j++) { if (!inView(b, j)) continue;
       let c = m.get(b.o[j]); if (!c) m.set(b.o[j], c = { o: b.o[j], n: 0, rm: 0, ce: 0, cm: 0, rd: 0, cd: 0, items: [] });
       const v = b.c[j], rm = v & 1, cs = v >> 1, d = b.dup.get(j);
       c.n++; c.rm += rm; c.ce += cs < 2; c.cm += cs === 1; c.items.push([i, j]);
@@ -248,7 +293,7 @@ function summary(G, mode) {
 const DEFAULT_GROUP = DATA.disp.length ? "disp" : DATA.dswx.length ? "dswx" : "burst";
 // Each product is consumed by one kind of group: CSLC-S1 by DISP-S1 frames, RTC-S1 by DSWx-S1 granules
 const MODE_FOR_GROUP = { disp: "cslc", dswx: "rtc" }, GROUP_FOR_MODE = { cslc: "disp", rtc: "dswx" };
-const st = { group: DEFAULT_GROUP, mode: MODE_FOR_GROUP[DEFAULT_GROUP] || "rtc", sort: "gaps", pass: "", track: "", gapsOnly: true, dupOnly: false, mapView: "gaps", rh: 10, sel: null, selDate: null };
+const st = { group: DEFAULT_GROUP, mode: MODE_FOR_GROUP[DEFAULT_GROUP] || "rtc", sort: "gaps", pass: "", track: "", sat: "", pol: "", gapsOnly: true, dupOnly: false, mapView: "gaps", rh: 10, sel: null, selDate: null };
 const groupsOf = g => DATA[g];
 const label = (g, G) => g === "disp" ? `F${String(G.id).padStart(5, "0")}` : G.id;
 // A DSWx-S1 granule (MGRS tile) can be fed by several tracks and both passes (G.ts, G.p = "AD")
@@ -265,8 +310,10 @@ function header() {
   $("meta").innerHTML = `${esc(m.start)} to ${esc(m.stop)}` +
     (m.as_of ? ` · <b>CMR timestamp: ${esc(utc(m.as_of))} UTC</b> (includes every product in CMR up to this time)` : "") +
     " · rechecked weekly, on Mondays";
-  $("subtitle").innerHTML = `Did OPERA make every L2 product it should have for each Sentinel-1 pass? Each timeline row is a DISP-S1
-    frame, a DSWx-S1 granule or a burst; hover for details.` + sourceNote(m);
+  // The weekly report's window is two weeks; a lookup for other dates names them
+  const twoWeeks = Date.parse(m.stop) - Date.parse(m.start) === 14 * DAY;
+  $("subtitle").innerHTML = `Did OPERA make every L2 product it should have for each Sentinel-1 pass ${twoWeeks ? "in the last two weeks" : `from ${esc(m.start)} to ${esc(m.stop)}`}?<br>Each timeline row is a
+    DISP-S1 frame, a DSWx-S1 granule or a burst; hover for details.` + sourceNote(m);
 }
 // Only problems are shown on the page; how the check works is explained in the README
 function sourceNote(m) {
@@ -278,25 +325,28 @@ function sourceNote(m) {
   return warn.length ? `<div class="warnline">⚠ ${warn.join(" ")}</div>` : "";
 }
 let WIN = {};
-const tileHTML = ([k, v, d]) => `<div class="tile"><div class="k">${k}</div><div class="v">${v}</div><div class="d">${d}</div></div>`;
+// A tile with a view [rows, product, map] is a button that shows it (see tileGo)
+const tileHTML = ([k, v, d, go]) => `<div class="tile"${go ? ` role="button" tabindex="0" data-g="${go[0]}" data-m="${go[1]}" data-v="${go[2]}" title="Show on the map and timeline"` : ""}><div class="k">${k}</div><div class="v">${v}</div><div class="d">${d}</div></div>`;
 function tiles() {
   let n = 0, rm = 0, ce = 0, cm = 0, rd = 0, cd = 0;
-  for (const b of B) { for (const v of b.c) { n++; rm += v & 1; ce += (v >> 1) < 2; cm += (v >> 1) === 1; }
-    for (const d of b.dup.values()) { rd += d[1] > 1; cd += d[2] > 1; } }
+  for (const b of B) { b.c.forEach((v, j) => { if (inView(b, j)) { n++; rm += v & 1; ce += (v >> 1) < 2; cm += (v >> 1) === 1; } });
+    for (const [j, d] of b.dup) if (inView(b, j)) { rd += d[1] > 1; cd += d[2] > 1; } }
   const gapsD = DATA.disp.filter(G => summary(G, "cslc").miss).length, gapsS = DATA.dswx.filter(G => summary(G, "rtc").miss).length;
   const pct = (a, b) => b ? ` (${(100 * a / b).toFixed(a && a / b < 0.001 ? 2 : 1)}%)` : "";
   const T = [
-    ["SLC SAFE files", DATA.slcs.length.toLocaleString(), "Sentinel-1 radar images in the window"],
+    ["SLC SAFE files", DATA.slcs.filter(x => !viewKey() || slcKept(x)).length.toLocaleString(), "Sentinel-1 radar images in the window"],
     ["Burst acquisitions", n.toLocaleString(), `${ce.toLocaleString()} in CSLC-S1 scope`],
-    ["RTC-S1 missing", rm.toLocaleString(), `of ${n.toLocaleString()}${pct(rm, n)}`],
-    ["CSLC-S1 missing", cm.toLocaleString(), `of ${ce.toLocaleString()} expected${pct(cm, ce)}`],
-    ["DISP-S1 frames with missing CSLCs", gapsD.toLocaleString(), `of ${DATA.disp.length.toLocaleString()} frames${pct(gapsD, DATA.disp.length)}`],
-    ["DSWx-S1 granules with missing RTCs", gapsS.toLocaleString(), `of ${DATA.dswx.length.toLocaleString()} granules${pct(gapsS, DATA.dswx.length)}`],
-    ["Duplicated", `${rd.toLocaleString()} · ${cd.toLocaleString()}`, "RTC-S1 · CSLC-S1 burst acquisitions with more than one product"],
+    ["RTC-S1 missing", rm.toLocaleString(), `of ${n.toLocaleString()}${pct(rm, n)}`, ["dswx", "rtc", "gaps"]],
+    ["CSLC-S1 missing", cm.toLocaleString(), `of ${ce.toLocaleString()} expected${pct(cm, ce)}`, ["disp", "cslc", "gaps"]],
+    ["DISP-S1 frames potentially stalled", gapsD.toLocaleString(), `of ${DATA.disp.length.toLocaleString()} frames${pct(gapsD, DATA.disp.length)}`, ["disp", "cslc", "gaps"]],
+    ["DSWx-S1 granules affected", gapsS.toLocaleString(), `of ${DATA.dswx.length.toLocaleString()} granules${pct(gapsS, DATA.dswx.length)}`, ["dswx", "rtc", "gaps"]],
+    ["RTC-S1 duplicated", rd.toLocaleString(), "burst acquisitions with more than one product", ["dswx", "rtc", "dups"]],
+    ["CSLC-S1 duplicated", cd.toLocaleString(), "burst acquisitions with more than one product", ["disp", "cslc", "dups"]],
   ];
-  WIN = { "RTC-S1 missing": rm, "RTC-S1 duplicate": rd, "CSLC-S1 missing": cm, "CSLC-S1 duplicate": cd };
+  // The "All unresolved" tiles are for every satellite and polarization, so their split uses the unfiltered counts
+  if (!viewKey()) WIN = { "RTC-S1 missing": rm, "RTC-S1 duplicate": rd, "CSLC-S1 missing": cm, "CSLC-S1 duplicate": cd };
   $("thishead").innerHTML = `This report: Sentinel-1 acquisitions ${esc(DATA.meta.start)} to ${esc(DATA.meta.stop)}
-    <span class="note">· the tiles, map and timeline cover only these dates</span>`;
+    <span class="note">· the tiles, map and timeline cover only these dates${viewKey() ? ` · <b>${esc(viewKey())} only</b> (the All unresolved tiles are for every satellite and polarization)` : ""}</span>`;
   $("tiles").innerHTML = T.map(tileHTML).join("");
 }
 // All unresolved problems from every report so far (followup.json next to this page on the published site); hidden when absent.
@@ -317,11 +367,13 @@ function unresolved() {
         : ch < 0 ? `<span class="delta down" tabindex="0" data-tip="${why}">▼ ${fmt(-ch)} net</span>`
         : `<span class="delta same" tabindex="0" data-tip="${why}">no net change</span>`;
       return [`${p} ${i === "missing" ? "missing" : "duplicated"}`, all.toLocaleString() + delta,
-        `${here.toLocaleString()} in this report + ${Math.max(all - here, 0).toLocaleString()} from earlier dates`];
+        `${here.toLocaleString()} in this report + ${Math.max(all - here, 0).toLocaleString()} from earlier dates`,
+        [p === "RTC-S1" ? "dswx" : "disp", p === "RTC-S1" ? "rtc" : "cslc", i === "missing" ? "gaps" : "dups"]];
     });
     $("openhead").innerHTML = `All unresolved: every report so far, as of ${esc(f.report_date)}
       <span class="note">· ▲▼ net change since the ${esc(f.previous_report || "last")} report (hover) · earlier dates are not on the map: see the <a href="followup.csv">follow-up CSV</a> · <a href="#defs" class="deflink" id="deflink">what these mean</a></span>`;
     $("opentiles").innerHTML = T.map(tileHTML).join("");
+    syncSegs();
     $("unresolved").hidden = false;
     $("deflink").onclick = e => { e.preventDefault(); $("defs").open = true; $("defs").scrollIntoView({ behavior: "smooth", block: "start" }); };
   }).catch(() => {});
@@ -345,8 +397,10 @@ function seg(id, key, set = v => { st[key] = v; }) {
   el.addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; set(b.dataset.v); syncSegs(); render(); });
 }
 function syncSegs() {
-  for (const [id, key] of [["group", "group"], ["mode", "mode"], ["mapview", "mapView"]])
+  for (const [id, key] of [["group", "group"], ["mode", "mode"], ["mapview", "mapView"], ["sat", "sat"], ["pol", "pol"]])
     for (const x of $(id).children) x.setAttribute("aria-pressed", x.dataset.v === st[key]);
+  for (const t of document.querySelectorAll(".tile[data-g]"))
+    t.setAttribute("aria-pressed", t.dataset.g === st.group && t.dataset.m === st.mode && t.dataset.v === st.mapView);
 }
 // Switching rows to frames/granules switches the product they consume, and vice versa; burst rows keep either product
 function setGroup(g) {
@@ -357,6 +411,14 @@ function setMode(m) { st.mode = m; if (st.group !== "burst") setGroup(GROUP_FOR_
 seg("group", "group", setGroup);
 seg("mode", "mode", setMode);
 seg("mapview", "mapView");
+// A filter change recounts every frame, granule and burst
+const setView = key => v => { st[key] = v; for (const g of ["disp", "dswx", "burst"]) for (const G of DATA[g]) delete G._cells; tiles(); };
+seg("sat", "sat", setView("sat"));
+seg("pol", "pol", setView("pol"));
+for (const x of $("sat").children) if (x.dataset.v && !DATA.slcs.some(s => s.startsWith(x.dataset.v))) {
+  x.disabled = true; x.title = "No radar images from this satellite in the window"; }
+for (const x of $("pol").children) if (x.dataset.v && !DATA.slcs.some(s => polOf(s) === x.dataset.v)) {
+  x.disabled = true; x.title = "No radar images with this polarization in the window"; }
 syncSegs();
 for (const t of [...new Set(B.map(b => b.t))].sort((a, b) => a - b)) $("track").insertAdjacentHTML("beforeend", `<option>${t}</option>`);
 // Gaps and duplicates are two views: each sets its sort, its row filter and the map colouring together
@@ -366,6 +428,17 @@ function focusOn(kind) {
   st.gapsOnly = $("gapsOnly").checked = !dups;
   st.dupOnly = $("dupOnly").checked = dups;
   st.mapView = kind; syncSegs();
+}
+// A tile shows its product and problem on the frames (CSLC-S1) or granules (RTC-S1) that use it, then scrolls to the
+// map (the earlier dates of an "All unresolved" tile are not on the map; this report's share is)
+function tileGo(t) {
+  setGroup(t.dataset.g); st.mode = t.dataset.m; focusOn(t.dataset.v); render();
+  window.scrollTo({ top: document.querySelector(".controls").getBoundingClientRect().top + scrollY, behavior: "smooth" });
+}
+for (const id of ["tiles", "opentiles"]) {
+  $(id).addEventListener("click", e => { const t = e.target.closest(".tile[data-g]"); if (t && !e.target.closest(".delta")) tileGo(t); });
+  $(id).addEventListener("keydown", e => { const t = e.target.closest(".tile[data-g]");
+    if (t && !e.target.closest(".delta") && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); tileGo(t); } });
 }
 $("sort").onchange = e => { const v = e.target.value; if (v === "gaps" || v === "dups") focusOn(v); else st.sort = v; render(); };
 $("pass").onchange = e => { st.pass = e.target.value; render(); };
@@ -386,13 +459,14 @@ document.querySelector(".theme").addEventListener("click", e => { const b = e.ta
   render(); });
 matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => render());
 // CSV downloads: byte-for-byte the files the tracker publishes (combined.missing_table and duplicates_table), under
-// the same dated names as on the site and in the email
+// the same dated names as on the site and in the email; with a Satellite or Polarization filter, only those rows,
+// and the filter in the name
 const byKeys = (...ks) => (a, b) => { for (const k of ks) { if (a[k] < b[k]) return -1; if (a[k] > b[k]) return 1; } return 0; };
 function downloadCsv(stem, header, rows) {
   const a = document.createElement("a");
   const field = v => /[",\n]/.test(String(v)) ? `"${String(v).replaceAll('"', '""')}"` : v;  // quoted like pandas' to_csv
   a.href = URL.createObjectURL(new Blob([[header, ...rows].map(r => r.map(field).join(",")).join("\n") + "\n"], { type: "text/csv" }));
-  a.download = `${stem}_${DATA.meta.start.replaceAll("-", "")}-${DATA.meta.stop.replaceAll("-", "")}.csv`;
+  a.download = `${stem}${viewKey() ? "_" + viewKey().replace(" ", "_") : ""}_${DATA.meta.start.replaceAll("-", "")}-${DATA.meta.stop.replaceAll("-", "")}.csv`;
   a.click(); URL.revokeObjectURL(a.href);
 }
 // Downstream products each burst feeds, comma-separated and sorted like the tracker's CSVs: DSWx-S1 granules (MGRS
@@ -408,14 +482,14 @@ const fed = () => FEEDS || (FEEDS = { dswx: feeds(DATA.dswx, false), disp: feeds
 $("csv").onclick = () => {
   const rows = [], F = fed();
   B.forEach((b, i) => { for (let j = 0; j < b.o.length; j++) { const v = b.c[j], cs = v >> 1;
-    if ((v & 1) || cs === 1) rows.push([b.id, iso(b.o[j]), DATA.slcs[b.k[j]], b.t, b.p === "A" ? "ASCENDING" : "DESCENDING",
+    if (((v & 1) || cs === 1) && inView(b, j)) rows.push([b.id, iso(b.o[j]), DATA.slcs[b.k[j]], b.t, b.p === "A" ? "ASCENDING" : "DESCENDING",
       v & 1 ? "missing" : "present", ["present", "missing", "out_of_scope"][cs], v & 1 ? F.dswx[i] : "", cs === 1 ? F.disp[i] : ""]); } });
   downloadCsv("missing", ["burst_id", "acq_date", "slc_id", "track", "pass", "rtc_s1", "cslc_s1", "dswx_granule_ids_affected",
     "disp_frame_ids_affected"], rows.sort(byKeys(1, 0)));
 };
 $("dupCsv").onclick = () => {
   const rows = [], F = fed();
-  B.forEach((b, i) => { for (const [j, d] of b.dup) { const at = [b.id, iso(b.o[j]), DATA.slcs[b.k[j]]];
+  B.forEach((b, i) => { for (const [j, d] of b.dup) { if (!inView(b, j)) continue; const at = [b.id, iso(b.o[j]), DATA.slcs[b.k[j]]];
     const ids = (kept, others) => [kept, ...others.split(" ")].filter(Boolean).join(",");
     if (d[1] > 1) rows.push(["RTC-S1", ...at, d[1], ids(d[5], d[3]), F.dswx[i], ""]);
     if (d[2] > 1) rows.push(["CSLC-S1", ...at, d[2], ids(d[6], d[4]), "", F.disp[i]]); } });
@@ -525,6 +599,32 @@ $("splitter").addEventListener("dblclick", () => setSplit(null, null));
 $("splitter").addEventListener("keydown", e => {
   const d = { ArrowUp: -40, ArrowDown: 40 }[e.key];
   if (d) { e.preventDefault(); setSplit($("map").clientHeight + d, $("tlScroll").clientHeight - d); }
+});
+// Map / burst table split (wide screens): dragging the bar between them sets the map's width. Double-click resets;
+// arrow keys work on the focused bar. Remembered per browser.
+function setMapW(w) {
+  const row = $("mapRow");
+  st.mapW = w === null ? null : Math.round(Math.min(Math.max(w, 300), row.clientWidth - 14 - 300));
+  st.mapW ? row.style.setProperty("--map-w", st.mapW + "px") : row.style.removeProperty("--map-w");
+  try { st.mapW ? localStorage.setItem("mapW", st.mapW) : localStorage.removeItem("mapW"); } catch {}
+  if (window._map && !window._mapRaf) window._mapRaf = requestAnimationFrame(() => { window._mapRaf = 0; window._map.invalidateSize({ pan: false }); });
+}
+try { const w = +localStorage.getItem("mapW"); if (w) setMapW(w); } catch {}
+$("vsplit").addEventListener("pointerdown", e => {
+  e.preventDefault();
+  const x0 = e.clientX, w0 = $("map").clientWidth, bar = e.currentTarget;
+  bar.classList.add("dragging"); document.body.classList.add("resizing-x");
+  const move = ev => setMapW(w0 + ev.clientX - x0);
+  const up = () => {
+    bar.classList.remove("dragging"); document.body.classList.remove("resizing-x");
+    removeEventListener("pointermove", move); removeEventListener("pointerup", up); removeEventListener("pointercancel", up);
+  };
+  addEventListener("pointermove", move); addEventListener("pointerup", up); addEventListener("pointercancel", up);
+});
+$("vsplit").addEventListener("dblclick", () => setMapW(null));
+$("vsplit").addEventListener("keydown", e => {
+  const d = { ArrowLeft: -40, ArrowRight: 40 }[e.key];
+  if (d) { e.preventDefault(); setMapW($("map").clientWidth + d); }
 });
 $("tlScroll").addEventListener("scroll", () => { if (!window._raf) window._raf = requestAnimationFrame(() => { window._raf = 0; draw(); }); });
 function drawAxis(W, xs) {
@@ -664,7 +764,7 @@ function drawBursts() {
   const feats = [];
   for (const i of G.b) { const b = B[i]; if (!bgeom(b)) continue;
     // A single burst is never "partial": red if missing (on the selected date, or on any date in the window), else blue
-    const js = st.selDate !== null ? [b.o.indexOf(st.selDate)].filter(j => j >= 0) : b.o.map((_, j) => j);
+    const js = (st.selDate !== null ? [b.o.indexOf(st.selDate)].filter(j => j >= 0) : b.o.map((_, j) => j)).filter(j => inView(b, j));
     if (!js.length) continue;
     const ks = js.map(j => judge(oneCell(i, j), st.mode)[0]), nMiss = ks.filter(v => v === 2).length;
     const k = nMiss ? 2 : ks.every(v => v === 3) ? 3 : 0;
@@ -698,15 +798,18 @@ function select(G, date, scroll) {
   const lyr = groupLayer.getLayers().find(l => l.feature.properties.G === G);
   if (lyr) map.fitBounds(lyr.getBounds(), { maxZoom: 10, padding: [20, 20] });
   if (scroll) { const l = layout.find(l => l.G === G), box = $("tlScroll");
-    if (l) { box.scrollTop = Math.max(0, l.y - box.clientHeight / 3); draw();
-      window.scrollTo({ top: box.getBoundingClientRect().top + scrollY - document.querySelector(".controls").offsetHeight - 40, behavior: "smooth" }); } }
+    if (l) { box.scrollTop = Math.max(0, l.y - box.clientHeight / 3); draw(); }
+    // Keep the map and the burst table in view: the page moves only when the map is off screen (e.g. after Find)
+    const r = $("map").getBoundingClientRect(), top = document.querySelector(".controls").offsetHeight;
+    if (r.top < top || r.bottom > innerHeight) window.scrollTo({ top: r.top + scrollY - top - 8, behavior: "smooth" }); }
 }
 
 // ---- selected row: its missing and duplicated burst acquisitions, with ASF Search links ----
 // ASF Search for a burst's OPERA products around the acquisition date (shareable link): two weeks either side for a
 // missing product, one day for duplicates (whose granules all have that date). Same links as the long-term archive page.
-// The SLC in ASF Search (list search by scene name, which for Sentinel-1 is the SLC ID)
-const slcLink = id => id ? `<a href="https://search.asf.alaska.edu/#/?dataset=SENTINEL-1&searchType=List%20Search&searchList=${encodeURIComponent(id)}&resultsLoaded=true" target="_blank" rel="noopener" title="Open this SLC in ASF Search">${esc(id)}</a>` : "";
+// The SLC in ASF Search (list search by scene name, which for Sentinel-1 is the SLC ID); the link shows the
+// satellite, and the full ID on hover (the CSVs have it in full)
+const slcLink = id => id ? `<a href="https://search.asf.alaska.edu/#/?dataset=SENTINEL-1&searchType=List%20Search&searchList=${encodeURIComponent(id)}&resultsLoaded=true" target="_blank" rel="noopener" title="${esc(id)}: open this SLC in ASF Search">${esc(id.slice(0, 3))} SLC ↗</a>` : "";
 function asfLink(burst, date, product, days = 14) {
   const t = Date.parse(`${date}T00:00:00Z`), at = v => new Date(v).toISOString().slice(0, 19) + "Z";
   return `https://search.asf.alaska.edu/#/?dataset=OPERA-S1&start=${at(t - days * DAY)}&end=${at(t + (days + 1) * DAY - 1000)}` +
@@ -717,7 +820,7 @@ function details() {
   if (!G) { box.innerHTML = ""; return; }
   const P = PRODUCT[st.mode], k = st.mode === "rtc" ? 1 : 2, out = [];
   for (const i of G.b) { const b = B[i];
-    b.o.forEach((o, j) => { if (st.selDate !== null && o !== st.selDate) return;
+    b.o.forEach((o, j) => { if (st.selDate !== null && o !== st.selDate || !inView(b, j)) return;
       const v = b.c[j], d = b.dup.get(j), at = { i, burst: b.id, date: iso(o), slc: DATA.slcs[b.k[j]] };
       if (st.mode === "rtc" ? v & 1 : (v >> 1) === 1) out.push({ ...at, what: `${P} missing`, days: 14 });
       if (d && d[k] > 1) out.push({ ...at, what: `${P} ×${d[k]}`, days: 1 }); }); }
@@ -731,14 +834,14 @@ function details() {
       out.slice(0, MAX).map(r => `<tr><td>${st.group === "burst" ? esc(r.burst) : `<button class="chip" data-i="${r.i}" title="Show this burst's row">${esc(r.burst)}</button>`}</td>
         <td>${r.date}</td><td>${esc(r.what)}</td>
         <td><a href="${esc(asfLink(r.burst, r.date, P, r.days))}" target="_blank" rel="noopener">${P === "CSLC-S1" ? "CSLC" : "RTC"} ↗</a></td>
-        <td class="ids">${slcLink(r.slc)}</td></tr>`).join("")}</tbody></table></div>` +
+        <td>${slcLink(r.slc)}</td></tr>`).join("")}</tbody></table></div>` +
       (out.length > MAX ? `<p class="note">Showing ${MAX} of ${fmt(out.length)}; the CSV downloads have all of them.</p>` : "") : "");
 }
 $("detail").addEventListener("click", e => { const c = e.target.closest(".chip"); if (!c) return;
   const G = DATA.burst[+c.dataset.i], date = st.selDate; setGroup("burst"); syncSegs(); rows = filtered(); select(G, date, true); });
 
 { const n = groupsOf(st.group).length; st.rh = n <= 150 ? 14 : 10; $("rh").value = String(st.rh); }
-header(); tiles(); unresolved(); render();
+header(); tiles(); syncSegs(); unresolved(); render();
 addEventListener("resize", () => { clearTimeout(window._rt); window._rt = setTimeout(draw, 120); });
 </script>
 </body>
