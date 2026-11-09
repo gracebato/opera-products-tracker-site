@@ -1,0 +1,64 @@
+{
+  "report_date": "2026-11-09",
+  "previous_report": "2026-11-02",
+  "triage_weeks": 4,
+  "groups": [
+    {
+      "product": "RTC-S1",
+      "issue": "missing",
+      "fixed": 3547,
+      "arrived_late": 0,
+      "no_longer_expected": 0,
+      "still_open": 2922,
+      "open_2w_plus": 2499,
+      "new": 885,
+      "removed_from_cmr": 0,
+      "needs_triage": 0,
+      "open": 3807,
+      "median_days_to_fix": 14.0
+    },
+    {
+      "product": "RTC-S1",
+      "issue": "duplicate",
+      "fixed": 0,
+      "arrived_late": 0,
+      "no_longer_expected": 0,
+      "still_open": 6902,
+      "open_2w_plus": 6902,
+      "new": 1906,
+      "removed_from_cmr": 0,
+      "needs_triage": 0,
+      "open": 8808,
+      "median_days_to_fix": null
+    },
+    {
+      "product": "CSLC-S1",
+      "issue": "missing",
+      "fixed": 780,
+      "arrived_late": 0,
+      "no_longer_expected": 0,
+      "still_open": 0,
+      "open_2w_plus": 0,
+      "new": 114,
+      "removed_from_cmr": 0,
+      "needs_triage": 0,
+      "open": 114,
+      "median_days_to_fix": 14.0
+    },
+    {
+      "product": "CSLC-S1",
+      "issue": "duplicate",
+      "fixed": 0,
+      "arrived_late": 0,
+      "no_longer_expected": 4,
+      "still_open": 431,
+      "open_2w_plus": 431,
+      "new": 313,
+      "removed_from_cmr": 0,
+      "needs_triage": 0,
+      "open": 744,
+      "median_days_to_fix": null
+    }
+  ],
+  "triage": []
+}
