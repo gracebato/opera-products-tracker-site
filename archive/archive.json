@@ -1,52 +1,37 @@
 {
  "kind": "archive",
- "run_date": "2026-11-09",
- "run_at": "2026-11-09T17:32:30Z",
+ "run_date": "2026-11-10",
+ "run_at": "2026-11-10T01:13:46Z",
  "first_month": "2016-04",
  "last_month": "2026-10",
  "n_burst_acquisitions": 57089205,
- "built": [
-  "2026-10"
- ],
- "rebuilt": [
-  "2021-11",
-  "2021-12",
-  "2022-10",
-  "2016-04",
-  "2016-05",
-  "2016-06",
-  "2016-08",
-  "2016-09",
-  "2016-11",
-  "2017-01",
-  "2017-11",
-  "2017-12"
- ],
+ "built": [],
+ "rebuilt": [],
  "failed": [],
- "changes_since": "2026-10-28T00:07:22Z",
+ "changes_since": "2026-11-09T17:32:30Z",
  "changed": {
-  "rtc_changed_granules": 165661,
-  "rtc_rows_updated": 53848,
-  "cslc_changed_granules": 11006,
-  "cslc_rows_updated": 694
+  "rtc_changed_granules": 14245,
+  "rtc_rows_updated": 12076,
+  "cslc_changed_granules": 0,
+  "cslc_rows_updated": 0
  },
- "rebuild_per_run": 12,
+ "rebuild_per_run": 0,
  "ledger": [
   {
    "product": "RTC-S1",
    "issue": "missing",
-   "open": 436475,
-   "new": 4437,
-   "fixed": 45572,
+   "open": 427652,
+   "new": 0,
+   "fixed": 8823,
    "arrived_late": 0,
    "no_longer_expected": 0,
-   "resolved_total": 283273
+   "resolved_total": 292096
   },
   {
    "product": "RTC-S1",
    "issue": "duplicate",
-   "open": 1116457,
-   "new": 15405,
+   "open": 1119710,
+   "new": 3253,
    "fixed": 0,
    "arrived_late": 0,
    "no_longer_expected": 0,
@@ -56,8 +41,8 @@
    "product": "CSLC-S1",
    "issue": "missing",
    "open": 26061,
-   "new": 7,
-   "fixed": 694,
+   "new": 0,
+   "fixed": 0,
    "arrived_late": 0,
    "no_longer_expected": 0,
    "resolved_total": 25007
@@ -66,14 +51,14 @@
    "product": "CSLC-S1",
    "issue": "duplicate",
    "open": 13097,
-   "new": 431,
+   "new": 0,
    "fixed": 0,
    "arrived_late": 0,
    "no_longer_expected": 0,
    "resolved_total": 868
   }
  ],
- "cmr_changes_checked_at": "2026-11-09T17:32:30Z",
+ "cmr_changes_checked_at": "2026-11-10T01:13:46Z",
  "months": [
   {
    "month": "2016-04",
@@ -12732,8 +12717,8 @@
   },
   {
    "month": "2021-11",
-   "as_of": "2026-11-09T17:46:22Z",
-   "built_at": "2026-11-09T17:51:40Z",
+   "as_of": "2026-11-09T20:57:01Z",
+   "built_at": "2026-11-09T21:02:48Z",
    "updated_at": null,
    "n_slcs": 23471,
    "n_burst_acquisitions": 543633,
@@ -21826,18 +21811,18 @@
    "month": "2026-06",
    "as_of": "2026-10-23T18:31:31Z",
    "built_at": "2026-10-23T18:36:54Z",
-   "updated_at": "2026-11-09T17:46:12Z",
+   "updated_at": "2026-11-10T01:14:03Z",
    "n_slcs": 29088,
    "n_burst_acquisitions": 673090,
    "rtc_expected": 673090,
-   "rtc_missing": 109032,
+   "rtc_missing": 108739,
    "cslc_expected": 59770,
    "cslc_missing": 6602,
-   "rtc_duplicated": 72449,
+   "rtc_duplicated": 72513,
    "cslc_duplicated": 5454,
    "disp_frames_with_missing": 372,
    "disp_frames": 1007,
-   "dswx_granules_with_missing": 13894,
+   "dswx_granules_with_missing": 13825,
    "dswx_granules": 19803,
    "early_rtc_made": 0,
    "early_rtc_extra": 0,
@@ -21850,9 +21835,9 @@
     "CSLC-S1|missing|fixed": 251,
     "CSLC-S1|missing|no_longer_expected": 1075,
     "CSLC-S1|missing|open": 6602,
-    "RTC-S1|duplicate|open": 72449,
-    "RTC-S1|missing|fixed": 10107,
-    "RTC-S1|missing|open": 109032
+    "RTC-S1|duplicate|open": 72513,
+    "RTC-S1|missing|fixed": 10400,
+    "RTC-S1|missing|open": 108739
    },
    "ledger_sat": {
     "CSLC-S1|duplicate|no_longer_expected": {
@@ -21886,13 +21871,14 @@
     "RTC-S1|duplicate|open": {
      "S1A VV": 40766,
      "S1C VV": 31303,
-     "S1D VV": 380
+     "S1D VV": 444
     },
     "RTC-S1|missing|fixed": {
      "S1A HH": 192,
      "S1A VV": 9274,
      "S1C HH": 24,
-     "S1C VV": 617
+     "S1C VV": 617,
+     "S1D VV": 293
     },
     "RTC-S1|missing|open": {
      "S1A HH": 7654,
@@ -21900,12 +21886,12 @@
      "S1C HH": 1959,
      "S1C VV": 354,
      "S1D HH": 6546,
-     "S1D VV": 90861
+     "S1D VV": 90568
     }
    },
    "extra_products": {
     "CSLC-S1": 5454,
-    "RTC-S1": 75181
+    "RTC-S1": 75245
    },
    "extra_sat": {
     "CSLC-S1": {
@@ -21916,7 +21902,7 @@
     "RTC-S1": {
      "S1A VV": 40880,
      "S1C VV": 33921,
-     "S1D VV": 380
+     "S1D VV": 444
     }
    },
    "sat_numbers": {
@@ -21960,14 +21946,14 @@
      "n_slcs": 11355,
      "n_burst_acquisitions": 265351,
      "rtc_expected": 265351,
-     "rtc_missing": 97407,
+     "rtc_missing": 97114,
      "cslc_expected": 21127,
      "cslc_missing": 6600,
-     "rtc_duplicated": 380,
+     "rtc_duplicated": 444,
      "cslc_duplicated": 397,
      "disp_frames_with_missing": 371,
      "disp_frames": 708,
-     "dswx_granules_with_missing": 13329,
+     "dswx_granules_with_missing": 13259,
      "dswx_granules": 18685,
      "early_rtc_made": 0,
      "early_rtc_extra": 0,
@@ -21978,14 +21964,14 @@
      "n_slcs": 27199,
      "n_burst_acquisitions": 633726,
      "rtc_expected": 633726,
-     "rtc_missing": 92873,
+     "rtc_missing": 92580,
      "cslc_expected": 58753,
      "cslc_missing": 6417,
-     "rtc_duplicated": 72449,
+     "rtc_duplicated": 72513,
      "cslc_duplicated": 5454,
      "disp_frames_with_missing": 356,
      "disp_frames": 994,
-     "dswx_granules_with_missing": 12888,
+     "dswx_granules_with_missing": 12819,
      "dswx_granules": 19053,
      "early_rtc_made": 0,
      "early_rtc_extra": 0,
@@ -22086,14 +22072,14 @@
      "n_slcs": 10538,
      "n_burst_acquisitions": 248225,
      "rtc_expected": 248225,
-     "rtc_missing": 90861,
+     "rtc_missing": 90568,
      "cslc_expected": 20646,
      "cslc_missing": 6415,
-     "rtc_duplicated": 380,
+     "rtc_duplicated": 444,
      "cslc_duplicated": 397,
      "disp_frames_with_missing": 355,
      "disp_frames": 693,
-     "dswx_granules_with_missing": 12595,
+     "dswx_granules_with_missing": 12525,
      "dswx_granules": 17968,
      "early_rtc_made": 0,
      "early_rtc_extra": 0,
@@ -22347,18 +22333,18 @@
    "month": "2026-08",
    "as_of": "2026-10-23T18:42:20Z",
    "built_at": "2026-10-23T18:47:35Z",
-   "updated_at": "2026-11-09T17:46:16Z",
+   "updated_at": "2026-11-10T01:14:06Z",
    "n_slcs": 25048,
    "n_burst_acquisitions": 580990,
    "rtc_expected": 580990,
-   "rtc_missing": 519,
+   "rtc_missing": 492,
    "cslc_expected": 53178,
    "cslc_missing": 27,
    "rtc_duplicated": 6677,
    "cslc_duplicated": 719,
    "disp_frames_with_missing": 2,
    "disp_frames": 1010,
-   "dswx_granules_with_missing": 231,
+   "dswx_granules_with_missing": 219,
    "dswx_granules": 19726,
    "early_rtc_made": 0,
    "early_rtc_extra": 0,
@@ -22372,9 +22358,9 @@
     "CSLC-S1|missing|no_longer_expected": 873,
     "CSLC-S1|missing|open": 27,
     "RTC-S1|duplicate|open": 6677,
-    "RTC-S1|missing|fixed": 6258,
+    "RTC-S1|missing|fixed": 6285,
     "RTC-S1|missing|no_longer_expected": 21,
-    "RTC-S1|missing|open": 519
+    "RTC-S1|missing|open": 492
    },
    "ledger_sat": {
     "CSLC-S1|duplicate|no_longer_expected": {
@@ -22402,7 +22388,8 @@
      "S1D VV": 4315
     },
     "RTC-S1|missing|fixed": {
-     "S1C VV": 6258
+     "S1C VV": 6258,
+     "S1D VV": 27
     },
     "RTC-S1|missing|no_longer_expected": {
      "? ?": 21
@@ -22410,7 +22397,7 @@
     "RTC-S1|missing|open": {
      "S1C HH": 287,
      "S1C VV": 150,
-     "S1D VV": 82
+     "S1D VV": 55
     }
    },
    "extra_products": {
@@ -22450,14 +22437,14 @@
      "n_slcs": 13395,
      "n_burst_acquisitions": 305667,
      "rtc_expected": 305667,
-     "rtc_missing": 82,
+     "rtc_missing": 55,
      "cslc_expected": 30127,
      "cslc_missing": 27,
      "rtc_duplicated": 4326,
      "cslc_duplicated": 719,
      "disp_frames_with_missing": 2,
      "disp_frames": 679,
-     "dswx_granules_with_missing": 34,
+     "dswx_granules_with_missing": 22,
      "dswx_granules": 14658,
      "early_rtc_made": 0,
      "early_rtc_extra": 0,
@@ -22468,14 +22455,14 @@
      "n_slcs": 23426,
      "n_burst_acquisitions": 547212,
      "rtc_expected": 547212,
-     "rtc_missing": 232,
+     "rtc_missing": 205,
      "cslc_expected": 51941,
      "cslc_missing": 27,
      "rtc_duplicated": 6666,
      "cslc_duplicated": 719,
      "disp_frames_with_missing": 2,
      "disp_frames": 995,
-     "dswx_granules_with_missing": 108,
+     "dswx_granules_with_missing": 96,
      "dswx_granules": 18996,
      "early_rtc_made": 0,
      "early_rtc_extra": 0,
@@ -22540,14 +22527,14 @@
      "n_slcs": 12688,
      "n_burst_acquisitions": 291336,
      "rtc_expected": 291336,
-     "rtc_missing": 82,
+     "rtc_missing": 55,
      "cslc_expected": 29554,
      "cslc_missing": 27,
      "rtc_duplicated": 4315,
      "cslc_duplicated": 719,
      "disp_frames_with_missing": 2,
      "disp_frames": 664,
-     "dswx_granules_with_missing": 34,
+     "dswx_granules_with_missing": 22,
      "dswx_granules": 13931,
      "early_rtc_made": 0,
      "early_rtc_extra": 0,
@@ -22579,18 +22566,18 @@
    "month": "2026-09",
    "as_of": "2026-10-23T18:47:36Z",
    "built_at": "2026-10-23T18:52:47Z",
-   "updated_at": "2026-11-09T17:46:19Z",
+   "updated_at": "2026-11-10T01:14:25Z",
    "n_slcs": 24350,
    "n_burst_acquisitions": 565999,
    "rtc_expected": 565999,
-   "rtc_missing": 8350,
+   "rtc_missing": 2492,
    "cslc_expected": 50893,
    "cslc_missing": 0,
    "rtc_duplicated": 506,
    "cslc_duplicated": 15,
    "disp_frames_with_missing": 0,
    "disp_frames": 1023,
-   "dswx_granules_with_missing": 2545,
+   "dswx_granules_with_missing": 719,
    "dswx_granules": 19685,
    "early_rtc_made": 0,
    "early_rtc_extra": 0,
@@ -22603,8 +22590,8 @@
     "CSLC-S1|missing|fixed": 92,
     "CSLC-S1|missing|no_longer_expected": 954,
     "RTC-S1|duplicate|open": 506,
-    "RTC-S1|missing|fixed": 28387,
-    "RTC-S1|missing|open": 8350
+    "RTC-S1|missing|fixed": 34245,
+    "RTC-S1|missing|open": 2492
    },
    "ledger_sat": {
     "CSLC-S1|duplicate|no_longer_expected": {
@@ -22631,11 +22618,11 @@
     },
     "RTC-S1|missing|fixed": {
      "S1C HH": 110,
-     "S1C VV": 28277
+     "S1C VV": 34135
     },
     "RTC-S1|missing|open": {
      "S1C HH": 2090,
-     "S1C VV": 6233,
+     "S1C VV": 375,
      "S1D VV": 27
     }
    },
@@ -22659,14 +22646,14 @@
      "n_slcs": 11335,
      "n_burst_acquisitions": 268360,
      "rtc_expected": 268360,
-     "rtc_missing": 8323,
+     "rtc_missing": 2465,
      "cslc_expected": 21410,
      "cslc_missing": 0,
      "rtc_duplicated": 257,
      "cslc_duplicated": 0,
      "disp_frames_with_missing": 0,
      "disp_frames": 518,
-     "dswx_granules_with_missing": 2535,
+     "dswx_granules_with_missing": 709,
      "dswx_granules": 13490,
      "early_rtc_made": 0,
      "early_rtc_extra": 0,
@@ -22695,14 +22682,14 @@
      "n_slcs": 22741,
      "n_burst_acquisitions": 532529,
      "rtc_expected": 532529,
-     "rtc_missing": 6260,
+     "rtc_missing": 402,
      "cslc_expected": 49778,
      "cslc_missing": 0,
      "rtc_duplicated": 426,
      "cslc_duplicated": 15,
      "disp_frames_with_missing": 0,
      "disp_frames": 1008,
-     "dswx_granules_with_missing": 2035,
+     "dswx_granules_with_missing": 209,
      "dswx_granules": 18952,
      "early_rtc_made": 0,
      "early_rtc_extra": 0,
@@ -22731,14 +22718,14 @@
      "n_slcs": 10430,
      "n_burst_acquisitions": 249236,
      "rtc_expected": 249236,
-     "rtc_missing": 6233,
+     "rtc_missing": 375,
      "cslc_expected": 20888,
      "cslc_missing": 0,
      "rtc_duplicated": 181,
      "cslc_duplicated": 0,
      "disp_frames_with_missing": 0,
      "disp_frames": 503,
-     "dswx_granules_with_missing": 2025,
+     "dswx_granules_with_missing": 199,
      "dswx_granules": 12763,
      "early_rtc_made": 0,
      "early_rtc_extra": 0,
@@ -22806,18 +22793,18 @@
    "month": "2026-10",
    "as_of": "2026-11-09T17:32:30Z",
    "built_at": "2026-11-09T17:38:03Z",
-   "updated_at": null,
+   "updated_at": "2026-11-10T01:14:58Z",
    "n_slcs": 24095,
    "n_burst_acquisitions": 560431,
    "rtc_expected": 560431,
-   "rtc_missing": 4437,
+   "rtc_missing": 1792,
    "cslc_expected": 51238,
    "cslc_missing": 7,
-   "rtc_duplicated": 7321,
+   "rtc_duplicated": 10510,
    "cslc_duplicated": 431,
    "disp_frames_with_missing": 2,
    "disp_frames": 999,
-   "dswx_granules_with_missing": 1706,
+   "dswx_granules_with_missing": 702,
    "dswx_granules": 19679,
    "early_rtc_made": 0,
    "early_rtc_extra": 0,
@@ -22827,8 +22814,9 @@
    "ledger": {
     "CSLC-S1|duplicate|open": 431,
     "CSLC-S1|missing|open": 7,
-    "RTC-S1|duplicate|open": 7321,
-    "RTC-S1|missing|open": 4437
+    "RTC-S1|duplicate|open": 10510,
+    "RTC-S1|missing|fixed": 2645,
+    "RTC-S1|missing|open": 1792
    },
    "ledger_sat": {
     "CSLC-S1|duplicate|open": {
@@ -22841,20 +22829,24 @@
     },
     "RTC-S1|duplicate|open": {
      "S1C HH": 466,
-     "S1C VV": 6024,
+     "S1C VV": 8068,
      "S1D HH": 33,
-     "S1D VV": 798
+     "S1D VV": 1943
+    },
+    "RTC-S1|missing|fixed": {
+     "S1C VV": 2587,
+     "S1D VV": 58
     },
     "RTC-S1|missing|open": {
      "S1C HH": 474,
-     "S1C VV": 3128,
+     "S1C VV": 541,
      "S1D HH": 379,
-     "S1D VV": 456
+     "S1D VV": 398
     }
    },
    "extra_products": {
     "CSLC-S1": 431,
-    "RTC-S1": 7342
+    "RTC-S1": 10531
    },
    "extra_sat": {
     "CSLC-S1": {
@@ -22864,9 +22856,9 @@
     },
     "RTC-S1": {
      "S1C HH": 466,
-     "S1C VV": 6045,
+     "S1C VV": 8089,
      "S1D HH": 33,
-     "S1D VV": 798
+     "S1D VV": 1943
     }
    },
    "sat_numbers": {
@@ -22874,14 +22866,14 @@
      "n_slcs": 11685,
      "n_burst_acquisitions": 277069,
      "rtc_expected": 277069,
-     "rtc_missing": 3602,
+     "rtc_missing": 1015,
      "cslc_expected": 23335,
      "cslc_missing": 7,
-     "rtc_duplicated": 6490,
+     "rtc_duplicated": 8534,
      "cslc_duplicated": 429,
      "disp_frames_with_missing": 2,
      "disp_frames": 515,
-     "dswx_granules_with_missing": 1438,
+     "dswx_granules_with_missing": 450,
      "dswx_granules": 13607,
      "early_rtc_made": 0,
      "early_rtc_extra": 0,
@@ -22892,14 +22884,14 @@
      "n_slcs": 12410,
      "n_burst_acquisitions": 283362,
      "rtc_expected": 283362,
-     "rtc_missing": 835,
+     "rtc_missing": 777,
      "cslc_expected": 27903,
      "cslc_missing": 0,
-     "rtc_duplicated": 831,
+     "rtc_duplicated": 1976,
      "cslc_duplicated": 2,
      "disp_frames_with_missing": 0,
      "disp_frames": 674,
-     "dswx_granules_with_missing": 305,
+     "dswx_granules_with_missing": 274,
      "dswx_granules": 14605,
      "early_rtc_made": 0,
      "early_rtc_extra": 0,
@@ -22910,14 +22902,14 @@
      "n_slcs": 22480,
      "n_burst_acquisitions": 526933,
      "rtc_expected": 526933,
-     "rtc_missing": 3584,
+     "rtc_missing": 939,
      "cslc_expected": 50037,
      "cslc_missing": 0,
-     "rtc_duplicated": 6822,
+     "rtc_duplicated": 10011,
      "cslc_duplicated": 351,
      "disp_frames_with_missing": 0,
      "disp_frames": 984,
-     "dswx_granules_with_missing": 1375,
+     "dswx_granules_with_missing": 370,
      "dswx_granules": 18972,
      "early_rtc_made": 0,
      "early_rtc_extra": 0,
@@ -22946,14 +22938,14 @@
      "n_slcs": 10770,
      "n_burst_acquisitions": 257635,
      "rtc_expected": 257635,
-     "rtc_missing": 3128,
+     "rtc_missing": 541,
      "cslc_expected": 22677,
      "cslc_missing": 0,
-     "rtc_duplicated": 6024,
+     "rtc_duplicated": 8068,
      "cslc_duplicated": 351,
      "disp_frames_with_missing": 0,
      "disp_frames": 500,
-     "dswx_granules_with_missing": 1229,
+     "dswx_granules_with_missing": 241,
      "dswx_granules": 12897,
      "early_rtc_made": 0,
      "early_rtc_extra": 0,
@@ -22982,14 +22974,14 @@
      "n_slcs": 11710,
      "n_burst_acquisitions": 269298,
      "rtc_expected": 269298,
-     "rtc_missing": 456,
+     "rtc_missing": 398,
      "cslc_expected": 27360,
      "cslc_missing": 0,
-     "rtc_duplicated": 798,
+     "rtc_duplicated": 1943,
      "cslc_duplicated": 0,
      "disp_frames_with_missing": 0,
      "disp_frames": 659,
-     "dswx_granules_with_missing": 161,
+     "dswx_granules_with_missing": 130,
      "dswx_granules": 13871,
      "early_rtc_made": 0,
      "early_rtc_extra": 0,
