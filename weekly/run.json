@@ -1,0 +1,32 @@
+{
+  "label": "Global",
+  "start": "2026-11-07",
+  "stop": "2026-11-21",
+  "burst_source": "catalog",
+  "n_slcs": 11362,
+  "n_burst_acquisitions": 263677,
+  "rtc_missing": 316,
+  "cslc_expected": 23765,
+  "cslc_missing": 0,
+  "rtc_duplicated": 54,
+  "cslc_duplicated": 17,
+  "failed_slcs": [],
+  "catalog_fallback_slcs": [
+    "S1C_IW_SLC__1SDV_20261107T043801_20261107T043828_010226_0146C0_E747"
+  ],
+  "baseline": {
+    "n_slcs": 30,
+    "n_slcs_unread": 0,
+    "n_bursts_annotation": 1426,
+    "n_bursts_catalog": 713,
+    "missing_from_catalog": 0,
+    "extra_in_catalog": 0
+  },
+  "as_of": "2026-11-23T06:02:25Z",
+  "generated": "2026-11-23 06:06 UTC",
+  "code": {
+    "opera_products_tracker": "1c0d955a556d69da709d8ff52f2203fa827d2dca",
+    "slc_rtc_lookup": "00cf59f2611176c54b6f2f9c01e3e160011cb468",
+    "opera_utils": "0.25.9"
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "report_date": "2026-11-23",
+  "previous_report": "2026-11-16",
+  "triage_weeks": 4,
+  "groups": [
+    {
+      "product": "RTC-S1",
+      "issue": "missing",
+      "fixed": 32,
+      "arrived_late": 0,
+      "no_longer_expected": 0,
+      "still_open": 1295,
+      "open_2w_plus": 1268,
+      "new": 289,
+      "removed_from_cmr": 0,
+      "needs_triage": 824,
+      "open": 1584,
+      "median_days_to_fix": 7.0
+    },
+    {
+      "product": "RTC-S1",
+      "issue": "duplicate",
+      "fixed": 0,
+      "arrived_late": 0,
+      "no_longer_expected": 0,
+      "still_open": 9583,
+      "open_2w_plus": 8808,
+      "new": 54,
+      "removed_from_cmr": 0,
+      "needs_triage": 6902,
+      "open": 9637,
+      "median_days_to_fix": null
+    },
+    {
+      "product": "CSLC-S1",
+      "issue": "missing",
+      "fixed": 0,
+      "arrived_late": 0,
+      "no_longer_expected": 0,
+      "still_open": 0,
+      "open_2w_plus": 0,
+      "new": 0,
+      "removed_from_cmr": 0,
+      "needs_triage": 0,
+      "open": 0,
+      "median_days_to_fix": null
+    },
+    {
+      "product": "CSLC-S1",
+      "issue": "duplicate",
+      "fixed": 0,
+      "arrived_late": 0,
+      "no_longer_expected": 0,
+      "still_open": 761,
+      "open_2w_plus": 744,
+      "new": 0,
+      "removed_from_cmr": 0,
+      "needs_triage": 431,
+      "open": 761,
+      "median_days_to_fix": null
+    }
+  ],
+  "triage": [
+    {
+      "product": "RTC-S1",
+      "issue": "missing",
+      "burst_id": "T001-000281-IW3",
+      "acq_date": "2026-10-03",
+      "first_reported": "2026-10-21",
+      "weeks_open": 4
+    },
+    {
+      "product": "RTC-S1",
+      "issue": "missing",
+      "burst_id": "T001-000282-IW2",
+      "acq_date": "2026-10-03",
+      "first_reported": "2026-10-21",
+      "weeks_open": 4
+    },
+    {
+      "product": "RTC-S1",
+      "issue": "missing",
+      "burst_id": "T001-000282-IW3",
+      "acq_date": "2026-10-03",
+      "first_reported": "2026-10-21",
+      "weeks_open": 4
+    },
+    {
+      "product": "RTC-S1",
+      "issue": "missing",
+      "burst_id": "T001-000283-IW2",
+      "acq_date": "2026-10-03",
+      "first_reported": "2026-10-21",
+      "weeks_open": 4
+    },
+    {
+      "product": "RTC-S1",
+      "issue": "missing",
+      "burst_id": "T001-000283-IW3",
+      "acq_date": "2026-10-03",
+      "first_reported": "2026-10-21",
+      "weeks_open": 4
+    },
+    {
+      "product": "RTC-S1",
+      "issue": "missing",
+      "burst_id": "T001-000284-IW3",
+      "acq_date": "2026-10-03",
+      "first_reported": "2026-10-21",
+      "weeks_open": 4
+    },
+    {
+      "product": "RTC-S1",
+      "issue": "missing",
+      "burst_id": "T001-000285-IW2",
+      "acq_date": "2026-10-03",
+      "first_reported": "2026-10-21",
+      "weeks_open": 4
+    },
+    {
+      "product": "RTC-S1",
+      "issue": "missing",
+      "burst_id": "T001-000285-IW3",
+      "acq_date": "2026-10-03",
+      "first_reported": "2026-10-21",
+      "weeks_open": 4
+    },
+    {
+      "product": "RTC-S1",
+      "issue": "missing",
+      "burst_id": "T001-000286-IW2",
+      "acq_date": "2026-10-03",
+      "first_reported": "2026-10-21",
+      "weeks_open": 4
+    },
+    {
+      "product": "RTC-S1",
+      "issue": "missing",
+      "burst_id": "T001-000286-IW3",
+      "acq_date": "2026-10-03",
+      "first_reported": "2026-10-21",
+      "weeks_open": 4
+    }
+  ]
+}
